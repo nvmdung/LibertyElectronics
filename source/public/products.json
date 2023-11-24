@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,"name":"Asus Tuf Gaming A15 2023","type":"Gaming","brand":"Asus","price":999,"image":"./image/MSI1.jpg","image1":"image/MSI2.jpg","image2":"image/MSI3.jpg","image3":"image/MSI4.jpg"    
+    }
+    ,{
+        "id":2,"name":"Lenovo Legion 5 Pro 16IAH7H 2022","type":"Gaming","brand":"Lenovo","price":1199,"image":"image/MSI1.jpg","image1":"image/MSI2.jpg","image2":"image/MSI3.jpg","image3":"image/MSI4.jpg"
+
+    }
+    ,
+    {
+        "id":3,"name":"Dell Gaming G16 7620 2022","type":"Gaming","brand":"DELL","price":1099,"image":"image/MSI1.jpg","image1":"image/MSI2.jpg","image2":"image/MSI3.jpg","image3":"image/MSI4.jpg"
+    }
+    ,{
+        "id":4,"name":"MSI Creator M16 16 inch 2023","type":"Gaming","brand":"MSI","price":1200,"image":"image/MSI1.jpg","image1":"image/MSI2.jpg","image2":"image/MSI3.jpg","image3":"image/MSI4.jpg"
+    }
+]
