@@ -6,9 +6,9 @@ function Item({laptop, onDelete}){
         <div>
             <tr>
              <td>{laptop.name}</td>
-             <td>{laptop.image.map(i =>(
-                <img src={i} width="100px"/>
-             ))}</td>
+           <td>
+            <img src={laptop.image[0]} width="100px"/>
+           </td>
              </tr>
             
              <tr>
