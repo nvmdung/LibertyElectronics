@@ -12,12 +12,12 @@
         "harddisksize":"512GB SSD M.2 PCIE G3X4",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/asusflip/Asus1",
             "./image/asus/asusflip/Asus2",
             "./image/asus/asusflip/Asus3",
             "./image/asus/asusflip/Asus4",
             "./image/asus/asusflip/Asus5"
-        ],
-        "avatar":["./avatar/asusflip/Asus1"] 
+        ]
     },
     {
         "id":2,
@@ -32,12 +32,12 @@
         "harddisksize":"512GB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/asus/asustuf/AsusMain",
             "./image/asus/asustuf/Asus41",
             "./image/asus/asustuf/Asus42",
             "./image/asus/asustuf/Asus43",
             "./image/asus/asustuf/Asus44"
-        ],
-        "avatar":["./avatar/asus/asustuf/AsusMain"]
+        ]
         
     },
     {
@@ -53,12 +53,12 @@
     "harddisksize":"1TB M.2 NVMe™ PCIe® 4.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/asus/asus14duo/Asus31",
         "./image/asus/asus14duo/Asus30",
         "./image/asus/asus14duo/Asus32",
         "./image/asus/asus14duo/Asus33",
         "./image/asus/asus14duo/Asus34"
-    ],
-    "avatar":["./avatar/asus/asus14duo/Asus31"]
+    ]
     },
     {
     "id":4,
@@ -73,12 +73,12 @@
     "harddisksize":"512GB M.2 NVMe PCIe 3.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/asus/asusflip/Asus20",
         "./image/asus/asusflip/Asus21",
         "./image/asus/asusflip/Asus22",
         "./image/asus/asusflip/Asus23",
         "./image/asus/asusflip/Asus24"
-    ],
-    "avatar":["./avatar/asus/asusflip/Asus20"]
+    ]
     },
     {
      "id":5,
@@ -93,12 +93,12 @@
     "harddisksize":"256GB PCIe NVMe SSD",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/lenovo/lenovonewest/main",
         "./image/lenovo/lenovonewest/1",
         "./image/lenovo/lenovonewest/2",
         "./image/lenovo/lenovonewest/3",
         "./image/lenovo/lenovonewest/4"
-    ],
-    "avatar":["./avatar/lenovo/lenovonewest/main"]
+    ]
     },
     {
       "id":6,
@@ -113,12 +113,12 @@
     "harddisksize":"1TB",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/lenovo/lenovoslim7pro/main",
         "./image/lenovo/lenovoslim7pro/1",
         "./image/lenovo/lenovoslim7pro/2",
         "./image/lenovo/lenovoslim7pro/3",
         "./image/lenovo/lenovoslim7pro/4"
-    ],
-    "avatar":["./avatar/lenovo/lenovoslim7pro/main"]
+    ]
     },
     {
       "id":7,
@@ -133,12 +133,12 @@
         "harddisksize":" 256GB  " ,
         "warranty": "2YEAR",
         "image":[
+            "./avatar/lenovo/lenovoslim3/main",
             "./image/lenovo/lenovoslim3/1",
             "./image/lenovo/lenovoslim3/2",
             "./image/lenovo/lenovoslim3/3",
             "./image/lenovo/lenovoslim3/4"
-        ],
-        "avatar":["./avatar/lenovo/lenovoslim3/main"]
+        ]
     },
     {
         "id":8,
@@ -153,12 +153,13 @@
     "harddisksize":" 1TB SSD",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/lenovo/lenovogen11/main",
         "./image/lenovo/lenovogen11/1",
         "./image/lenovo/lenovogen11/2",
         "./image/lenovo/lenovogen11/3",
         "./image/lenovo/lenovogen11/4"
-    ],
-    "avatar":["./avatar/lenovo/lenovogen11/main"]
+    ]
+
     },
     {
         "id":9,
@@ -173,12 +174,12 @@
     "harddisksize":"256 GB SSD",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/lenovo/lenovogaming3/main",
         "./image/lenovo/lenovogaming3/1",
         "./image/lenovo/lenovogaming3/2",
         "./image/lenovo/lenovogaming3/3",
         "./image/lenovo/lenovogaming3/4"
-    ],
-    "avatar":["./avatar/lenovo/lenovogaming3/main"]
+    ]
     },
     {
         "id":10,
@@ -193,11 +194,11 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/gigabyte/gigabytea5k1/image1",
         "./image/gigabyte/gigabytea5k1/image2",
         "./image/gigabyte/gigabytea5k1/image3",
         "./image/gigabyte/gigabytea5k1/image4"
-    ],
-    "avatar":["./avatar/gigabyte/gigabytea5k1/image1"]
+    ]
     },
     {
         
@@ -213,11 +214,11 @@
 "harddisksize":"1TB SSD M.2 PCIE G4X4",
 "warranty": "2YEAR",
 "image":[
+    "./avatar/gigabyte/gigabyteaorus15/image1",
     "./image/gigabyte/gigabyteaorus15/image2",
     "./image/gigabyte/gigabyteaorus15/image3",
     "./image/gigabyte/gigabyteaorus15/image4"
-],
-"avatar":["./avatar/gigabyte/gigabyteaorus15/image1"]
+]
     },
     {
         "id":12,
@@ -232,11 +233,11 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/gigabyte/gigabyteg5kf/image1",
         "./image/gigabyte/gigabyteg5kf/image2",
         "./image/gigabyte/gigabyteg5kf/image3",
         "./image/gigabyte/gigabyteg5kf/image4"
-    ],
-    "avatar":["./avatar/gigabyte/gigabyteg5kf/image1"]
+    ]
     },
     {
         "id":13,
@@ -251,11 +252,11 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/gigabyte/gigabyteg5me/image1",
         "./image/msi/gigabyteg5me/image2",
         "./image/gigabyte/gigabyteg5me/image3",
         "./image/gigabyte/gigabyteg5me/image4"
-    ],
-    "avatar":["./avatar/gigabyte/gigabyteg5me/image1"]
+    ]
 
     },
     {
@@ -271,11 +272,11 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/msi/LaptopgamingMSIKatana15B13VEK252VN/image1",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image2",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image3",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image4"
-    ],
-    "avatar":["./avatar/msi/LaptopgamingMSIKatana15B13VEK252VN/image1"]
+    ]
     },
     {
         "id":15,
@@ -290,11 +291,11 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/gigabyte/LaptopgamingMSIGF6312UCX841VN/image1",
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image2",
         "./image/gigabyte/LaptopgamingMSIGF6312UCX841VN/image3",
         "./image/gigabyte/LaptopgamingMSIGF6312UCX841VN/image4"
-    ],
-    "avatar":["./avatar/gigabyte/LaptopgamingMSIGF6312UCX841VN/image1"]
+    ]
     },
     {
         "id":16,
@@ -309,11 +310,11 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4" ,
     "warranty": "2YEAR",
     "image":[
+        "./avatar/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image2",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image3",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image4"
-    ],
-    "avatar":["./avatar/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1"]
+    ]
     },
     {
         "id":17,
@@ -328,11 +329,11 @@
     "harddisksize":"1TB NVMe PCIe Gen 4 SSD" ,
     "warranty": "2YEAR" ,
     "image":[
+        "./avatar/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image2",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image3",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image4"
-    ],
-    "avatar":["./avatar/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1"]
+    ]
     },
     {
         "id":18,
@@ -347,12 +348,12 @@
     "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/1",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/2",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/3",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/4"
-    ],
-    "avatar":["./avatar/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN"]
+    ]
     },
     {
         "id":19,
@@ -367,12 +368,12 @@
     "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
     "warranty": "2YEAR",
     "image":[
+        "./avatar/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/1",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/2",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/3",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/4"
-    ],
-    "avatar":["./avatar/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN"]
+    ]
     },
     {
         "id":20,
@@ -387,12 +388,12 @@
         "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/1",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/2",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/3",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/4"
-        ],
-        "avatar":["./avatar/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN"]
+        ]
     },
     {
         "id":21,
@@ -407,12 +408,12 @@
         "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/hp/hp240g96l1y2pa/HPG96LMAIN",
             "./image/hp/hp240g96l1y2pa/1",
             "./image/hp/hp240g96l1y2pa/2",
             "./image/hp/hp240g96l1y2pa/3",
             "./image/hp/hp240g96l1y2pa/4"
-        ],
-        "avatar":["./avatar/hp/hp240g96l1y2pa/HPG96LMAIN"]
+        ]
     },
     {
         "id":22,
@@ -427,12 +428,12 @@
         "harddisksize":"256GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU1",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU2",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU4"
-        ],
-        "avatar":["./avatar/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain"]
+        ]
     },
     {
         "id":23,
@@ -447,12 +448,12 @@
         "harddisksize":"256GB SSD M.2 PCIE ",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1GrayMain",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray1",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray2",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray3",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray4"
-        ],
-        "avatar":["./avatar/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1GrayMain"]
+        ]
     },
     {
         "id":24,
@@ -467,12 +468,12 @@
         "harddisksize":"512GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032641",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032642",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032644"
-        ],
-        "avatar":["./avatar/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main"]
+        ]
     },
     {
         "id":25,
@@ -487,11 +488,11 @@
         "harddisksize":"256GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
+            "./avatar/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black1",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black2",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black4"
-        ],
-        "avatar":["./avatar/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain"]
+        ]
     }
 ]
