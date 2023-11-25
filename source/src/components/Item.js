@@ -4,11 +4,12 @@ function Item({laptop, onDelete}){
     const navigate = useNavigate();
     return(
         <div>
-            <tr>
-             <td>{laptop.name}</td>
-           <td>
+                <td>
             <img src={laptop.image[0]} width="100px"/>
            </td>
+            <tr>
+             <td>{laptop.name}</td>
+       
              </tr>
             
              <tr>
