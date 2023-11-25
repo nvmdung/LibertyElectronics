@@ -1,15 +1,497 @@
 [
     {
         "id":1,
-        "name":"Asus Tuf Gaming A15 2023",
-        "type":"Gaming",
+        "name":"Laptop Asus Vivobook S 14 flip TP3402VA LZ118W",
+        "brand":"Asus",
+        "price": 999,
+        "itemweight":"1.5 kg",
+        "memorysize":"16GB (8GB Onboard + 8GB) DDR4 3200MHz (1x SO-DIMM socket, up to 16GB SDRAM)",
+        "cpuchip":"Intel® Core™ i9-13900H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads)",
+        "pin":"3 Cells 50WHrs",
+        "screensize":"14 inch WUXGA (1920 x 1200) 16:10 aspect ratio, LED Backlit, IPS-level Panel, 60Hz, 300nits, 45% NTSC color gamut, Glossy display, TÜV Rheinland-certified, Touch screen, Screen-to-body ratio: 85%",
+        "harddisksize":"512GB SSD M.2 PCIE G3X4",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/asus/asusflip/Asus2",
+            "./image/asus/asusflip/Asus3",
+            "./image/asus/asusflip/Asus4",
+            "./image/asus/asusflip/Asus5"
+        ],
+        "avatar":"./avatar/asusflip/Asus1" 
+    },
+    {
+        "id":2,
+        "name":"Laptop gaming ASUS TUF A15 FA507NU LP031W",
         "brand":"Asus",
         "price":999,
+        "itemweight":"2.2 kg",
+        "memorysize":"16GB (2 x 8) DDR5 4800MHz (2x SO-DIMM socket, up to 32GB SDRAM)",
+        "cpuchip":"AMD Ryzen™ 7 7735HS Mobile Processor (8-core/16-thread, 16MB L3 cache, up to 4.7 GHz max boost)",
+        "pin":"90WHrs, 4S1P, 4-cell Li-ion",
+        "screensize":"15.6 inch FHD (1920 x 1080) 16:9 IPS, 144Hz, Wide View, 250nits, Narrow Bezel, Non-Glare with 72% NTSC, 100% sRGB, G-Sync",
+        "harddisksize":"512GB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
+        "warranty": "2YEAR",
         "image":[
-        "./image/MSI1.jpg",
-        "image/MSI2.jpg",
-        "./image/MSI3.jpg",
-        "./image/MSI4.jpg"
-        ]    
+            "./image/asus/asustuf/Asus41",
+            "./image/asus/asustuf/Asus42",
+            "./image/asus/asustuf/Asus43",
+            "./image/asus/asustuf/Asus44"
+        ],
+        "avatar":"./avatar/asus/asustuf/AsusMain"
+        
+    },
+    {
+        "id":3,
+    "name":" Laptop ZenBook Pro 14 Duo UX8402VU P1028W",
+    "brand":"Asus",
+    "price":2699,
+    "itemweight":"1.75 kg",
+    "memorysize":"32GB LPDDR5 onboard",
+    "cpuchip":"Intel® Core™ i9-13900H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads)",
+    "pin":"4 Cells 76WHrs",
+    "screensize":"15.6 inch FHD (1920 x 1080) 16:9 IPS, 144Hz, Wide View, 250nits, Narrow Bezel, Non-Glare with 72% NTSC, 100% sRGB, G-Sync",
+    "harddisksize":"1TB M.2 NVMe™ PCIe® 4.0 Performance SSD (1 slot)",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/asus/asus14duo/Asus30",
+        "./image/asus/asus14duo/Asus32",
+        "./image/asus/asus14duo/Asus33",
+        "./image/asus/asus14duo/Asus34"
+    ],
+    "avatar":"./avatar/asus/asus14duo/Asus31"
+    },
+    {
+    "id":4,
+    "name":" Laptop VivoBook 14X OLED S3405VA KM071W",
+    "brand":"Asus",
+    "price":949,
+    "itemweight":"1.4 kg",
+    "memorysize":"16GB (8GB Onboard + 8GB Sodimm) DDR4 3200MHz ",
+    "cpuchip":"Intel® Core™ i9-13900H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads)",
+    "pin":"63WHrs, 3S1P, 3-cell Li-ion",
+    "screensize":"14 inch, 2.8K (2880 x 1800) OLED 16:10 aspect ratio, 0.2ms, 90Hz, 600nits HDR peak brightness, 100% DCI-P3, PANTONE Validated, VESA CERTIFIED Display HDR True Black 600 Glossy display",
+    "harddisksize":"512GB M.2 NVMe PCIe 3.0 Performance SSD (1 slot)",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/asus/asusflip/Asus21",
+        "./image/asus/asusflip/Asus22",
+        "./image/asus/asusflip/Asus23",
+        "./image/asus/asusflip/Asus24"
+    ],
+    "avatar":"./avatar/asus/asusflip/Asus20"
+    },
+    {
+     "id":5,
+    "name":"Lenovo 2022 Newest Ideapad 3 Laptop,",
+    "brand":"Lenovo",
+    "price":418,
+    "itemweight":"1.8 kg",
+    "memorysize":"8 GB",    
+    "cpuchip":"11th Gen Intel Core i3-1115G4",
+    "pin":"70wh",
+    "screensize":"15.6 inches",
+    "harddisksize":"256GB PCIe NVMe SSD",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/lenovo/lenovonewest/1",
+        "./image/lenovo/lenovonewest/2",
+        "./image/lenovo/lenovonewest/3",
+        "./image/lenovo/lenovonewest/4"
+    ],
+    "avatar":"./avatar/lenovo/lenovonewest/main"
+    },
+    {
+      "id":6,
+    "name":"Lenovo Slim 7 Pro X Laptop",
+    "brand":"Lenovo",
+    "price":1199,
+    "itemweight":"2.2 kg",
+    "memorysize":"32 GB",
+    "cpuchip":"AMD Ryzen 9 6900HS)",
+    "pin":"70 Wh",
+    "screensize":"14.5 inches",
+    "harddisksize":"1TB",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/lenovo/lenovoslim7pro/1",
+        "./image/lenovo/lenovoslim7pro/2",
+        "./image/lenovo/lenovoslim7pro/3",
+        "./image/lenovo/lenovoslim7pro/4"
+    ],
+    "avatar":"./avatar/lenovo/lenovoslim7pro/main"
+    },
+    {
+      "id":7,
+        "name":" Lenovo IdeaPad Slim 3 - Everyday Laptop ",
+        "brand":"Lenovo",
+        "price":396,
+        "itemweight":"2.3 kg",
+        "memorysize":"8GB ",
+        "cpuchip":" AMD Ryzen 3 7320U",
+        "pin":"70wh",
+        "screensize":"15.6 inch ",
+        "harddisksize":" 256GB  " ,
+        "warranty": "2YEAR",
+        "image":[
+            "./image/lenovo/lenovoslim3/1",
+            "./image/lenovo/lenovoslim3/2",
+            "./image/lenovo/lenovoslim3/3",
+            "./image/lenovo/lenovoslim3/4"
+        ],
+        "avatar":"./avatar/lenovo/lenovoslim3/main"
+    },
+    {
+        "id":8,
+    "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "brand":"Lenovo",
+    "price":1340,
+    "itemweight":"1.12 kg",
+    "memorysize":"32GB ",
+    "cpuchip":" Intel i7-1365U vPro",
+    "pin":"73WHrs ",
+    "screensize":"14 inches",
+    "harddisksize":" 1TB SSD",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/lenovo/lenovogen11/1",
+        "./image/lenovo/lenovogen11/2",
+        "./image/lenovo/lenovogen11/3",
+        "./image/lenovo/lenovogen11/4"
+    ],
+    "avatar":"./avatar/lenovo/lenovogen11/main"
+    },
+    {
+        "id":9,
+    "name":" Lenovo IdeaPad Gaming 3 ",
+    "brand":"Lenovo",
+    "price":794,
+    "itemweight":"1.4 kg",
+    "memorysize":"8GB",
+    "cpuchip":" AMD Ryzen 5 6600H",
+    "pin":"63WHrs ",
+    "screensize":"15.6 inches",
+    "harddisksize":"256 GB SSD",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/lenovo/lenovogaming3/1",
+        "./image/lenovo/lenovogaming3/2",
+        "./image/lenovo/lenovogaming3/3",
+        "./image/lenovo/lenovogaming3/4"
+    ],
+    "avatar":"./avatar/lenovo/lenovogaming3/main"
+    },
+    {
+        "id":10,
+    "name":"Laptop Gaming Gigabyte A5 K1 AVN1030SB",
+    "brand":"GIGABYE",
+    "price":1499,
+    "itemweight":"2.12 kg",
+    "memorysize":"8GB DDR4 3200MHz ",
+    "cpuchip":"AMD Ryzen 5 5600H 3.3GHz",
+    "pin":"4 Cell 48.96Wh",
+    "screensize":"15.6' FHD IPS 144Hz",
+    "harddisksize":"512GB SSD M.2 PCIE G3X4",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/gigabyte/gigabytea5k1/image2",
+        "./image/gigabyte/gigabytea5k1/image3",
+        "./image/gigabyte/gigabytea5k1/image4"
+    ],
+    "avatar":"./avatar/gigabyte/gigabytea5k1/image1"
+    },
+    {
+        
+"id":11,
+"name":"Laptop Gaming Gigabyte AORUS 15 XE4 73VNB14GH",
+"brand":"GIGABYE",
+"price":2199,
+"itemweight":"2.4 kg",
+"memorysize":"16GB (8x2) DDR4 3200MHz (2x SO-DIMM socket, up to 64GB SDRAM) ",
+"cpuchip":"Intel Core i7-12700H 3.6GHz",
+"pin":"4 Cell 50.96Wh",
+"screensize":"15.6' FHD IPS 165Hz",
+"harddisksize":"1TB SSD M.2 PCIE G4X4",
+"warranty": "2YEAR",
+"image":[
+    "./image/gigabyte/gigabyteaorus15/image2",
+    "./image/gigabyte/gigabyteaorus15/image3",
+    "./image/gigabyte/gigabyteaorus15/image4"
+],
+"avatar":"./avatar/gigabyte/gigabyteaorus15/image1"
+    },
+    {
+        "id":12,
+    "name":"Laptop gaming Gigabyte G5 KF E3VN313SH",
+    "brand":"GIGABYE",
+    "price":1699,
+    "itemweight":"1.9 kg",
+    "memorysize":"8GB DDR4 3200MHz ",
+    "cpuchip":"Intel Core i5-12500H (2.5GHz~4.5GHz), 12 Cores, 16 Threads ",
+    "pin":"Lithium-Ion 54Wh",
+    "screensize":"15.6' FHD IPS 144Hz",
+    "harddisksize":"512GB SSD M.2 PCIE G3X4",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/gigabyte/gigabyteg5kf/image2",
+        "./image/gigabyte/gigabyteg5kf/image3",
+        "./image/gigabyte/gigabyteg5kf/image4"
+    ],
+    "avatar":"./avatar/gigabyte/gigabyteg5kf/image1"
+    },
+    {
+        "id":13,
+    "name":"Laptop gaming Gigabyte G5 GE 51VN263SH",
+    "brand":"GIGABYE",
+    "price":1399,
+    "itemweight":"1.9 kg",
+    "memorysize":"8GB DDR4 3200MHz ",
+    "cpuchip":"Intel Core i5-12500H (2.5GHz~4.5GHz), 12 Cores, 16 Threads ",
+    "pin":"Lithium-Ion 54Wh",
+    "screensize":"15.6' FHD IPS 144Hz",
+    "harddisksize":"512GB SSD M.2 PCIE G3X4",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/msi/gigabyteg5me/image2",
+        "./image/gigabyte/gigabyteg5me/image3",
+        "./image/gigabyte/gigabyteg5me/image4"
+    ],
+    "avatar":"./avatar/gigabyte/gigabyteg5me/image1"
+
+    },
+    {
+        "id":14,
+    "name":"Laptop gaming MSI Katana 15 B13VEK 252VN",
+    "brand":"MSI",
+    "price":1499,
+    "itemweight":"1.5 kg",
+    "memorysize":"8GB DDR4 3200MHz ",
+    "cpuchip":"Intel® Core™ i7-13620H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads)",
+    "pin":"3 Cells 50WHrs",
+    "screensize":"15.6' FHD IPS 144Hz",
+    "harddisksize":"512GB SSD M.2 PCIE G3X4",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image2",
+        "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image3",
+        "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image4"
+    ],
+    "avatar":"./avatar/msi/LaptopgamingMSIKatana15B13VEK252VN/image1"
+    },
+    {
+        "id":15,
+    "name":"Laptop gaming MSI GF63 12UCX 841VN ",
+    "brand":"MSI",
+    "price":999,
+    "itemweight":"1.86 kg",
+    "memorysize":"8GB DDR4 3200MHz(2x SO-DIMM socket, up to 64GB SDRAM) ",
+    "cpuchip":"Intel Core i5-12450H 3.3GHz up to 4.40GHz 12MB, 8 Cores 12 Threads",
+    "pin":"3 Cells 52.4WHrs",
+    "screensize":"15.6' FHD IPS 144Hz",
+    "harddisksize":"512GB SSD M.2 PCIE G3X4",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/msi/LaptopgamingMSIGF6312UCX841VN/image2",
+        "./image/gigabyte/LaptopgamingMSIGF6312UCX841VN/image3",
+        "./image/gigabyte/LaptopgamingMSIGF6312UCX841VN/image4"
+    ],
+    "avatar":"./avatar/gigabyte/LaptopgamingMSIGF6312UCX841VN/image1"
+    },
+    {
+        "id":16,
+    "name":"Laptop Gaming MSI Katana 15 B13VEK 1205VN",
+    "brand":"MSI",
+    "price":1699,
+    "itemweight":"2.25 kg",
+    "memorysize":"8GB DDR4 3200MHz(2x SO-DIMM socket, up to 64GB SDRAM) ",
+    "cpuchip":"Intel Core i5-13420H (3.40GHz~4.60GHz) 8 Cores 12 Threads",
+    "pin":"3 Cells 53.5WHrs",
+    "screensize":"15.6' FHD IPS 144Hz",
+    "harddisksize":"512GB SSD M.2 PCIE G3X4" ,
+    "warranty": "2YEAR",
+    "image":[
+        "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image2",
+        "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image3",
+        "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image4"
+    ],
+    "avatar":"./avatar/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1"
+    },
+    {
+        "id":17,
+    "name":"Laptop gaming MSI Katana 15 B13VGK 1211VN",
+    "brand":"MSI",
+    "price":1999,
+    "itemweight":"2.25 kg",
+    "memorysize":"16GB (2 x 8GB) DDR5 5600MHz (2x SO-DIMM socket, up to 64GB SDRAM) ",
+    "cpuchip":"Intel Core i7-13620H (3.6GHz~4.9GHz) 10 Cores 16 Threads",
+    "pin":"3 Cells 53.5WHrs",
+    "screensize":"15.6' FHD IPS 240Hz",
+    "harddisksize":"1TB NVMe PCIe Gen 4 SSD" ,
+    "warranty": "2YEAR" ,
+    "image":[
+        "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image2",
+        "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image3",
+        "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image4"
+    ],
+    "avatar":"./avatar/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1"
+    },
+    {
+        "id":18,
+    "name":"Laptop HP Pavilion 15 eg3112TU 8U6L9PA",
+    "brand":"HP",
+    "price":1499,
+    "itemweight":"1.74 kg",
+    "memorysize":"16GB (2 x 8) DDR4 3200MHz ",
+    "cpuchip":"Intel® Core™ i7-1355U (up to 5.0 GHz with Intel® Turbo Boost Technology, 12 MB L3 cache, 10 cores, 12 threads)",
+    "pin":"41WHrs, 3S1P, 3-cell Li-ion",
+    "screensize":"15.6 diagonal, FHD (1920 x 1080), IPS, micro-edge, anti-glare, 250 nits, 45% NTSC",
+    "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/1",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/2",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/3",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/4"
+    ],
+    "avatar":"./avatar/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN"
+    },
+    {
+        "id":19,
+    "name":"Laptop HP Pavilion 15 eg3091TU 8C5L2PA",
+    "brand":"HP",
+    "price":1499,
+    "itemweight":"1.74 kg",
+    "memorysize":"16GB (2 x 8) DDR4 3200MHz ",
+    "cpuchip":"Intel® Core™ i7-1355U (up to 5.0 GHz with Intel® Turbo Boost Technology, 12 MB L3 cache, 10 cores, 12 threads)",
+    "pin":"41WHrs, 3S1P, 3-cell Li-ion",
+    "screensize":"15.6 diagonal, FHD (1920 x 1080), IPS, micro-edge, anti-glare, 250 nits, 45% NTSC",
+    "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
+    "warranty": "2YEAR",
+    "image":[
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/1",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/2",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/3",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/4"
+    ],
+    "avatar":"./avatar/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN"
+    },
+    {
+        "id":20,
+        "name":"Laptop HP Pavilion 15 eg3093TU 8C5L4PA",
+        "brand":"HP",
+        "price":1499,
+        "itemweight":"1.74 kg",
+        "memorysize":"16GB (2 x 8) DDR4 3200MHz ",
+        "cpuchip":"Intel Core i5-1335U (up to 1.3 GHz - 4.6 GHz with Intel® Turbo Boost Technology, 12 MB L3 cache, 10 cores, 12 threads)",
+        "pin":"41WHrs, 3S1P, 3-cell Li-ion",
+        "screensize":"15.6 diagonal, FHD (1920 x 1080), IPS, micro-edge, anti-glare, 250 nits, 45% NTSC",
+        "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/1",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/2",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/3",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/4"
+        ],
+        "avatar":"./avatar/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN"
+    },
+    {
+        "id":21,
+        "name":"Laptop HP 240 G9 6L1Y2PA",
+        "brand":"HP",
+        "price":1499,
+        "itemweight":"1.74 kg",
+        "memorysize":"16GB (2 x 8) DDR4 3200MHz ",
+        "cpuchip":"Intel Core i5-1335U (up to 1.3 GHz - 4.6 GHz with Intel® Turbo Boost Technology, 12 MB L3 cache, 10 cores, 12 threads)",
+        "pin":"41WHrs, 3S1P, 3-cell Li-ion",
+        "screensize":"15.6 diagonal, FHD (1920 x 1080), IPS, micro-edge, anti-glare, 250 nits, 45% NTSC",
+        "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/hp/hp240g96l1y2pa/1",
+            "./image/hp/hp240g96l1y2pa/2",
+            "./image/hp/hp240g96l1y2pa/3",
+            "./image/hp/hp240g96l1y2pa/4"
+        ],
+        "avatar":"./avatar/hp/hp240g96l1y2pa/HPG96LMAIN"
+    },
+    {
+        "id":22,
+        "name":"Laptop Dell Inspiron 15 3520 i3U082W11BLU",
+        "brand":"DELL",
+        "price":1499,
+        "itemweight":"1.9 kg",
+        "memorysize":"8GB DDR4 2666MHz  ",
+        "cpuchip":"Intel Core i3-1215U Processor (10MB Cache, up to 4.4 GHz)",
+        "pin":"3-cell Li-ion, 41 Wh",
+        "screensize":"15.6 Inch FHD (1920 x 1080),120Hz, Anti- Glare LED Backlit Narrow Border Displa",
+        "harddisksize":"256GB SSD NVMe PCIe ",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU1",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU2",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU4"
+        ],
+        "avatar":"./avatar/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain"
+    },
+    {
+        "id":23,
+        "name":"Laptop Dell Vostro 3520 V5I3614W1 Gray",
+        "brand":"DELL",
+        "price":1499,
+        "itemweight":"1.66 kg",
+        "memorysize":"8GB (8x1) DDR4 2666MHz ",
+        "cpuchip":"Intel Core i3 - 1215U (Up to 4.4 Ghz, 12Mb)",
+        "pin":"3 Cell 41WHr",
+        "screensize":"15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display",
+        "harddisksize":"256GB SSD M.2 PCIE ",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray1",
+            "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray2",
+            "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray3",
+            "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray4"
+        ],
+        "avatar":"./avatar/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1GrayMain"
+    },
+    {
+        "id":24,
+        "name":"Laptop Dell Inspiron 15 3520 71003264",
+        "brand":"DELL",
+        "price":1499,
+        "itemweight":"1.65 kg",
+        "memorysize":"8GB DDR4 2666MHz ",
+        "cpuchip":"Intel Core i3-1215U Up to 4.40 GHz, 6 cores 8 threads(10MB Cache, up to 4.4 GHz)",
+        "pin":"3-cell Li-ion, 41 Wh",
+        "screensize":"15.6 Inch FHD (1920 x 1080),120Hz, 250 nits, WVA .Anti- Glare LED Backlit Narrow Border Display",
+        "harddisksize":"512GB SSD NVMe PCIe ",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032641",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032642",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032644"
+        ],
+        "avatar":"./avatar/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main"
+    },
+    {
+        "id":25,
+        "name":"Laptop Dell Inspiron 15 3520 N5I5122W1 Black",
+        "brand":"DELL",
+        "price":1499,
+        "itemweight":"1.9 kg",
+        "memorysize":"1 x 8GB DDR4 2666MHz ",
+        "cpuchip":"Intel(R) Core(TM) i5-1235U Processor (12MB Cache, up to 4.4 GHz)",
+        "pin":"3-cell Li-ion, 41 Wh",
+        "screensize":"15.6 Inch FHD (1920 x 1080),120Hz, Anti- Glare LED Backlit Narrow Border Display",
+        "harddisksize":"256GB SSD NVMe PCIe ",
+        "warranty": "2YEAR",
+        "image":[
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black1",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black2",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black4"
+        ],
+        "avatar":"./avatar/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain"
     }
 ]
