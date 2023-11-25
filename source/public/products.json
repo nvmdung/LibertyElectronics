@@ -17,7 +17,7 @@
             "./image/asus/asusflip/Asus4",
             "./image/asus/asusflip/Asus5"
         ],
-        "avatar":"./avatar/asusflip/Asus1" 
+        "avatar":["./avatar/asusflip/Asus1"] 
     },
     {
         "id":2,
@@ -37,7 +37,7 @@
             "./image/asus/asustuf/Asus43",
             "./image/asus/asustuf/Asus44"
         ],
-        "avatar":"./avatar/asus/asustuf/AsusMain"
+        "avatar":["./avatar/asus/asustuf/AsusMain"]
         
     },
     {
@@ -58,7 +58,7 @@
         "./image/asus/asus14duo/Asus33",
         "./image/asus/asus14duo/Asus34"
     ],
-    "avatar":"./avatar/asus/asus14duo/Asus31"
+    "avatar":["./avatar/asus/asus14duo/Asus31"]
     },
     {
     "id":4,
@@ -78,7 +78,7 @@
         "./image/asus/asusflip/Asus23",
         "./image/asus/asusflip/Asus24"
     ],
-    "avatar":"./avatar/asus/asusflip/Asus20"
+    "avatar":["./avatar/asus/asusflip/Asus20"]
     },
     {
      "id":5,
@@ -98,7 +98,7 @@
         "./image/lenovo/lenovonewest/3",
         "./image/lenovo/lenovonewest/4"
     ],
-    "avatar":"./avatar/lenovo/lenovonewest/main"
+    "avatar":["./avatar/lenovo/lenovonewest/main"]
     },
     {
       "id":6,
@@ -118,7 +118,7 @@
         "./image/lenovo/lenovoslim7pro/3",
         "./image/lenovo/lenovoslim7pro/4"
     ],
-    "avatar":"./avatar/lenovo/lenovoslim7pro/main"
+    "avatar":["./avatar/lenovo/lenovoslim7pro/main"]
     },
     {
       "id":7,
@@ -138,7 +138,7 @@
             "./image/lenovo/lenovoslim3/3",
             "./image/lenovo/lenovoslim3/4"
         ],
-        "avatar":"./avatar/lenovo/lenovoslim3/main"
+        "avatar":["./avatar/lenovo/lenovoslim3/main"]
     },
     {
         "id":8,
@@ -158,7 +158,7 @@
         "./image/lenovo/lenovogen11/3",
         "./image/lenovo/lenovogen11/4"
     ],
-    "avatar":"./avatar/lenovo/lenovogen11/main"
+    "avatar":["./avatar/lenovo/lenovogen11/main"]
     },
     {
         "id":9,
@@ -178,7 +178,7 @@
         "./image/lenovo/lenovogaming3/3",
         "./image/lenovo/lenovogaming3/4"
     ],
-    "avatar":"./avatar/lenovo/lenovogaming3/main"
+    "avatar":["./avatar/lenovo/lenovogaming3/main"]
     },
     {
         "id":10,
@@ -197,7 +197,7 @@
         "./image/gigabyte/gigabytea5k1/image3",
         "./image/gigabyte/gigabytea5k1/image4"
     ],
-    "avatar":"./avatar/gigabyte/gigabytea5k1/image1"
+    "avatar":["./avatar/gigabyte/gigabytea5k1/image1"]
     },
     {
         
@@ -217,7 +217,7 @@
     "./image/gigabyte/gigabyteaorus15/image3",
     "./image/gigabyte/gigabyteaorus15/image4"
 ],
-"avatar":"./avatar/gigabyte/gigabyteaorus15/image1"
+"avatar":["./avatar/gigabyte/gigabyteaorus15/image1"]
     },
     {
         "id":12,
@@ -236,7 +236,7 @@
         "./image/gigabyte/gigabyteg5kf/image3",
         "./image/gigabyte/gigabyteg5kf/image4"
     ],
-    "avatar":"./avatar/gigabyte/gigabyteg5kf/image1"
+    "avatar":["./avatar/gigabyte/gigabyteg5kf/image1"]
     },
     {
         "id":13,
@@ -255,7 +255,7 @@
         "./image/gigabyte/gigabyteg5me/image3",
         "./image/gigabyte/gigabyteg5me/image4"
     ],
-    "avatar":"./avatar/gigabyte/gigabyteg5me/image1"
+    "avatar":["./avatar/gigabyte/gigabyteg5me/image1"]
 
     },
     {
@@ -275,7 +275,7 @@
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image3",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image4"
     ],
-    "avatar":"./avatar/msi/LaptopgamingMSIKatana15B13VEK252VN/image1"
+    "avatar":["./avatar/msi/LaptopgamingMSIKatana15B13VEK252VN/image1"]
     },
     {
         "id":15,
@@ -294,7 +294,7 @@
         "./image/gigabyte/LaptopgamingMSIGF6312UCX841VN/image3",
         "./image/gigabyte/LaptopgamingMSIGF6312UCX841VN/image4"
     ],
-    "avatar":"./avatar/gigabyte/LaptopgamingMSIGF6312UCX841VN/image1"
+    "avatar":["./avatar/gigabyte/LaptopgamingMSIGF6312UCX841VN/image1"]
     },
     {
         "id":16,
@@ -313,7 +313,7 @@
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image3",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image4"
     ],
-    "avatar":"./avatar/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1"
+    "avatar":["./avatar/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1"]
     },
     {
         "id":17,
@@ -332,7 +332,7 @@
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image3",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image4"
     ],
-    "avatar":"./avatar/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1"
+    "avatar":["./avatar/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1"]
     },
     {
         "id":18,
@@ -352,7 +352,7 @@
         "./image/hp/hppavilion15eg3112tu8U6L9pa/3",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/4"
     ],
-    "avatar":"./avatar/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN"
+    "avatar":["./avatar/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN"]
     },
     {
         "id":19,
@@ -372,7 +372,7 @@
         "./image/hp/hppavilion15eg3091tu8C5L2pa/3",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/4"
     ],
-    "avatar":"./avatar/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN"
+    "avatar":["./avatar/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN"]
     },
     {
         "id":20,
@@ -392,7 +392,7 @@
             "./image/hp/hppavilion15eg3093tu8c5l4pa/3",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/4"
         ],
-        "avatar":"./avatar/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN"
+        "avatar":["./avatar/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN"]
     },
     {
         "id":21,
@@ -412,7 +412,7 @@
             "./image/hp/hp240g96l1y2pa/3",
             "./image/hp/hp240g96l1y2pa/4"
         ],
-        "avatar":"./avatar/hp/hp240g96l1y2pa/HPG96LMAIN"
+        "avatar":["./avatar/hp/hp240g96l1y2pa/HPG96LMAIN"]
     },
     {
         "id":22,
@@ -432,7 +432,7 @@
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU4"
         ],
-        "avatar":"./avatar/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain"
+        "avatar":["./avatar/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain"]
     },
     {
         "id":23,
@@ -452,7 +452,7 @@
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray3",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray4"
         ],
-        "avatar":"./avatar/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1GrayMain"
+        "avatar":["./avatar/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1GrayMain"]
     },
     {
         "id":24,
@@ -472,7 +472,7 @@
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032644"
         ],
-        "avatar":"./avatar/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main"
+        "avatar":["./avatar/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main"]
     },
     {
         "id":25,
@@ -492,6 +492,6 @@
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black4"
         ],
-        "avatar":"./avatar/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain"
+        "avatar":["./avatar/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain"]
     }
 ]
