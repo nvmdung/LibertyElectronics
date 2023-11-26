@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 import { Link, Route, Routes } from 'react-router-dom';
 import List from './components/List';
+import Product from './components/ProductList';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
@@ -61,11 +62,13 @@ function App() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/list">List</Link>
+        <Link to="/product">product</Link>
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
         <Route path="/" element={<Home laptops={filterLaptops}/>}/>
         <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
+        <Route path="/product" element={<Product laptops={filterLaptops}/>}/>
 {/*         
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}
