@@ -7,6 +7,7 @@ import List from './components/List';
 // import Create from './components/Create';
 // import Details from './components/Details';
 // import Search from './components/Search';
+import Home from './components/Home';
 
 function App() {
 
@@ -58,11 +59,13 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/">List</Link>
+        <Link to="/">Home</Link>
+        <Link to="/list">List</Link>
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
-        <Route path="/" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
+        <Route path="/" element={<Home laptops={filterLaptops}/>}/>
+        <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
 {/*         
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}
