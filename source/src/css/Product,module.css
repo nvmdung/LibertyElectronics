@@ -1,0 +1,27 @@
+.header{
+    text-align: center;
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.cat{
+    text-align: left;
+    border: 1px solid blueviolet;
+    padding: 10px 15px;
+}
+.cat:hover{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+.boxes{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.prodimg{
+    width: 200px;
+
+}
