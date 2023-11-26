@@ -9,6 +9,7 @@ import Product from './components/ProductList';
 // import Details from './components/Details';
 // import Search from './components/Search';
 import Home from './components/Home';
+import Search from './components/Search';
 
 function App() {
 
@@ -29,6 +30,11 @@ function App() {
     };
     fetchData();
   }, []);
+  const handleSearch = (value) => {
+    setValue(value);
+    const filterLaptops = laptops.filter(d => d.name.toLowerCase().includes(value.toLowerCase()));
+    setFilerLaptops(filterLaptops);
+  }
 
   const handleAdd = (newLaptop) => {
     setLaptops([...laptops,newLaptop]);
@@ -68,7 +74,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home laptops={filterLaptops}/>}/>
         <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
-        <Route path="/product" element={<Product laptops={filterLaptops}/>}/>
+        <Route path="/product" element={
+          <div>
+          <Search onSearch={handleSearch}/>
+        <Product laptops={filterLaptops}/>
+        </div>
+      }/>
 {/*         
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}

@@ -8,11 +8,9 @@ function ProductItem({laptop, addCart}){
         </td>
         <div><td>{laptop.name}</td></div>
         <div><td>${laptop.price}</td></div>
-        <div><td>{laptop.brand}</td></div>
         <td>
             <button onClick={() => addCart(laptop.id)}>Add to Cart</button>
         </td>
-        <div></div>
     </tr>
     )
 }
