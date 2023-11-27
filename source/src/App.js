@@ -12,9 +12,10 @@ import Home from './components/Home';
 import Search from './components/Search';
 
 function App() {
-
+  const [lavatars, setAvatars] = useState([]);
   const [laptops, setLaptops] = useState([]);
   const [filterLaptops, setFilerLaptops] = useState([])
+  const [filterAvatars, setFilerAvatars] = useState([])
   const [value, setValue] = useState('');
 
   useEffect(() => {
@@ -29,7 +30,19 @@ function App() {
       }
     };
     fetchData();
-  }, []);
+ 
+  const fetcData = async () => {
+    try{
+      const dataJson = await fetch('avatar.json');
+      const avatarData = await dataJson.json();
+      setAvatars(avatarData);
+      setFilerAvatars(avatarData);
+    }catch (error){
+      console.log('error reading json');
+    }
+  };
+  fetcData();
+}, []);
   const handleSearch = (value) => {
     setValue(value);
     const filterLaptops = laptops.filter(d => d.name.toLowerCase().includes(value.toLowerCase()));
@@ -72,7 +85,7 @@ function App() {
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
-        <Route path="/" element={<Home laptops={filterLaptops}/>}/>
+        <Route path="/" element={<Home avatars={filterAvatars}/>}/>
         <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
         <Route path="/product" element={
           <div>

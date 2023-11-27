@@ -82,7 +82,7 @@
     },
     {
      "id":5,
-    "name":"Lenovo 2022 Newest Ideapad 3 Laptop,",
+    "name":"Lenovo 2022 Newest Ideapad 3 Laptop",
     "brand":"Lenovo",
     "price":418,
     "itemweight":"1.8 kg",
@@ -122,7 +122,7 @@
     },
     {
       "id":7,
-        "name":" Lenovo IdeaPad Slim 3 - Everyday Laptop ",
+        "name":"Lenovo IdeaPad Slim 3 - Everyday Laptop",
         "brand":"Lenovo",
         "price":396,
         "itemweight":"2.3 kg",
@@ -163,7 +163,7 @@
     },
     {
         "id":9,
-    "name":" Lenovo IdeaPad Gaming 3 ",
+    "name":"Lenovo IdeaPad Gaming 3",
     "brand":"Lenovo",
     "price":794,
     "itemweight":"1.4 kg",
@@ -280,7 +280,7 @@
     },
     {
         "id":15,
-    "name":"Laptop gaming MSI GF63 12UCX 841VN ",
+    "name":"Laptop gaming MSI GF63 12UCX 841VN",
     "brand":"MSI",
     "price":999,
     "itemweight":"1.86 kg",
