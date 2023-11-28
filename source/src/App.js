@@ -10,6 +10,7 @@ import Product from './components/ProductList';
 // import Search from './components/Search';
 import Home from './components/Home';
 import Search from './components/Search';
+import Ad from './components/Ad';
 
 function App() {
   const [lavatars, setAvatars] = useState([]);
@@ -75,17 +76,19 @@ function App() {
   //   const filterLaptops = laptops.filter(d => d.name.includes(value))
   //   setFilerLaptops(filterLaptops);
   // }
-
+  
   return (
     <div className="App">
       <nav>
-        <Link to="/">Home</Link>
+        <Link to="/"></Link>
+        <Link to="/home">Home</Link>
         <Link to="/list">List</Link>
         <Link to="/product">product</Link>
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
-        <Route path="/" element={<Home avatars={filterAvatars}/>}/>
+        <Route path="/home" element={<Home avatars={filterAvatars}/>}/>
+        <Route path="/" element={<Ad />} />
         <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
         <Route path="/product" element={
           <div>
