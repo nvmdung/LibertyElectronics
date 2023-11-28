@@ -10,6 +10,7 @@ function ProductItem({laptop, addCart}){
         <div><td>${laptop.price}</td></div>
         <td>
             <button onClick={() => addCart(laptop.id)}>Add to Cart</button>
+            
         </td>
     </tr>
     )
