@@ -34,8 +34,8 @@ function App() {
       const productdata2 = data;
       setLaptops(data);
       setFilerLaptops(data);  
-      setAsusProduct(productdata1.filter(p => p.brand == "Asus").slice(0,20));
-      setDellProduct(productdata2.filter(p => p.brand == "DELL").slice(0,20));
+      setAsusProduct(productdata1.filter(p => p.brand == "Asus").slice(0,25));
+      setDellProduct(productdata2.filter(p => p.brand == "DELL").slice(0,25));
     })
     .catch(error=>console.log('error reading json',error));
   },[]);
