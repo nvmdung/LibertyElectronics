@@ -14,6 +14,7 @@ import Ad from './components/Ad';
 import Asus from './components/Asus';
 import LaptopDetails from './components/LaptopDetails';
 import DELL from './components/Dell';
+import './css/Menu.css'
 
 function App() {
   const [lavatars, setAvatars] = useState([]);
@@ -107,8 +108,13 @@ function App() {
         <Link to="/home">Home</Link>
         <Link to="/list">List</Link>
         <Link to="/product">product</Link>
+        <div className='menu'>
+          <button className='menubtn'>Menu</button>
+          <div className='menu-content'>
         <Link to="/asus">Asus</Link>
         <Link to='dell'>DELL</Link>
+        </div>
+        </div>
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
