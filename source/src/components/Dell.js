@@ -1,14 +1,14 @@
-function Asus({asusProduct}){
+function DELL({dellProduct}){
     return(
         <div>
-        <h1>Asus</h1>
-        {asusProduct.map(pro => (
+        <h1>DELL</h1>
+        {dellProduct.map(del => (
             <div>
-                {pro.name}
-                <div><img src={pro.image[0]} width="10%" alt="image"/></div>
+                {del.name}
+                <div><img src={del.image[0]} width="10%" alt="image"/></div>
             </div>
         ))}
         </div>
     );
 }
-export default Asus;
+export default DELL;

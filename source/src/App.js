@@ -13,6 +13,7 @@ import Search from './components/Search';
 import Ad from './components/Ad';
 import Asus from './components/Asus';
 import LaptopDetails from './components/LaptopDetails';
+import DELL from './components/Dell';
 
 function App() {
   const [lavatars, setAvatars] = useState([]);
@@ -107,6 +108,7 @@ function App() {
         <Link to="/list">List</Link>
         <Link to="/product">product</Link>
         <Link to="/asus">Asus</Link>
+        <Link to='dell'>DELL</Link>
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
@@ -124,7 +126,8 @@ function App() {
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}
         {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
-        <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
+     dellProduct   <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
+        <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
       </Routes>
     </div>
   );
