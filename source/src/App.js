@@ -12,6 +12,7 @@ import Home from './components/Home';
 import Search from './components/Search';
 import Ad from './components/Ad';
 import Asus from './components/Asus';
+import LaptopDetails from './components/LaptopDetails';
 
 function App() {
   const [lavatars, setAvatars] = useState([]);
@@ -21,6 +22,8 @@ function App() {
   const [value, setValue] = useState('');
   const [asusProduct, setAsusProduct] = useState([]);
   const [dellProduct, setDellProduct] = useState([]);
+  const [laptopDetails, setLaptopDetails] = useState(null);
+  
   useEffect(()=>{
     fetch('item.json')
     .then(response=>response.json())
@@ -91,6 +94,10 @@ function App() {
   //   const filterLaptops = laptops.filter(d => d.name.includes(value))
   //   setFilerLaptops(filterLaptops);
   // }
+
+  const getDetails = (pro) => {
+    setLaptopDetails(pro);
+  }
   
   return (
     <div className="App">
@@ -105,11 +112,12 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home avatars={filterAvatars}/>}/>
         <Route path="/" element={<Ad />} />
-        <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
+        <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete} />}/>
+        <Route path='/details' element={<LaptopDetails laptop={laptopDetails}/>}/>
         <Route path="/product" element={
           <div>
           <Search onSearch={handleSearch}/>
-        <Product laptops={filterLaptops}/>
+        <Product laptops={filterLaptops} getDetails={getDetails}/>
         </div>
       }/>
 {/*         
