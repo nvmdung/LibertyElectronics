@@ -11,6 +11,10 @@ import Product from './components/ProductList';
 import Home from './components/Home';
 import Search from './components/Search';
 import Ad from './components/Ad';
+import Asus from './components/Asus';
+import LaptopDetails from './components/LaptopDetails';
+import DELL from './components/Dell';
+import './css/Menu.css'
 
 function App() {
   const [lavatars, setAvatars] = useState([]);
@@ -18,7 +22,23 @@ function App() {
   const [filterLaptops, setFilerLaptops] = useState([])
   const [filterAvatars, setFilerAvatars] = useState([])
   const [value, setValue] = useState('');
-
+  const [asusProduct, setAsusProduct] = useState([]);
+  const [dellProduct, setDellProduct] = useState([]);
+  const [laptopDetails, setLaptopDetails] = useState(null);
+  
+  useEffect(()=>{
+    fetch('item.json')
+    .then(response=>response.json())
+    .then(data=>{
+      const productdata1 = data;
+      const productdata2 = data;
+      setLaptops(data);
+      setFilerLaptops(data);  
+      setAsusProduct(productdata1.filter(p => p.brand == "Asus").slice(0,20));
+      setDellProduct(productdata2.filter(p => p.brand == "DELL").slice(0,20));
+    })
+    .catch(error=>console.log('error reading json',error));
+  },[]);
   useEffect(() => {
     const fetchData = async () => {
       try{
@@ -76,6 +96,10 @@ function App() {
   //   const filterLaptops = laptops.filter(d => d.name.includes(value))
   //   setFilerLaptops(filterLaptops);
   // }
+
+  const getDetails = (pro) => {
+    setLaptopDetails(pro);
+  }
   
   return (
     <div className="App">
@@ -84,23 +108,32 @@ function App() {
         <Link to="/home">Home</Link>
         <Link to="/list">List</Link>
         <Link to="/product">product</Link>
+        <div className='menu'>
+          <button className='menubtn'>Menu</button>
+          <div className='menu-content'>
+        <Link to="/asus">Asus</Link>
+        <Link to='dell'>DELL</Link>
+        </div>
+        </div>
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
         <Route path="/home" element={<Home avatars={filterAvatars}/>}/>
         <Route path="/" element={<Ad />} />
-        <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete}/>}/>
+        <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete} />}/>
+        <Route path='/details' element={<LaptopDetails laptop={laptopDetails}/>}/>
         <Route path="/product" element={
           <div>
           <Search onSearch={handleSearch}/>
-        <Product laptops={filterLaptops}/>
+        <Product laptops={filterLaptops} getDetails={getDetails}/>
         </div>
       }/>
 {/*         
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}
         {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
-        
+     dellProduct   <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
+        <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
       </Routes>
     </div>
   );

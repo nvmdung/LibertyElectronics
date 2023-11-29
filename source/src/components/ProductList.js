@@ -2,7 +2,7 @@
 import classes from '../css/Product.module.css'
 import ProductItem from './ProductItem';
 
-function ProductList({laptops,addCart}){
+function ProductList({laptops,addCart,getDetails}){
 
     return(
         <div>
@@ -15,7 +15,7 @@ function ProductList({laptops,addCart}){
             <tbody className={classes.boxes}>
             {
                     laptops.map(p => (
-                        <ProductItem key={p.id} laptop={p}  addCart={addCart}/>
+                        <ProductItem key={p.id} laptop={p}  addCart={addCart} getDetails={getDetails}/>
                     ))
                 }
             </tbody>
