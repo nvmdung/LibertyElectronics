@@ -5,7 +5,7 @@ function Home({avatars}){
     return(
         <>
         <div >  
-        <h1>Trang chuyên bán phụ kiện và laptop uy tín</h1>
+        <h1>Laptop and accessory</h1>
         <table>
             <tbody>
                 {

@@ -1,8 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-
+import style from './css/Home.css'
 import { Link, Route, Routes } from 'react-router-dom';
-import List from './components/List';
+
 import Product from './components/ProductList';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
@@ -120,7 +120,6 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home avatars={filterAvatars}/>}/>
         <Route path="/" element={<Ad />} />
-        <Route path="/list" element={<List laptops={filterLaptops} onDelete={handleDelete} />}/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails}/>}/>
         <Route path="/product" element={
           <div>
