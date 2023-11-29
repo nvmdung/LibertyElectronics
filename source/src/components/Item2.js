@@ -82,10 +82,10 @@ function Item2({avatar}){
             </tr>
             </div>
           
-            <td>
-                {/* <button onClick={() => navigate(`/details/${laptop.id}`)}>Details</button> */}
+            <footer>
+                <button onClick={() => navigate(`/home1`)}>Next</button>
                 {/* <button onClick={() => navigate(`/edit/${laptop.id}`)}>Update</button> */}
-            </td>
+            </footer>
         </tr>
         </div>
         </div>

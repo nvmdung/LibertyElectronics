@@ -7,7 +7,7 @@ function ProductList({laptops,addCart,getDetails}){
     return(
         <div>
                <div className={classes.header}>
-                <h1>Shopping Cart</h1>
+                <h1>Laptop List</h1>
             </div>
             <thead>
           

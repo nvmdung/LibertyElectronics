@@ -7,8 +7,9 @@ import Product from './components/ProductList';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
-// import Search from './components/Search';
+import Search1 from './components/Search1';
 import Home from './components/Home';
+import Home1 from './components/Home1';
 import Search from './components/Search';
 import Ad from './components/Ad';
 import Asus from './components/Asus';
@@ -17,7 +18,7 @@ import DELL from './components/Dell';
 import './css/Menu.css'
 
 function App() {
-  const [lavatars, setAvatars] = useState([]);
+  const [avatars, setAvatars] = useState([]);
   const [laptops, setLaptops] = useState([]);
   const [filterLaptops, setFilerLaptops] = useState([])
   const [filterAvatars, setFilerAvatars] = useState([])
@@ -69,6 +70,11 @@ function App() {
     const filterLaptops = laptops.filter(d => d.name.toLowerCase().includes(value.toLowerCase()));
     setFilerLaptops(filterLaptops);
   }
+  const handleSearch1 = (value) => {
+    setValue(value);
+    const filterAvatars = avatars.filter(p => p.name.toLowerCase().includes(value.toLowerCase()));
+    setFilerAvatars(filterAvatars);
+  }
 
   const handleAdd = (newLaptop) => {
     setLaptops([...laptops,newLaptop]);
@@ -104,10 +110,12 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/"></Link>
-        <Link to="/home">Home</Link>
-        <Link to="/list">List</Link>
-        <Link to="/product">product</Link>
+        <Link  to="/"></Link>
+        <Link className="header" to="/home">Home</Link>
+        <Link className="header" to="/product">Product</Link>
+        <Link className="header" to="/product">About us</Link>
+        <Link className="header" to="/product">Contact us</Link>
+        <Link className="header" to="/product">Blog</Link>
         <div className='menu'>
           <button className='menubtn'>Menu</button>
           <div className='menu-content'>
@@ -118,8 +126,19 @@ function App() {
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
-        <Route path="/home" element={<Home avatars={filterAvatars}/>}/>
-        <Route path="/" element={<Ad />} />
+        <Route path="/home" element={
+          <div>
+          <Search1 onSearch1={handleSearch1}/>
+          <Home avatars={filterAvatars}/>
+        </div>
+      }/>
+      <Route path="/home1" element={
+          <div>
+          <Search1 onSearch1={handleSearch1}/>
+          <Home1 avatars={filterAvatars}/>
+        </div>
+      }/>
+        <Route path="/" element={<Ad/>} />
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails}/>}/>
         <Route path="/product" element={
           <div>
@@ -131,7 +150,7 @@ function App() {
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}
         {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
-     dellProduct   <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
+      <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
       </Routes>
     </div>
