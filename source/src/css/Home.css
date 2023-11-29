@@ -10,6 +10,7 @@ div{
   font-size: 20px;
   text-align: center;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
 
 }
 .container2{
@@ -22,7 +23,7 @@ font-size: 20px;
 text-align: center;
 grid-template-columns: repeat(4, 1fr);
 padding: 60px;
-
+align-items: center;
 }
 .brand{
 
@@ -44,18 +45,36 @@ padding: 60px;
   padding-right: 20px;
   padding-top: 26px;
   padding-bottom:50px ;
-  color:red
+  color:red;
+
+  
 }
 .container2-grid td{
   padding-bottom: 30px;
   padding-top: 30px;
   text-align: center;
+  align-items: center;
 }
 .container-grid td{
   padding-bottom: 0px;
   padding-top: 30px;
   text-align: center;
+  align-items: center;
 }
 .X{
   text-align: right;
+}
+.box-phone{
+  width: 160px;
+  height: 30px;
+  background-color: rgb(52, 11, 11);
+  border-radius: 10px;
+  position: fixed;
+}
+.phone-num{
+  position: fixed;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-left: 20px;
 }
