@@ -19,9 +19,13 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
+    position: absolute;
 
 }
 .prodimg{
     width: 200px;
 
+}
+.font-home{
+    position: relative;
 }

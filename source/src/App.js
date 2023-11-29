@@ -116,6 +116,7 @@ function App() {
         <Link className="header" to="/product">About us</Link>
         <Link className="header" to="/product">Contact us</Link>
         <Link className="header" to="/product">Blog</Link>
+        <Link to='/test'>test</Link>
         <div className='menu'>
           <button className='menubtn'>Menu</button>
           <div className='menu-content'>
