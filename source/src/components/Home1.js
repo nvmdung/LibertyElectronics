@@ -1,7 +1,7 @@
-import Item2 from "./Item2";
+import Item3 from "./Item3";
 import style from '../css/Home.css';
 
-function Home({avatars}){  
+function Home1({avatars}){  
     return(
         <>
         <div >  
@@ -10,7 +10,7 @@ function Home({avatars}){
             <tbody>
                 {
                     avatars.map(a => (
-                        <Item2 key={a.id} avatar={a}/>
+                        <Item3 key={a.id} avatar={a}/>
                     ))
                 }
             </tbody>
@@ -18,4 +18,4 @@ function Home({avatars}){
         </div>  
     </>
     )
-}export default Home;
+}export default Home1;
