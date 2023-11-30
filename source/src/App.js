@@ -26,6 +26,7 @@ function App() {
   const [asusProduct, setAsusProduct] = useState([]);
   const [dellProduct, setDellProduct] = useState([]);
   const [laptopDetails, setLaptopDetails] = useState(null);
+  const [sortOrder, setSortOrder] = useState('asc');
   
   useEffect(()=>{
     fetch('item.json')
@@ -106,8 +107,27 @@ function App() {
   const getDetails = (pro) => {
     setLaptopDetails(pro);
   }
+  const handleSort = () => {
+    const sortedProduct =[...filterLaptops].sort((a,b) => a.name.localeCompare(b.name));
+    setFilerLaptops(sortedProduct);
+  }
+  const handleSortByPrice = () => {
+    const sortedProduct = [...filterLaptops].sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a.price - b.price;
+      } else {
+        return b.price - a.price;
+      }
+    });
+    setFilerLaptops(sortedProduct);
+    setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+  }
+
+  
+  
   
   return (
+    
     <div className="App">
       <nav>
         <Link  to="/"></Link>
@@ -144,6 +164,10 @@ function App() {
         <Route path="/product" element={
           <div>
           <Search onSearch={handleSearch}/>
+          <button onClick={handleSortByPrice}>
+        Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
+      </button>
+          <button onClick={handleSort}>Sort By Name</button>
         <Product laptops={filterLaptops} getDetails={getDetails}/>
         </div>
       }/>
