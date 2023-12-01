@@ -15,6 +15,7 @@ import Ad from './components/Ad';
 import Asus from './components/Asus';
 import LaptopDetails from './components/LaptopDetails';
 import DELL from './components/Dell';
+import CartList from './components/CartList';
 import './css/Menu.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   const [dellProduct, setDellProduct] = useState([]);
   const [laptopDetails, setLaptopDetails] = useState(null);
   const [sortOrder, setSortOrder] = useState('asc');
+  const [carts, setCarts] = useState([]);
   
   useEffect(()=>{
     fetch('item.json')
@@ -122,7 +124,15 @@ function App() {
     setFilerLaptops(sortedProduct);
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
   }
+  const addCart = (pro) => {
+    setCarts([...carts, pro]);
+  }
 
+  const handleDeleteCart = (id) => {
+    const DeleteCart = carts.filter(c => c.id !== id);
+    setCarts(DeleteCart);
+  }
+ 
   
   
   
@@ -136,6 +146,7 @@ function App() {
         <Link className="header" to="/product">About us</Link>
         <Link className="header" to="/product">Contact us</Link>
         <Link className="header" to="/product">Blog</Link>
+        <Link to="/cart">Cart</Link>
         <Link to='/test'>test</Link>
         <div className='menu'>
           <button className='menubtn'>Menu</button>
@@ -160,7 +171,7 @@ function App() {
         </div>
       }/>
         <Route path="/" element={<Ad/>} />
-        <Route path='/details' element={<LaptopDetails laptop={laptopDetails}/>}/>
+        <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
         <Route path="/product" element={
           <div>
           <Search onSearch={handleSearch}/>
@@ -168,7 +179,7 @@ function App() {
         Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
       </button>
           <button onClick={handleSort}>Sort By Name</button>
-        <Product laptops={filterLaptops} getDetails={getDetails}/>
+        <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
         </div>
       }/>
 {/*         
@@ -177,6 +188,7 @@ function App() {
         {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
       <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
+        <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
       </Routes>
     </div>
   );

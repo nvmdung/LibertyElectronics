@@ -13,7 +13,7 @@ function ProductItem({laptop, addCart, getDetails}){
         <div><td>{laptop.name}</td></div>
         <div><td>${laptop.price}</td></div>
         <td>
-            <button onClick={() => addCart(laptop.id)}>Add to Cart</button>
+            <button onClick={() => addCart(laptop)}>Add to Cart</button>
             
         </td>
     </tr>
