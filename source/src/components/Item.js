@@ -1,26 +1,18 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+import style from '../css/Home.css';
 
-function Item({laptop, onDelete}){
+function Item({laptop}){
     const navigate = useNavigate();
     return(
         <div>
-                <td>
-            <img src={laptop.image[0]} width="100px"/>
-           </td>
             <tr>
-             <td>{laptop.name}</td>
-       
-             </tr>
-            
-             <tr>
+                <td>{laptop.name}</td>
+                <td><img src={laptop.image[0]} width="250px" alt="image"/></td>
             </tr>
-            <h2>${laptop.price}</h2>
-            <tr>
-            <td>
-                {/* <button onClick={() => navigate(`/details/${laptop.id}`)}>Details</button> */}
-                {/* <button onClick={() => navigate(`/edit/${laptop.id}`)}>Update</button> */}
-                <button onClick={() => onDelete(laptop.id)}>Delete</button>
-            </td>
+        <tr>
+            <footer>
+               
+            </footer>
         </tr>
         </div>
     );

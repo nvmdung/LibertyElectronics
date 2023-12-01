@@ -1,6 +1,4 @@
-div{
-  background-color: aliceblue;
-}
+
 .container{
     display: grid;
     height: 130px;
@@ -85,4 +83,20 @@ align-items: center;
   align-items: center;
   text-align: center;
   font-size: 25px;
+  background-color: rgb(21, 19, 19);
+  color: white;
+}
+.login{
+  text-align: center;
+}
+.chacon{
+position: absolute;
+}
+.cha{
+  position: relative;
+  
+}
+.con{
+
+  position: absolute;
 }

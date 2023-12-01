@@ -1,17 +1,14 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import style from './css/Home.css'
-import { Link, Route, Routes } from 'react-router-dom';
-
+import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import Login from './components/Login';
 import Product from './components/ProductList';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
-import Search1 from './components/Search1';
 import Home from './components/Home';
-import Home1 from './components/Home1';
 import Search from './components/Search';
-import Ad from './components/Ad';
 import Asus from './components/Asus';
 import LaptopDetails from './components/LaptopDetails';
 import DELL from './components/Dell';
@@ -19,6 +16,13 @@ import CartList from './components/CartList';
 import './css/Menu.css'
 
 function App() {
+  const [users,setUsers] = useState([]);
+  const [avatarLaptopsAsus, setAvatarLaptopsAsus] = useState([]);
+  const [avatarLaptopsLenovo, setAvatarLaptopsLenovo] = useState([]);
+  const [avatarLaptopsGigabyte, setAvatarLaptopsGigabyte] = useState([]);
+  const [avatarLaptopsMSI, setAvatarLaptopsMSI] = useState([]);
+  const [avatarLaptopsHP, setAvatarLaptopsHP] = useState([]);
+  const navigate=useNavigate();
   const [avatars, setAvatars] = useState([]);
   const [laptops, setLaptops] = useState([]);
   const [filterLaptops, setFilerLaptops] = useState([])
@@ -50,6 +54,17 @@ function App() {
         const laptopData = await dataJson.json();
         setLaptops(laptopData);
         setFilerLaptops(laptopData);
+        const laptopData1 = laptopData;
+        const laptopData2 = laptopData;
+        const laptopData3 = laptopData;
+        const laptopData4 = laptopData;
+        const laptopData5 = laptopData;
+        setAvatarLaptopsAsus(laptopData1.filter(p => p.brand == "Asus").slice(2,3))
+        setAvatarLaptopsLenovo(laptopData2.filter(p => p.brand == "Lenovo").slice(0,2))
+        setAvatarLaptopsGigabyte(laptopData3.filter(p => p.brand == "GIGABYTE").slice(0,2))
+        setAvatarLaptopsMSI(laptopData4.filter(p => p.brand == "MSI").slice(0,2))
+        setAvatarLaptopsHP(laptopData5.filter(p => p.brand == "HP").slice(0,2))
+        
       }catch (error){
         console.log('error reading json');
       }
@@ -89,6 +104,21 @@ function App() {
     
     setFilerLaptops(deleted);
   }
+  const checkLogin = (checkUser) =>{
+    const Finduser = users.find(u => u.username==checkUser.username && u.password==checkUser.password);
+    if(Finduser != null){
+      console.log("Login success");
+      navigate('/product');
+      localStorage.setItem('username',checkUser.username)
+    }else{
+      console.log("Login Fail");
+      navigate('/login2');
+      // setErrorlogin("Wrong password or pass");
+    }
+  }
+   const DeletelocalStorage = () => {
+    localStorage.clear()
+   } 
 
   // const handleEdit = (newLaptop) => {
   //   console.log(newLaptop);
@@ -140,8 +170,7 @@ function App() {
     
     <div className="App">
       <nav>
-        <Link  to="/"></Link>
-        <Link className="header" to="/home">Home</Link>
+        <Link className="header" to="/">Home</Link>
         <Link className="header" to="/product">Product</Link>
         <Link className="header" to="/product">About us</Link>
         <Link className="header" to="/product">Contact us</Link>
@@ -155,22 +184,30 @@ function App() {
         <Link to='dell'>DELL</Link>
         </div>
         </div>
+        {localStorage.getItem('username') ?
+        (<span>
+          Hello {localStorage.getItem('username')},
+        <Link className="header" to="/login" onClick={()=> DeletelocalStorage()}>
+          Logout
+        </Link>
+        </span>) :
+        (<Link className="header" to="/login">Login</Link>)
+}
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
-        <Route path="/home" element={
+     
+     <Route path="/" element={
           <div>
-          <Search1 onSearch1={handleSearch1}/>
-          <Home avatars={filterAvatars}/>
+          <Search onSearch={handleSearch}/>
+          <Home avatarLaptopsAsus={avatarLaptopsAsus}
+                avatarLaptopsLenovo={avatarLaptopsLenovo}
+                avatarLaptopsGigabyte={avatarLaptopsGigabyte}
+                avatarLaptopsHP={avatarLaptopsHP}
+                avatarLaptopsMSI={avatarLaptopsMSI}
+                />
         </div>
       }/>
-      <Route path="/home1" element={
-          <div>
-          <Search1 onSearch1={handleSearch1}/>
-          <Home1 avatars={filterAvatars}/>
-        </div>
-      }/>
-        <Route path="/" element={<Ad/>} />
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
         <Route path="/product" element={
           <div>
@@ -189,6 +226,7 @@ function App() {
       <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
+        <Route path="/login" element={<Login checkLogin={checkLogin}/>}/>
       </Routes>
     </div>
   );
