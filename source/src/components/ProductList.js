@@ -4,7 +4,7 @@ import ProductItem from './ProductItem';
 
 function ProductList({ laptops, addCart, getDetails }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4; // Điều chỉnh số sản phẩm hiển thị trên mỗi trang nếu cần
+  const itemsPerPage = 6; // Điều chỉnh số sản phẩm hiển thị trên mỗi trang nếu cần
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentLaptops = laptops.slice(indexOfFirstItem, indexOfLastItem);

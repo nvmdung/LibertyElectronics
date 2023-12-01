@@ -4,6 +4,7 @@ import style from './css/Home.css'
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
+import './css/Sort.css'
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
@@ -14,6 +15,7 @@ import LaptopDetails from './components/LaptopDetails';
 import DELL from './components/Dell';
 import CartList from './components/CartList';
 import './css/Menu.css'
+import VideoPlayer from './components/video/video';
 
 function App() {
   const [users,setUsers] = useState([]);
@@ -210,10 +212,17 @@ function App() {
         <Route path="/product" element={
           <div>
           <Search onSearch={handleSearch}/>
-          <button onClick={handleSortByPrice}>
+          <div className='container-sort'>
+          <div className='sort'>
+            <button className='btn-sort'>Sort</button>
+            <div className='sort-content'>
+          <button className='sort-price' onClick={handleSortByPrice}>
         Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
       </button>
-          <button onClick={handleSort}>Sort By Name</button>
+          <button className='sort-name' onClick={handleSort}>Sort By Name</button>
+          </div>
+          </div>
+          </div>
         <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
         </div>
       }/>
@@ -221,7 +230,12 @@ function App() {
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}
         {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
-      <Route path='/asus' element={<Asus asusProduct={asusProduct}/>}/>
+        
+      <Route path='/asus' element={
+        <div>
+            <VideoPlayer />
+      <Asus asusProduct={asusProduct}/>
+      </div>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
         <Route path="/login" element={<Login checkLogin={checkLogin}/>}/>
