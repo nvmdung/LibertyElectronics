@@ -8,9 +8,10 @@ import { Link } from "react-router-dom";
 function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avatarLaptopsMSI,avatarLaptopsHP}){  
     return(
         <>
+
         <CarouselHome/>
-        <div >  
-        <h1>Laptop and accessory</h1>
+     
+        <h1 className="brand2 ">LIBERTY ELECTRONICS</h1>
         <div className='menu'>
           <button className='menubtn'>Menu</button>
           <div className='menu-content'>
@@ -21,7 +22,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avata
         <table>
         <div className="box-phone">
                 <tr className="phone-num">
-                    <td><img src="./image/imgcall/call1.png" width="25px"/>0707185xxx</td>
+                    <td><img src="./image/imgcall/call1.png" width="22px"/>0707185xxx</td>
                 </tr>
             </div>
             <tbody  className="container"> 
@@ -52,7 +53,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avata
                 }
             </tbody>
         </table>            
-        </div>  
+        
        {/* <footer><Footer/></footer> */}
     </>
     )

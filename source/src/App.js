@@ -172,11 +172,10 @@ function App() {
       <nav>
         <Link className="header" to="/">Home</Link>
         <Link className="header" to="/product">Product</Link>
-        <Link className="header" to="/product">About us</Link>
-        <Link className="header" to="/product">Contact us</Link>
-        <Link className="header" to="/product">Blog</Link>
-        <Link to="/cart">Cart</Link>
-        <Link to='/test'>test</Link>
+        <Link className="header" to="/about">About us</Link>
+        <Link className="header" to="/contact">Contact us</Link>
+        <Link className="header" to="/blog">Blog</Link>
+        <Link className="header" to="/cart">Cart</Link>
         <div className='menu'>
           <button className='menubtn'>Menu</button>
           <div className='menu-content'>
@@ -199,7 +198,6 @@ function App() {
      
      <Route path="/" element={
           <div>
-          <Search onSearch={handleSearch}/>
           <Home avatarLaptopsAsus={avatarLaptopsAsus}
                 avatarLaptopsLenovo={avatarLaptopsLenovo}
                 avatarLaptopsGigabyte={avatarLaptopsGigabyte}
