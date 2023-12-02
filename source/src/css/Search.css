@@ -36,3 +36,6 @@ div {
     color: #3498db; /* Màu của icon */
     cursor: pointer;
   }
+  .container-search{
+    display: flex;
+  }

@@ -3,7 +3,7 @@ import '../css/Search.css';
 
 function Search({ value, onSearch }) {
   return (
-    <div>
+    <div className='container-search'>
       <input
         placeholder="enter name to search"
         value={value}
