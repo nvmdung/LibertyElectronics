@@ -12,7 +12,7 @@
         "harddisksize":"512GB SSD M.2 PCIE G3X4",
         "warranty": "2YEAR",
         "image":[
-            "./image/asus/asusflip/0.png",
+            "./image/asus/asusflip/0.jpg",
             "./image/asus/asusflip/1.png",
             "./image/asus/asusflip/2.png",
             "./image/asus/asusflip/3.png",
@@ -32,7 +32,7 @@
         "harddisksize":"512GB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
         "warranty": "2YEAR",
         "image":[
-            "./image/asus/asustuf/0.png",
+            "./image/asus/asustuf/0.jpg",
             "./image/asus/asustuf/1.webp",
             "./image/asus/asustuf/2.webp",
             "./image/asus/asustuf/3.webp",
@@ -53,7 +53,7 @@
     "harddisksize":"1TB M.2 NVMe™ PCIe® 4.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
     "image":[
-        "./image/asus/asus14duo/0.png",
+        "./image/asus/asus14duo/0.webp",
         "./image/asus/asus14duo/1.png",
         "./image/asus/asus14duo/2.png",
         "./image/asus/asus14duo/3.png",
@@ -73,11 +73,11 @@
     "harddisksize":"512GB M.2 NVMe PCIe 3.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
     "image":[
-        "./image/asus/asusflip/0.png",
-        "./image/asus/asusflip/1.png",
-        "./image/asus/asusflip/2.png",
-        "./image/asus/asusflip/3.png",
-        "./image/asus/asusflip/4.png"
+        "./image/asus/asus14xoled/0.jpg",
+        "./image/asus/asus14xoled/1.png",
+        "./image/asus/asus14xoled/2.png",
+        "./image/asus/asus14xoled/3.png",
+        "./image/asus/asus14xoled/4.png"
     ]
     },
     {
