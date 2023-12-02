@@ -1,0 +1,38 @@
+/* Search.css (hoặc bạn có thể thêm trực tiếp vào file chứa component Search) */
+
+/* Thêm style cho container bao bọc input */
+div {
+    position: relative;
+  }
+  
+  /* Thiết lập style cho input */
+  input {
+    padding: 10px; /* Điều chỉnh khoảng cách giữa viền và nội dung trong input */
+    width: 300px; /* Điều chỉnh chiều rộng của input */
+    border: 2px solid #3498db; /* Màu viền */
+    border-radius: 5px; /* Bo tròn góc của input */
+    outline: none; /* Loại bỏ đường viền khi input được chọn */
+    font-size: 16px; /* Kích thước font chữ */
+  }
+  
+  /* Hiệu ứng khi input được focus */
+  input:focus {
+    border-color: #2ecc71; /* Thay đổi màu viền khi input được chọn */
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /* Đổ bóng khi input được chọn */
+  }
+  
+  /* Thêm style cho placeholder */
+  input::placeholder {
+    color: #95a5a6; /* Màu chữ của placeholder */
+  }
+  
+  /* Thêm style cho icon search (nếu có) */
+  /* Ví dụ: FontAwesome icon */
+  .icon-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #3498db; /* Màu của icon */
+    cursor: pointer;
+  }

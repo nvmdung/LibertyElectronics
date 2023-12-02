@@ -4,7 +4,7 @@ import ProductItem from './ProductItem';
 
 function ProductList({ laptops, addCart, getDetails }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6; // Điều chỉnh số sản phẩm hiển thị trên mỗi trang nếu cần
+  const itemsPerPage = 5; // Điều chỉnh số sản phẩm hiển thị trên mỗi trang nếu cần
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentLaptops = laptops.slice(indexOfFirstItem, indexOfLastItem);
@@ -15,9 +15,6 @@ function ProductList({ laptops, addCart, getDetails }) {
 
   return (
     <div>
-      <div className={classes.header}>
-        <h1>Danh sách Laptop</h1>
-      </div>
       <div className={classes.boxes}>
         {currentLaptops.map((p) => (
           <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
