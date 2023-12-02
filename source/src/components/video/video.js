@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoPlayer = () => {
+const AsusVideo = () => {
   return (
     <div>
       <h1>React Video Player</h1>
@@ -12,4 +12,4 @@ const VideoPlayer = () => {
   );
 };
 
-export default VideoPlayer;
+export default AsusVideo;

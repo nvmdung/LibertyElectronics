@@ -11,12 +11,15 @@ import './css/Sort.css'
 // import Details from './components/Details';
 import Home from './components/Home';
 import Search from './components/Search';
-import Asus from './components/Asus';
+import Asus from './components/brand/Asus';
 import LaptopDetails from './components/LaptopDetails';
-import DELL from './components/Dell';
+import DELL from './components/brand/Dell';
 import CartList from './components/CartList';
 import './css/Menu.css'
-import VideoPlayer from './components/video/video';
+import AsusVideo from './components/video/video';
+import Msi from './components/brand/Msi';
+import GIGABYTE from './components/brand/Gigabyte';
+import LENOVO from './components/brand/Lenovo.js';
 
 function App() {
   const [users,setUsers] = useState([]);
@@ -33,9 +36,13 @@ function App() {
   const [value, setValue] = useState('');
   const [asusProduct, setAsusProduct] = useState([]);
   const [dellProduct, setDellProduct] = useState([]);
+  const [msiProduct, setMsiProduct] = useState([]);
+  const [gigabyteProduct, setGigabyteProduct] = useState([]);
+  const [lenovoProduct, setLenovoProduct] = useState([]);
   const [laptopDetails, setLaptopDetails] = useState(null);
   const [sortOrder, setSortOrder] = useState('asc');
   const [carts, setCarts] = useState([]);
+  
   
   useEffect(()=>{
     fetch('item.json')
@@ -43,10 +50,16 @@ function App() {
     .then(data=>{
       const productdata1 = data;
       const productdata2 = data;
+      const productdata3 = data;
+      const productdata4 = data;
+      const productdata5 = data;
       setLaptops(data);
-      setFilerLaptops(data);  
+      setFilerLaptops(data);
       setAsusProduct(productdata1.filter(p => p.brand == "Asus").slice(0,25));
       setDellProduct(productdata2.filter(p => p.brand == "DELL").slice(0,25));
+      setMsiProduct(productdata3.filter(p => p.brand == "MSI").slice(0,25)); 
+      setGigabyteProduct(productdata4.filter(p => p.brand == "GIGABYE").slice(0,25)); 
+      setLenovoProduct(productdata5.filter(p => p.brand == "Lenovo").slice(0,25)); 
     })
     .catch(error=>console.log('error reading json',error));
   },[]);
@@ -64,7 +77,7 @@ function App() {
         const laptopData5 = laptopData;
         setAvatarLaptopsAsus(laptopData1.filter(p => p.brand == "Asus").slice(2,3))
         setAvatarLaptopsLenovo(laptopData2.filter(p => p.brand == "Lenovo").slice(0,2))
-        setAvatarLaptopsGigabyte(laptopData3.filter(p => p.brand == "GIGABYTE").slice(0,2))
+        setAvatarLaptopsGigabyte(laptopData3.filter(p => p.brand == "GIGABYE").slice(0,2))
         setAvatarLaptopsMSI(laptopData4.filter(p => p.brand == "MSI").slice(0,2))
         setAvatarLaptopsHP(laptopData5.filter(p => p.brand == "HP").slice(0,2))
         
@@ -177,7 +190,10 @@ function App() {
           <button className='menubtn'>Menu</button>
           <div className='menu-content'>
         <Link to="/asus">Asus</Link>
+        <Link to='msi'>MSI</Link>
         <Link to='dell'>DELL</Link>
+        <Link to='gigabyte'>GIGABYTE</Link>
+        <Link to='lenovo'>LENOVO</Link>
         </div>
         </div>
         <Link className="header1" to="/cart">Cart</Link>
@@ -229,10 +245,13 @@ function App() {
         
       <Route path='/asus' element={
         <div>
-            <VideoPlayer/>
+            <AsusVideo/>
             <Asus asusProduct={asusProduct}/>
       </div>}/>
+      <Route path='/msi' element={<Msi msiProduct={msiProduct}/>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
+        <Route path='/gigabyte' element={<GIGABYTE gigabyteProduct={gigabyteProduct}/>}/>
+        <Route path='/lenovo' element={<LENOVO lenovoProduct={lenovoProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
         <Route path="/login" element={<Login checkLogin={checkLogin}/>}/>
       </Routes>

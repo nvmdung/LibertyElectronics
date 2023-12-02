@@ -93,7 +93,7 @@
     "harddisksize":"256GB PCIe NVMe SSD",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovonewest/main.png",
+        "./image/lenovo/lenovonewest/0.webp",
         "./image/lenovo/lenovonewest/1.png",
         "./image/lenovo/lenovonewest/2.png",
         "./image/lenovo/lenovonewest/3.png",
@@ -113,7 +113,7 @@
     "harddisksize":"1TB",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovoslim7pro/main.png",
+        "./image/lenovo/lenovoslim7pro/0.webp",
         "./image/lenovo/lenovoslim7pro/1.png",
         "./image/lenovo/lenovoslim7pro/2.png",
         "./image/lenovo/lenovoslim7pro/3.png",
