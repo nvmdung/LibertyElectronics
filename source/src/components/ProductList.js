@@ -20,7 +20,7 @@ function ProductList({ laptops, addCart, getDetails }) {
       </div>
       <div className={classes.boxes}>
         {currentLaptops.map((p) => (
-          <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails} />
+          <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
         ))}
       </div>
       <div className={classes.pagination}>

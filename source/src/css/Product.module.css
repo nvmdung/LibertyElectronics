@@ -1,47 +1,56 @@
-/* Product.module.css */
+/* ... (your existing styles) */
 
-.boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 cột có độ rộng bằng nhau */
-    gap: 20px; /* Khoảng cách giữa các ô */
-  }
-  
-  .product-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .product-item:hover {
+.productItem {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 3px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(252, 150, 167);
+  &:hover {
     transform: scale(1.05);
   }
-  
-  .product-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .product-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .product-price {
-    font-size: 14px;
-    color: #888;
-  }
-  
-  .add-to-cart {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .add-to-cart:hover {
+}
+
+
+.productInfo {
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.productPrice {
+  font-size: 20px;
+  color: rgb(249, 19, 19)  ;
+}
+
+.addToCart {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  width: 200px;
+
+  &:hover {
     background-color: #45a049;
   }
+}
+.containerboxes{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

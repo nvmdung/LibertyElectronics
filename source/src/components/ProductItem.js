@@ -1,5 +1,6 @@
-import classes from "../css/Product.module.css";
-import { useNavigate } from "react-router-dom";
+// ... (your existing imports)
+import classes from '../css/Product.module.css'
+import { useNavigate } from 'react-router-dom';
 
 function ProductItem({ laptop, addCart, getDetails }) {
   const navigate = useNavigate();
@@ -12,18 +13,19 @@ function ProductItem({ laptop, addCart, getDetails }) {
   };
 
   return (
-    <tr>
-    <div className={`${classes.productItem}`} onClick={() => {
-      getDetails(laptop);
-      navigate('/details');
-    }}>
-      <img src={laptop.image[0]} alt={laptop.name} width="220px" className={classes.productImage} />
+    <div className={classes.containerboxes}>
+      <div className={classes.productItem} onClick={() => {
+        getDetails(laptop);
+        navigate('/details');
+      }}>
+        <img src={laptop.image[0]} width="250px" alt={laptop.name} className={classes.productImage} />
+        <div className={classes.productInfo}>
+          <div className={classes.productName}>{shortenProductName(laptop.name, 50)}</div>
+          <div className={classes.productPrice}>${laptop.price}</div>
+          <button className={classes.addToCart} onClick={() => addCart(laptop)}>Add to Cart</button>
+        </div>
       </div>
-      <div className={classes.productName}>{shortenProductName(laptop.name, 10)}</div>
-      <div className={classes.productPrice}>${laptop.price}</div>
-      <button className={classes.addToCart} onClick={() => addCart(laptop)}>Add to Cart</button>
-    
-    </tr>
+    </div>
   );
 }
 
