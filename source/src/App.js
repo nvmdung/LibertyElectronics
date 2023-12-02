@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import style from './css/Home.css'
+import './css/Home.css'
+import './css/Header.css'
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
@@ -90,11 +91,6 @@ function App() {
     const filterLaptops = laptops.filter(d => d.name.toLowerCase().includes(value.toLowerCase()));
     setFilerLaptops(filterLaptops);
   }
-  const handleSearch1 = (value) => {
-    setValue(value);
-    const filterAvatars = avatars.filter(p => p.name.toLowerCase().includes(value.toLowerCase()));
-    setFilerAvatars(filterAvatars);
-  }
 
   const handleAdd = (newLaptop) => {
     setLaptops([...laptops,newLaptop]);
@@ -110,11 +106,11 @@ function App() {
     const Finduser = users.find(u => u.username==checkUser.username && u.password==checkUser.password);
     if(Finduser != null){
       console.log("Login success");
-      navigate('/product');
+      navigate('/');
       localStorage.setItem('username',checkUser.username)
     }else{
       console.log("Login Fail");
-      navigate('/login2');
+      navigate('/login');
       // setErrorlogin("Wrong password or pass");
     }
   }
@@ -177,7 +173,6 @@ function App() {
         <Link className="header" to="/about">About us</Link>
         <Link className="header" to="/contact">Contact us</Link>
         <Link className="header" to="/blog">Blog</Link>
-        <Link className="header" to="/cart">Cart</Link>
         <div className='menu'>
           <button className='menubtn'>Menu</button>
           <div className='menu-content'>
@@ -185,14 +180,15 @@ function App() {
         <Link to='dell'>DELL</Link>
         </div>
         </div>
+        <Link className="header1" to="/cart">Cart</Link>
         {localStorage.getItem('username') ?
         (<span>
           Hello {localStorage.getItem('username')},
-        <Link className="header" to="/login" onClick={()=> DeletelocalStorage()}>
+        <Link className="header1" to="/login" onClick={()=> DeletelocalStorage()}>
           Logout
         </Link>
         </span>) :
-        (<Link className="header" to="/login">Login</Link>)
+        (<Link className="header1" to="/login">Login</Link>)
 }
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
@@ -233,8 +229,8 @@ function App() {
         
       <Route path='/asus' element={
         <div>
-            <VideoPlayer />
-      <Asus asusProduct={asusProduct}/>
+            <VideoPlayer/>
+            <Asus asusProduct={asusProduct}/>
       </div>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>

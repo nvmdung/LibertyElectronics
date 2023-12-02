@@ -5,10 +5,8 @@ function Item({laptop}){
     const navigate = useNavigate();
     return(
         <div>
-            <tr>
-                <td>{laptop.name}</td>
-                <td><img src={laptop.image[0]} width="250px" alt="image"/></td>
-            </tr>
+            <div><img src={laptop.image[0]} width="150px" alt="image"/></div>
+            <div><td>{laptop.name}</td></div>
         <tr>
             <footer>
                
