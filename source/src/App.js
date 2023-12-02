@@ -201,7 +201,7 @@ function App() {
                 avatarLaptopsGigabyte={avatarLaptopsGigabyte}
                 avatarLaptopsHP={avatarLaptopsHP}
                 avatarLaptopsMSI={avatarLaptopsMSI}
-                />
+              />
         </div>
       }/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>

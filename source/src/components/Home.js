@@ -16,7 +16,9 @@ function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avata
                 </tr>
             </div>
         <table>
-            <tbody  className="container"> 
+            <tbody> 
+            <div >BEST OFFER IN CHRISTMAS</div>
+            <div className="container">
                {
                     avatarLaptopsAsus.map(a => (
                         <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
@@ -42,6 +44,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avata
                         <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
                     )) 
                 }
+                </div>
             </tbody>
         </table>            
         
