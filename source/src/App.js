@@ -19,7 +19,9 @@ import './css/Menu.css'
 import AsusVideo from './components/video/video';
 import Msi from './components/brand/Msi';
 import GIGABYTE from './components/brand/Gigabyte';
-import LENOVO from './components/brand/Lenovo.js';
+import Lenovo from './components/brand/Lenovo.js';
+import Noel from './components/Animation.js';
+import WavingSanta from './components/Noelami.js'
 
 function App() {
   const [users,setUsers] = useState([]);
@@ -235,6 +237,7 @@ function App() {
           </div>
           </div>
           </div>
+          <Noel/>  <WavingSanta />
         <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
         </div>
       }/>
@@ -251,7 +254,7 @@ function App() {
       <Route path='/msi' element={<Msi msiProduct={msiProduct}/>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
         <Route path='/gigabyte' element={<GIGABYTE gigabyteProduct={gigabyteProduct}/>}/>
-        <Route path='/lenovo' element={<LENOVO lenovoProduct={lenovoProduct}/>}/>
+        <Route path='/lenovo' element={<Lenovo lenovoProduct={lenovoProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
         <Route path="/login" element={<Login checkLogin={checkLogin}/>}/>
       </Routes>
