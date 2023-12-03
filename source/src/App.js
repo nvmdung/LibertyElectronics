@@ -76,7 +76,7 @@ function App() {
         const laptopData3 = laptopData;
         const laptopData4 = laptopData;
         const laptopData5 = laptopData;
-        setAvatarLaptopsAsus(laptopData1.filter(p => p.brand == "Asus").slice(2,3))
+        setAvatarLaptopsAsus(laptopData1.filter(p => p.brand == "Asus").slice(0,4))
         setAvatarLaptopsLenovo(laptopData2.filter(p => p.brand == "Lenovo").slice(0,2))
         setAvatarLaptopsGigabyte(laptopData3.filter(p => p.brand == "GIGABYE").slice(0,2))
         setAvatarLaptopsMSI(laptopData4.filter(p => p.brand == "MSI").slice(0,2))

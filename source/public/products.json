@@ -12,7 +12,7 @@
         "harddisksize":"512GB SSD M.2 PCIE G3X4",
         "warranty": "2YEAR",
         "image":[
-            "./image/asus/asusflip/0.jpg",
+            "./image/asus/asusflip/0.png",
             "./image/asus/asusflip/1.png",
             "./image/asus/asusflip/2.png",
             "./image/asus/asusflip/3.png",
@@ -32,11 +32,11 @@
         "harddisksize":"512GB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
         "warranty": "2YEAR",
         "image":[
-            "./image/asus/asustuf/0.jpg",
-            "./image/asus/asustuf/1.webp",
-            "./image/asus/asustuf/2.webp",
-            "./image/asus/asustuf/3.webp",
-            "./image/asus/asustuf/4.webp"
+            "./image/asus/asustuf/0.png",
+            "./image/asus/asustuf/1.png",
+            "./image/asus/asustuf/2.png",
+            "./image/asus/asustuf/3.png",
+            "./image/asus/asustuf/4.png"
         ]
         
     },
@@ -53,7 +53,7 @@
     "harddisksize":"1TB M.2 NVMe™ PCIe® 4.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
     "image":[
-        "./image/asus/asus14duo/0.webp",
+        "./image/asus/asus14duo/0.png",
         "./image/asus/asus14duo/1.png",
         "./image/asus/asus14duo/2.png",
         "./image/asus/asus14duo/3.png",
@@ -73,7 +73,7 @@
     "harddisksize":"512GB M.2 NVMe PCIe 3.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
     "image":[
-        "./image/asus/asus14xoled/0.jpg",
+        "./image/asus/asus14xoled/0.png",
         "./image/asus/asus14xoled/1.png",
         "./image/asus/asus14xoled/2.png",
         "./image/asus/asus14xoled/3.png",
@@ -93,7 +93,7 @@
     "harddisksize":"256GB PCIe NVMe SSD",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovonewest/0.webp",
+        "./image/lenovo/lenovonewest/0.png",
         "./image/lenovo/lenovonewest/1.png",
         "./image/lenovo/lenovonewest/2.png",
         "./image/lenovo/lenovonewest/3.png",
@@ -113,7 +113,7 @@
     "harddisksize":"1TB",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovoslim7pro/0.webp",
+        "./image/lenovo/lenovoslim7pro/0.png",
         "./image/lenovo/lenovoslim7pro/1.png",
         "./image/lenovo/lenovoslim7pro/2.png",
         "./image/lenovo/lenovoslim7pro/3.png",
@@ -348,11 +348,11 @@
     "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
     "warranty": "2YEAR",
     "image":[
-        "./image/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN.webp",
-        "./image/hp/hppavilion15eg3112tu8U6L9pa/1.webp",
-        "./image/hp/hppavilion15eg3112tu8U6L9pa/2.webp",
-        "./image/hp/hppavilion15eg3112tu8U6L9pa/3.webp",
-        "./image/hp/hppavilion15eg3112tu8U6L9pa/4.webp"
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN.png",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/1.png",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/2.png",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/3.png",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/4.png"
     ]
     },
     {
@@ -368,11 +368,11 @@
     "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
     "warranty": "2YEAR",
     "image":[
-        "./image/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN.webp",
-        "./image/hp/hppavilion15eg3091tu8C5L2pa/1.webp",
-        "./image/hp/hppavilion15eg3091tu8C5L2pa/2.webp",
-        "./image/hp/hppavilion15eg3091tu8C5L2pa/3.webp",
-        "./image/hp/hppavilion15eg3091tu8C5L2pa/4.webp"
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN.png",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/1.png",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/2.png",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/3.png",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/4.png"
     ]
     },
     {
@@ -388,11 +388,11 @@
         "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
         "warranty": "2YEAR",
         "image":[
-            "./image/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN.webp",
-            "./image/hp/hppavilion15eg3093tu8c5l4pa/1.webp",
-            "./image/hp/hppavilion15eg3093tu8c5l4pa/2.webp",
-            "./image/hp/hppavilion15eg3093tu8c5l4pa/3.webp",
-            "./image/hp/hppavilion15eg3093tu8c5l4pa/4.webp"
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN.png",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/1.png",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/2.png",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/3.png",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/4.png"
         ]
     },
     {
@@ -410,7 +410,7 @@
         "image":[
             "./image/hp/hp240g96l1y2pa/HPG96LMAIN.png",
             "./image/hp/hp240g96l1y2pa/1.png",
-            "./image/hp/hp240g96l1y2pa/2.webp",
+            "./image/hp/hp240g96l1y2pa/2.png",
             "./image/hp/hp240g96l1y2pa/3.png",
             "./image/hp/hp240g96l1y2pa/4.png"
         ]
@@ -428,11 +428,11 @@
         "harddisksize":"256GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain.webp",
-            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU1.webp",
-            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU2.webp",
-            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3.webp",
-            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU4.webp"
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain.png",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU1.png",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU2.png",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3.png",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU4.png"
         ]
     },
     {
@@ -468,11 +468,11 @@
         "harddisksize":"512GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main.webp",
-            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032641.webp",
-            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032642.webp",
-            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643.webp",
-            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032644.webp"
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main.png",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032641.png",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032642.png",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643.png",
+            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032644.png"
         ]
     },
     {
@@ -488,11 +488,11 @@
         "harddisksize":"256GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain.webp",
-            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black1.webp",
-            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black2.webp",
-            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3.webp",
-            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black4.webp"
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain.png",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black1.png",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black2.png",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3.png",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black4.png"
         ]
     }
 ]

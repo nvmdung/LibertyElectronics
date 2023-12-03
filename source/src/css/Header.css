@@ -1,37 +1,114 @@
-.header1{
-    color: white;
-    margin-right: 20px;
-   
-    justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    nav {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1;
+    }
+    .qazwsx{
+     z-index: 0;
+     padding-top: 46px;
+     padding-left: 20%;
+     padding-right: 20%;
+    text-align: center;
+    }
+    .header1{
+        color: white;
+        margin-right: 20px;
+       float: right;
+       justify-content: space-between;  
+       text-decoration: none;
+       
+      }
+    .header{
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        float: left;
+      }
+      .menu {
+        position: relative;
+        display: inline-block;
+        
+      }
+      
+      .menubtn {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        
+      }
+      
+      .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;   
+      }
   }
-.header{
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    text-align: left;
-  }
-  .menu {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .menubtn {
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .menu-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .menu:hover .menu-content {
-    display: block;
+  @media (max-width: 1024px)  and (max-height:933px){
+    nav {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      position: fixed;
+      align-items: center;
+      z-index: 1;
+      height: 5%;
+    }
+    .qazwsx{
+     z-index: 0;
+     padding-top: 46px;
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-bottom: 30%;
+    }
+    .header1{
+        color: white;
+        margin-right: 20px;
+       float: right;
+       justify-content: space-between;  
+       text-decoration: none;
+       font-size: 4px; 
+      }
+    .header{
+        color: white;
+        text-decoration: none;
+        margin-right: 18px;
+        float: left;
+        font-size: 4px;
+      }
+      .menu {
+        position: relative;
+        display: inline-block;
+        font-size: 4px;  
+        
+      }
+      
+      .menubtn {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        
+      }
+      
+      .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        
+      }
   }
   

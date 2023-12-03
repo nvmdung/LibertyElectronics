@@ -1,15 +1,14 @@
 import Itemasus from "./Item";
+import '../css/Header.css';
 import style from '../css/Home.css';
 import CarouselHome from "./Carousel";
 function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avatarLaptopsMSI,avatarLaptopsHP}){  
     return(
         <>
-
-        <CarouselHome/>
-     
-        <h1 className="brand">LIBERTY ELECTRONICS</h1>
-        
-        
+            <div  className="qazwsx" >
+            <CarouselHome/>
+            </div>    
+        <h1 className="brand">LIBERTY ELECTRONICS</h1>  
         <div className="box-phone">
                 <tr className="phone-num">
                     <td><img src="./image/imgcall/call1.png" width="22px"/>0707185xxx</td>
@@ -49,6 +48,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avata
         </table>            
         
        {/* <footer><Footer/></footer> */}
+       
     </>
     )
 }export default Home;
