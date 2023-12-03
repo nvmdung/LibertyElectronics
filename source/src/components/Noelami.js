@@ -3,7 +3,7 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../css/WavingSanta.css';
 
-const WavingSanta = () => {
+const WavingSanta = ({imagePath}) => {
   const props = useSpring({
     to: async (next) => {
       while (true) {
@@ -16,7 +16,7 @@ const WavingSanta = () => {
     from: { transform: 'rotate(0deg)' },
   });
 
-  return <animated.img className="waving-santa" src="../image1/satan.png" alt="Waving Santa" style={props} />;
+  return <animated.img className="waving-santa" src={imagePath} alt="Waving Santa" style={props} />;
 };
 
 export default WavingSanta;

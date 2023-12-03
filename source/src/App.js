@@ -237,7 +237,7 @@ function App() {
           </div>
           </div>
           </div>
-          <Noel/>  <WavingSanta />
+          <Noel/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
         <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
         </div>
       }/>
