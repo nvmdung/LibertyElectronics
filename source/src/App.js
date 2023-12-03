@@ -19,7 +19,7 @@ import './css/Menu.css'
 import AsusVideo from './components/video/video';
 import Msi from './components/brand/Msi';
 import GIGABYTE from './components/brand/Gigabyte';
-import Lenovo from './components/brand/Lenovo.js';
+import Lenovo from './components/brand/Lenovo';
 import WavingSanta from './components/Noelami.js'
 
 function App() {
@@ -225,17 +225,6 @@ function App() {
         <Route path="/product" element={
           <div>
           <Search onSearch={handleSearch}/>
-          <div className='container-sort'>
-          <div className='sort'>
-            <button className='btn-sort'>Sort</button>
-            <div className='sort-content'>
-          <button className='sort-price' onClick={handleSortByPrice}>
-        Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
-      </button>
-          <button className='sort-name' onClick={handleSort}>Sort By Name</button>
-          </div>
-          </div>
-          </div>
           <div className='container-satan'>
             <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
             </div>
@@ -253,6 +242,17 @@ function App() {
                 <td><button>DELL</button></td>
               </tr>
             </div>
+            <div className='container-sort'>
+          <div className='sort'>
+            <button className='btn-sort'>Sort</button>
+            <div className='sort-content'>
+          <button className='sort-price' onClick={handleSortByPrice}>
+        Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
+      </button>
+          <button className='sort-name' onClick={handleSort}>Sort By Name</button>
+          </div>
+          </div>
+          </div>
         <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
         </div>
       }/>
