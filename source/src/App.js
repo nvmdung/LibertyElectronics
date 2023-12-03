@@ -20,7 +20,6 @@ import AsusVideo from './components/video/video';
 import Msi from './components/brand/Msi';
 import GIGABYTE from './components/brand/Gigabyte';
 import Lenovo from './components/brand/Lenovo.js';
-import Noel from './components/Animation.js';
 import WavingSanta from './components/Noelami.js'
 
 function App() {
@@ -237,7 +236,6 @@ function App() {
           </div>
           </div>
           </div>
-          <Noel/>
           <div className='container-satan'>
             <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
             </div>
