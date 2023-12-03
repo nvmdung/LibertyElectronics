@@ -239,6 +239,20 @@ function App() {
           <div className='container-satan'>
             <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
             </div>
+            <div>
+              <tr>
+                <td><button onClick={() => {
+                  navigate('/asus');
+                }}>ASUS</button></td>
+                <td><button onClick={()=>{
+                  navigate('/lenovo');
+                }}>LENOVO</button></td>
+                <td><button>MSI</button></td>
+                <td><button>GIGABYE</button></td>
+                <td><button>HP</button></td>
+                <td><button>DELL</button></td>
+              </tr>
+            </div>
         <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
         </div>
       }/>
