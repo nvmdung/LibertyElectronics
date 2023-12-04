@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "name":"Laptop Asus Vivobook S 14 flip TP3402VA LZ118W",
+        "name":"Laptop Asus Vivobook S 14 flip  LZ118W",
         "brand":"asus",
         "price": 999,
         "itemweight":"1.5 kg",
@@ -21,7 +21,7 @@
     },
     {
         "id":2,
-        "name":"Laptop gaming ASUS TUF A15 FA507NU LP031W",
+        "name":"Laptop gaming ASUS TUF A15  LP031W",
         "brand":"Asus",
         "price":999,
         "itemweight":"2.2 kg",
@@ -42,7 +42,7 @@
     },
     {
         "id":3,
-    "name":" Laptop ZenBook Pro 14 Duo UX8402VU P1028W",
+    "name":" Laptop ZenBook Pro 14 Duo  P1028W",
     "brand":"Asus",
     "price":2699,
     "itemweight":"1.75 kg",
@@ -62,7 +62,7 @@
     },
     {
     "id":4,
-    "name":" Laptop VivoBook 14X OLED S3405VA KM071W",
+    "name":" Laptop VivoBook 14X OLED  KM071W",
     "brand":"Asus",
     "price":949,
     "itemweight":"1.4 kg",
@@ -82,7 +82,7 @@
     },
     {
      "id":5,
-    "name":"Lenovo 2022 Newest Ideapad 3 Laptop",
+    "name":"Lenovo 2022 Newest Ideapad 3 ",
     "brand":"Lenovo",
     "price":418,
     "itemweight":"1.8 kg",
@@ -122,7 +122,7 @@
     },
     {
       "id":7,
-        "name":"Lenovo IdeaPad Slim 3 - Everyday Laptop",
+        "name":"Lenovo IdeaPad Slim 3  ",
         "brand":"Lenovo",
         "price":396,
         "itemweight":"2.3 kg",
@@ -183,7 +183,7 @@
     },
     {
         "id":10,
-    "name":"Laptop Gaming Gigabyte A5 K1 AVN1030SB",
+    "name":"Laptop Gaming Gigabyte A5 K1 ",
     "brand":"GIGABYE",
     "price":1499,
     "itemweight":"2.12 kg",
@@ -241,7 +241,7 @@
     },
     {
         "id":13,
-    "name":"Laptop gaming Gigabyte G5 GE 51VN263SH",
+    "name":"Laptop gaming Gigabyte G5 GE ",
     "brand":"GIGABYE",
     "price":1399,
     "itemweight":"1.9 kg",
@@ -280,7 +280,7 @@
     },
     {
         "id":15,
-    "name":"Laptop gaming MSI GF63 12UCX 841VN",
+    "name":"Laptop gaming MSI GF63 12UCX ",
     "brand":"MSI",
     "price":999,
     "itemweight":"1.86 kg",
@@ -299,7 +299,7 @@
     },
     {
         "id":16,
-    "name":"Laptop Gaming MSI Katana 15 B13VEK 1205VN",
+    "name":"Laptop Gaming MSI Katana 15 B13VEK ",
     "brand":"MSI",
     "price":1699,
     "itemweight":"2.25 kg",
@@ -318,7 +318,7 @@
     },
     {
         "id":17,
-    "name":"Laptop gaming MSI Katana 15 B13VGK 1211VN",
+    "name":"Laptop gaming MSI Katana 15 B13VGK ",
     "brand":"MSI",
     "price":1999,
     "itemweight":"2.25 kg",
@@ -337,7 +337,7 @@
     },
     {
         "id":18,
-    "name":"Laptop HP Pavilion 15 eg3112TU 8U6L9PA",
+    "name":"Laptop HP Pavilion 15 eg3112TU ",
     "brand":"HP",
     "price":1499,
     "itemweight":"1.74 kg",
@@ -357,7 +357,7 @@
     },
     {
         "id":19,
-    "name":"Laptop HP Pavilion 15 eg3091TU 8C5L2PA",
+    "name":"Laptop HP Pavilion 15 eg3091TU ",
     "brand":"HP",
     "price":1499,
     "itemweight":"1.74 kg",
@@ -377,7 +377,7 @@
     },
     {
         "id":20,
-        "name":"Laptop HP Pavilion 15 eg3093TU 8C5L4PA",
+        "name":"Laptop HP Pavilion 15 eg3093TU ",
         "brand":"HP",
         "price":1499,
         "itemweight":"1.74 kg",
@@ -417,7 +417,7 @@
     },
     {
         "id":22,
-        "name":"Laptop Dell Inspiron 15 3520 i3U082W11BLU",
+        "name":"Laptop Dell Inspiron 15 3520 ",
         "brand":"DELL",
         "price":1499,
         "itemweight":"1.9 kg",
@@ -437,7 +437,7 @@
     },
     {
         "id":23,
-        "name":"Laptop Dell Vostro 3520 V5I3614W1 Gray",
+        "name":"Laptop Dell Vostro 3520  Gray",
         "brand":"DELL",
         "price":1499,
         "itemweight":"1.66 kg",
@@ -457,7 +457,7 @@
     },
     {
         "id":24,
-        "name":"Laptop Dell Inspiron 15 3520 71003264",
+        "name":"Laptop Dell Inspiron 15 3520 ",
         "brand":"DELL",
         "price":1499,
         "itemweight":"1.65 kg",
@@ -477,7 +477,7 @@
     },
     {
         "id":25,
-        "name":"Laptop Dell Inspiron 15 3520 N5I5122W1 Black",
+        "name":"Laptop Dell Inspiron 15 3520  Black",
         "brand":"DELL",
         "price":1499,
         "itemweight":"1.9 kg",

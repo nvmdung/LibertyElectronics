@@ -1,18 +1,14 @@
 // Import CSS vào component Search
 import '../css/Search.css';
 
-function Search({ value, onSearch }) {
+function Search({ onSearch }) {
+  const handleSearch = (event) => {
+    const searchTerm = event.target.value;
+    onSearch(searchTerm);
+  };
+
   return (
-    <div className='container-search'>
-      <input
-        placeholder="enter name to search"
-        value={value}
-        onChange={(e) => onSearch(e.target.value)}
-      />
-      {/* Ví dụ sử dụng FontAwesome icon */}
-      <i className="icon-search fas fa-search"></i>
-    </div>
+    <input type="text" placeholder="Search..." onChange={handleSearch} />
   );
 }
-
 export default Search;

@@ -212,12 +212,12 @@ function App() {
         </div>
       }/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
+       
         <Route path="/product" element={
+          
           <div>
-          <Search onSearch={handleSearch}/>
-          <div className='container-satan'>
-            <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
-            </div>
+         
+            <div className='container-product'>
             <div>
               <tr>
                 <td><button onClick={() => {
@@ -232,6 +232,7 @@ function App() {
                 <td><button>DELL</button></td>
               </tr>
             </div>
+            <Search onSearch={handleSearch}/>
             <div className='container-sort'>
           <div className='sort'>
             <button className='btn-sort'>Sort</button>
@@ -244,8 +245,14 @@ function App() {
           </div>
           </div>
         <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
+        <div className='container-satan'>
+            <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
+            </div>
+       
+        </div>
         </div>
       }/>
+     
 {/*         
         <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
         <Route path="/details/:id" element={<Details/>}/> */}

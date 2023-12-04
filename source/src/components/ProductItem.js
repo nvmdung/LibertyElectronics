@@ -31,4 +31,5 @@ function ProductItem({ laptop, addCart, getDetails }) {
   );
 }
 
+
 export default ProductItem;
