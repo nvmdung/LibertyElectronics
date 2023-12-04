@@ -1,9 +1,7 @@
 /* ... (your existing styles) */
 
 .productItem {
-  display: flex;
-  align-items: center;
-  width: 40%;
+  width: 80%;
   border: 3px solid #ddd;
   border-radius: 20px;
   overflow: hidden;
@@ -17,9 +15,9 @@
 
 .productInfo {
   flex-grow: 1;
-  padding: 10px;
-  display: flex;
   flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .productName {
@@ -58,4 +56,14 @@
 .containerboxes{
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
 }
+.productImage{
+  border: 2px solid;
+  background-color: white;
+}
+.boxes{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+

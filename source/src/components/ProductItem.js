@@ -18,12 +18,14 @@ function ProductItem({ laptop, addCart, getDetails }) {
         getDetails(laptop);
         navigate('/details');
       }}>
-        <img src={laptop.image[0]} width="250px" alt={laptop.name} className={classes.productImage} />
+        <td><img src={laptop.image[0]} width="250px" alt={laptop.name} className={classes.productImage} /></td>
+        <td>
         <div className={classes.productInfo}>
           <div className={classes.productName}>{shortenProductName(laptop.name, 50)}</div>
           <div className={classes.productPrice}>${laptop.price}</div>
           <button className={classes.addToCart} onClick={() => addCart(laptop)}>Add to Cart</button>
         </div>
+        </td>
       </div>
     </div>
   );
