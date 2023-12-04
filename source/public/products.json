@@ -93,7 +93,7 @@
     "harddisksize":"256GB PCIe NVMe SSD",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovonewest/0.png",
+        "./image/lenovo/lenovonewest/0.jpg",
         "./image/lenovo/lenovonewest/1.png",
         "./image/lenovo/lenovonewest/2.png",
         "./image/lenovo/lenovonewest/3.png",
@@ -113,7 +113,7 @@
     "harddisksize":"1TB",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovoslim7pro/0.png",
+        "./image/lenovo/lenovoslim7pro/0.webp",
         "./image/lenovo/lenovoslim7pro/1.png",
         "./image/lenovo/lenovoslim7pro/2.png",
         "./image/lenovo/lenovoslim7pro/3.png",
@@ -133,7 +133,7 @@
         "harddisksize":" 256GB  " ,
         "warranty": "2YEAR",
         "image":[
-            "./image/lenovo/lenovoslim3/main.png",
+            "./image/lenovo/lenovoslim3/0.webp",
             "./image/lenovo/lenovoslim3/1.png",
             "./image/lenovo/lenovoslim3/2.png",
             "./image/lenovo/lenovoslim3/3.png",
@@ -153,7 +153,7 @@
     "harddisksize":" 1TB SSD",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovogen11/main.png",
+        "./image/lenovo/lenovogen11/0.webp",
         "./image/lenovo/lenovogen11/1.png",
         "./image/lenovo/lenovogen11/2.png",
         "./image/lenovo/lenovogen11/3.png",
@@ -174,7 +174,7 @@
     "harddisksize":"256 GB SSD",
     "warranty": "2YEAR",
     "image":[
-        "./image/lenovo/lenovogaming3/main.png",
+        "./image/lenovo/lenovogaming3/0.jpg",
         "./image/lenovo/lenovogaming3/1.png",
         "./image/lenovo/lenovogaming3/2.png",
         "./image/lenovo/lenovogaming3/3.png",
@@ -203,7 +203,7 @@
     {
         
 "id":11,
-"name":"Laptop Gaming Gigabyte AORUS 15 XE4 73VNB14GH",
+"name":"Laptop Gaming Gigabyte AORUS 15 XE4 ",
 "brand":"GIGABYE",
 "price":2199,
 "itemweight":"2.4 kg",
@@ -222,7 +222,7 @@
     },
     {
         "id":12,
-    "name":"Laptop gaming Gigabyte G5 KF E3VN313SH",
+    "name":"Laptop gaming Gigabyte G5 KF ",
     "brand":"GIGABYE",
     "price":1699,
     "itemweight":"1.9 kg",
@@ -252,7 +252,7 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
-        "./image/gigabyte/gigabyteg5me/image1.png",
+        "./image/gigabyte/gigabyteg5me/image1.jpg",
         "./image/gigabyte/gigabyteg5me/image2.png",
         "./image/gigabyte/gigabyteg5me/image3.png",
         "./image/gigabyte/gigabyteg5me/image4.png"
@@ -261,7 +261,7 @@
     },
     {
         "id":14,
-    "name":"Laptop gaming MSI Katana 15 B13VEK 252VN",
+    "name":"Laptop gaming MSI Katana 15 ",
     "brand":"MSI",
     "price":1499,
     "itemweight":"1.5 kg",
@@ -272,7 +272,7 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
-        "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image1.png",
+        "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image1.jpg",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image2.png",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image3.png",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image4.png"
@@ -291,7 +291,7 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4",
     "warranty": "2YEAR",
     "image":[
-        "./image/msi/LaptopgamingMSIGF6312UCX841VN/image1.png",
+        "./image/msi/LaptopgamingMSIGF6312UCX841VN/image1.jpg",
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image2.png",
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image3.png",
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image4.png"
@@ -310,7 +310,7 @@
     "harddisksize":"512GB SSD M.2 PCIE G3X4" ,
     "warranty": "2YEAR",
     "image":[
-        "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1.png",
+        "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image1.jpg",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image2.png",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image3.png",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image4.png"
@@ -329,7 +329,7 @@
     "harddisksize":"1TB NVMe PCIe Gen 4 SSD" ,
     "warranty": "2YEAR" ,
     "image":[
-        "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1.png",
+        "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image1.jpg",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image2.png",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image3.png",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image4.png"
@@ -348,7 +348,7 @@
     "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
     "warranty": "2YEAR",
     "image":[
-        "./image/hp/hppavilion15eg3112tu8U6L9pa/HPPAU6L8MAIN.png",
+        "./image/hp/hppavilion15eg3112tu8U6L9pa/0.png",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/1.png",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/2.png",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/3.png",
@@ -368,7 +368,7 @@
     "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0 ",
     "warranty": "2YEAR",
     "image":[
-        "./image/hp/hppavilion15eg3091tu8C5L2pa/HP8C5L2MAIN.png",
+        "./image/hp/hppavilion15eg3091tu8C5L2pa/0.png",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/1.png",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/2.png",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/3.png",
@@ -388,7 +388,7 @@
         "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
         "warranty": "2YEAR",
         "image":[
-            "./image/hp/hppavilion15eg3093tu8c5l4pa/HPG9C5L4MAIN.png",
+            "./image/hp/hppavilion15eg3093tu8c5l4pa/0.png",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/1.png",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/2.png",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/3.png",
@@ -408,7 +408,7 @@
         "harddisksize":"512GB SSD M.2 NVMe™ PCIe® 3.0",
         "warranty": "2YEAR",
         "image":[
-            "./image/hp/hp240g96l1y2pa/HPG96LMAIN.png",
+            "./image/hp/hp240g96l1y2pa/0.png",
             "./image/hp/hp240g96l1y2pa/1.png",
             "./image/hp/hp240g96l1y2pa/2.png",
             "./image/hp/hp240g96l1y2pa/3.png",
@@ -428,7 +428,7 @@
         "harddisksize":"256GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLUMain.png",
+            "./image/dell/LaptopDellInspiron153520i3U082W11BLU/0.webp",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU1.png",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU2.png",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3.png",
@@ -448,7 +448,7 @@
         "harddisksize":"256GB SSD M.2 PCIE ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1GrayMain.png",
+            "./image/dell/LaptopDellVostro3520V5I3614W1Gray/0.webp",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray1.png",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray2.png",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray3.png",
@@ -468,7 +468,7 @@
         "harddisksize":"512GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron15352071003264Main.png",
+            "./image/dell/LaptopDellInspiron15352071003264/0.jpg",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032641.png",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032642.png",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643.png",
@@ -488,7 +488,7 @@
         "harddisksize":"256GB SSD NVMe PCIe ",
         "warranty": "2YEAR",
         "image":[
-            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1BlackMain.png",
+            "./image/dell/LaptopDellInspiron153520N5I5122W1Black/0.jpg",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black1.png",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black2.png",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3.png",

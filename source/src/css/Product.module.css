@@ -21,14 +21,14 @@
 }
 
 .productName {
-  font-size: 30px;
+  font-size: 20px;
+  display: flex;
   font-weight: bold;
   flex-direction: column;
 }
 
 .productPrice {
-  margin-top: 20px;
-  font-size: 30px;
+  font-size: 35px;
   color: rgb(249, 19, 19)  ;
   flex-direction: column;
 }
@@ -47,7 +47,6 @@
   transition: background-color 0.3s ease-in-out;
   width: 120px;
   flex-direction: column;
-
   &:hover {
     background-color: #45a049;
   }
@@ -60,7 +59,7 @@
 }
 .productImage{
   border: 2px solid;
-  background-color: white;
+  background-color: white;  
 }
 .boxes{
   display: grid;
