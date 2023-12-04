@@ -1,17 +1,34 @@
-import {  useNavigate } from "react-router-dom";
-import style from '../css/Home.css';
+import React, { useState } from 'react';
+import '../css/Home.css';
 
-function Item({laptop}){
-    const navigate = useNavigate();
-    return(
-        <div>
-            <div><img src={laptop.image[0]} width="150px" alt="image"/></div>
-            <div className="laptopname"><td>{laptop.name}</td></div>
-        <tr>
-            <footer>
-               
-            </footer>
-        </tr>
+function Item({ laptop, addCart }) {
+    const [showButton, setShowButton] = useState(false);
+
+    const handleMouseEnter = () => {
+        setShowButton(true);
+    };
+    const handleMouseLeave = () => {
+        setShowButton(false);
+    };
+    const handleAddToCart = (laptop) => {
+        addCart(laptop);
+    };
+    return (
+        <div
+            className="item-container"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
+            <div>
+                <img src={laptop.image[0]} width="auto" height="130px" alt="image" />
+            </div>
+            <div className="laptopname">{laptop.name}</div>
+            <div className="laptopprice">${laptop.price}</div>
+            {showButton && (
+                <button onClick={() => handleAddToCart(laptop)} className="addcart">
+                    Add to Cart
+                </button>
+            )}
         </div>
     );
 }

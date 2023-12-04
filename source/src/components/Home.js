@@ -1,14 +1,34 @@
 import Itemasus from "./Item";
-import '../css/Header.css';
-import style from '../css/Home.css';
+import '../css/Home.css';
 import CarouselHome from "./Carousel";
-function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avatarLaptopsMSI,avatarLaptopsHP}){  
+import { useState } from "react";
+import MenuHome from "./MenuHome";
+function Home({
+    avatarLaptopsAsus,
+    avatarLaptopsLenovo,
+    avatarLaptopsGigabyte,
+    avatarLaptopsMSI,
+    avatarLaptopsHP,
+    addCart
+})
+{    const [showAd, setShowAd] = useState(true);
+    const handleCloseAd = () => {
+        setShowAd(false);
+    };
     return(
         <>
-            <div  className="qazwsx" >
+        <div>
+        {showAd && (
+                <div className="Ads"> 
+                    <div className="Ads-content"><img src="./image/banner/Asus.png" width="auto" height="500px"/></div>
+                    <button  className="Ads-button" onClick={handleCloseAd}><img src="./image/banner/X.png"width="10px"height="auto"/></button> {/* Nút đóng */}
+                </div>
+            )}
+            </div>
+            <MenuHome/>
+            <div className="CarouselHome" >
             <CarouselHome/>
-            </div>    
-        <h1 className="brand">LIBERTY ELECTRONICS</h1>  
+            </div>     
         <div className="box-phone">
                 <tr className="phone-num">
                     <td><img src="./image/imgcall/call1.png" width="22px"/>0707185xxx</td>
@@ -16,38 +36,66 @@ function Home({avatarLaptopsAsus,avatarLaptopsLenovo,avatarLaptopsGigabyte,avata
             </div>
         <table>
             <tbody> 
-            <div >BEST OFFER IN CHRISTMAS</div>
+            <div className="bestoffer">BEST OFFER IN CHRISTMAS</div>
             <div className="container">
                {
-                    avatarLaptopsAsus.map(a => (
-                        <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
+                    avatarLaptopsAsus.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
                     )) 
                 }
                  {
-                    avatarLaptopsLenovo.map(a => (
-                        <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
+                    avatarLaptopsLenovo.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
                     )) 
                 }
                  {
-                    avatarLaptopsGigabyte.map(a => (
-                        <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
+                    avatarLaptopsGigabyte.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
                     )) 
                 }
                  {
-                    avatarLaptopsMSI.map(a => (
-                        <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
+                    avatarLaptopsMSI.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
                     )) 
                 }
                  {
-                    avatarLaptopsHP.map(a => (
-                        <div className="box-image"><Itemasus key={a.id} laptop={a}/></div>
+                    avatarLaptopsHP.slice(2,3).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
+                    )) 
+                }
+                </div>
+                <div className="bestoffer">Powerful GAMING LAPTOP</div>
+            <div className="container">
+               {
+                    avatarLaptopsAsus.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
+                    )) 
+                }
+                 {
+                    avatarLaptopsAsus.slice(0,1 ).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
+                    )) 
+                }
+                 {
+                    avatarLaptopsGigabyte.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
+                    )) 
+                }
+                 {
+                    avatarLaptopsMSI.slice(1,2).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
+                    )) 
+                }
+                 {
+                    avatarLaptopsMSI.slice(0,1).map(a => (
+                        <div className="box-image"><Itemasus key={a.id} addCart={addCart}  laptop={a}/></div>
                     )) 
                 }
                 </div>
             </tbody>
         </table>            
         
-       {/* <footer><Footer/></footer> */}
+       <footer></footer>
        
     </>
     )

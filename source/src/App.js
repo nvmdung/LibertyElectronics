@@ -1,7 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import './css/Home.css'
-import './css/Header.css'
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
@@ -21,7 +20,7 @@ import Msi from './components/brand/Msi';
 import GIGABYTE from './components/brand/Gigabyte';
 import Lenovo from './components/brand/Lenovo';
 import WavingSanta from './components/Noelami.js'
-
+import Footer from './components/Footer.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [avatarLaptopsAsus, setAvatarLaptopsAsus] = useState([]);
@@ -76,11 +75,11 @@ function App() {
         const laptopData3 = laptopData;
         const laptopData4 = laptopData;
         const laptopData5 = laptopData;
-        setAvatarLaptopsAsus(laptopData1.filter(p => p.brand == "Asus").slice(0,4))
-        setAvatarLaptopsLenovo(laptopData2.filter(p => p.brand == "Lenovo").slice(0,2))
-        setAvatarLaptopsGigabyte(laptopData3.filter(p => p.brand == "GIGABYE").slice(0,2))
-        setAvatarLaptopsMSI(laptopData4.filter(p => p.brand == "MSI").slice(0,2))
-        setAvatarLaptopsHP(laptopData5.filter(p => p.brand == "HP").slice(0,2))
+        setAvatarLaptopsAsus(laptopData1.filter(p => p.brand == "Asus"))
+        setAvatarLaptopsLenovo(laptopData2.filter(p => p.brand == "Lenovo"))
+        setAvatarLaptopsGigabyte(laptopData3.filter(p => p.brand == "GIGABYE"))
+        setAvatarLaptopsMSI(laptopData4.filter(p => p.brand == "MSI"))
+        setAvatarLaptopsHP(laptopData5.filter(p => p.brand == "HP"))
         
       }catch (error){
         console.log('error reading json');
@@ -187,16 +186,6 @@ function App() {
         <Link className="header" to="/about">About us</Link>
         <Link className="header" to="/contact">Contact us</Link>
         <Link className="header" to="/blog">Blog</Link>
-        <div className='menu'>
-          <button className='menubtn'>Menu</button>
-          <div className='menu-content'>
-        <Link to="/asus">Asus</Link>
-        <Link to='msi'>MSI</Link>
-        <Link to='dell'>DELL</Link>
-        <Link to='gigabyte'>GIGABYTE</Link>
-        <Link to='lenovo'>LENOVO</Link>
-        </div>
-        </div>
         <Link className="header1" to="/cart">Cart</Link>
         {localStorage.getItem('username') ?
         (<span>
@@ -218,7 +207,8 @@ function App() {
                 avatarLaptopsGigabyte={avatarLaptopsGigabyte}
                 avatarLaptopsHP={avatarLaptopsHP}
                 avatarLaptopsMSI={avatarLaptopsMSI}
-              />
+                laptops={filterLaptops} addCart={addCart}
+              /> 
         </div>
       }/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
@@ -273,6 +263,7 @@ function App() {
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
         <Route path="/login" element={<Login checkLogin={checkLogin}/>}/>
       </Routes>
+      <footer><Footer/></footer>
     </div>
   );
 }

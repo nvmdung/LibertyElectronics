@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice:wght@300;400;500;700&display=swap');
+.item-container{
+  height: 230px;
+}
 .box-image{
   border: 3px solid #ccc; /* Định dạng viền */
   padding: 5px; /* Khoảng cách từ viền đến hình ảnh */
@@ -10,6 +14,7 @@
   overflow: hidden;
   background-image: url("https://cdn.tgdd.vn/Files/2020/10/10/1297792/noel-2020-ngay-nao-thu-may-nguon-goc-va-y-nghia-cua-ngay-le-noel-le-giang-sinh-202010102030173176.jpg");
   padding-top: 20px;
+/*  ảnh laptop */
 }
 .box-image:hover{
   border-radius: 10px;
@@ -18,7 +23,9 @@
   background-size: cover;
   background-position: 0 0;
   animation: animate 10s linear infinite;
+  border: 3px solid #ccc;  
 }
+/*  ảnh laptop */
 .container{
   display: grid;
   flex-wrap:wrap-reverse  ;
@@ -27,10 +34,12 @@
   text-align: center;
   grid-template-columns: repeat(5, 1fr);
 }
+/* phân ảnh  */
 .brand{
   font-weight: 7  00;
   font-size: 40px;
   font-family: Arial, sans-serif;
+  
 }
 .box-phone{
   width: 160px;
@@ -38,6 +47,8 @@
   background-color: rgb(52, 11, 11);
   border-radius: 10px;
   position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 .phone-num{
   position: fixed;
@@ -72,9 +83,124 @@
 }
 .laptopname{
   font-size: 15px;
-  color: rgb(42, 41, 41);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
 }
-@media (max-width: 600px) {
+.laptopprice{
+  font-size: 15px;
+  color: rgb(247, 85, 85);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+.bestoffer{
+  background-image: url('christmas.png') ;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  color: white;
+  font-size: 100%;
+  background-size: cover;
+  background-position: 0 0;
+  font-family: 'Bungee Spice', sans-serif;
+  margin: 13px;
+  font-size: 30px;
+  padding-left: 30px;
+}
+nav {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1;
+}
+.CarouselHome{
+ z-index: 0;
+ padding-top: 46px;
+ padding-left: 20%;
+ padding-right: 20%;
+text-align: center;
+}
+.header1{
+    color: white;
+    margin-right: 20px;
+   float: right;
+   justify-content: space-between;  
+   text-decoration: none;
+  }
+.header{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    float: left;
+  }
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menubtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .menu-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    border-radius: 3px;  
+  }
+  .menu-content:hover {
+    position: absolute;
+    background-color: #6d6c6c;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    border-radius: 3px; 
+    color: white; 
+  }
+  .Ads {
+    z-index: 1; 
+    padding-left: 30%;
+    padding-right: 30%;
+    position: fixed;
+}
+
+.Ads-content {
+    position: relative; 
+    display: inline-block; 
+    z-index: 2; 
+}
+
+.Ads-button {
+    position: absolute; 
+    top: 0%; 
+    right: 454px; 
+    z-index: 3;
+      border: none; 
+    padding: 5px 10px; 
+} 
+.addcart{
+  border-radius: 20px;
+  background-color: rgb(183, 118, 118);
+}
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1024px)  and (max-height:933px){
   .box-image{
     border: 3px solid #ccc; /* Định dạng viền */
     padding: 5px; /* Khoảng cách từ viền đến hình ảnh */
@@ -115,7 +241,6 @@
     background-color: rgb(52, 11, 11);
     border-radius: 10px;
     position: fixed;
-  
   }
   .phone-num{
     position: fixed;
@@ -124,7 +249,6 @@
     align-items: center;
     padding-left: 20px;
   }
-  
   .login{
     text-align: center;
   }
@@ -133,7 +257,6 @@
     position: relative;
     display: inline-block;
   }
-  
   .menubtn {
     background-color: #333;
     color: white;
@@ -153,6 +276,62 @@
   }
   .laptopname{
     font-size: 15px;
-    color: rgb(42, 41, 41);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
   }
+  nav {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    height: 5%;
+  }
+  .CarouselHome{
+  z-index: 0;
+  padding-top: 46px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30%;
+  }
+  .header1{
+    color: white;
+    margin-right: 20px;
+    float: right;
+    justify-content: space-between;  
+    text-decoration: none;
+    font-size: 4px; 
+    }
+  .header{
+      color: white;
+      text-decoration: none;
+      margin-right: 18px;
+      float: left;
+      font-size: 4px;
+    }
+    .menu {
+      position: relative;
+      display: inline-block;
+      font-size: 4px;  
+      
+    }
+    
+    .menubtn {
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      
+    }
+    
+    .menu-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      
+    }
 }
