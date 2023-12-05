@@ -8,15 +8,15 @@ function LaptopDetails({laptop,addCart}){
             </div> }
             <div>
                 <h1>   {laptop.name}</h1>
-                <h2>   {laptop.price}</h2>
-                <h3>   {laptop.brand}</h3>
-                <h4>   {laptop.itemweight}</h4>
-                <h4>   {laptop.memorysize}</h4>
-                <h4>   {laptop.cpuchip}</h4>
-                <h4>   {laptop.pin}</h4>
-                <h4>   {laptop.screensize}</h4>
-                <h4>   {laptop.harddisksize}</h4>
-                <h4>   {laptop.warranty}</h4>
+                <h2>   ${laptop.price}</h2>
+                <h3>   Brand: {laptop.brand}</h3>
+                <h4>   Weight: {laptop.itemweight}</h4>
+                <h4>   Memory Size: {laptop.memorysize}</h4>
+                <h4>   CPU: {laptop.cpuchip}</h4>
+                <h4>   Battery: {laptop.pin}</h4>
+                <h4>   Screen Size: {laptop.screensize}</h4>
+                <h4>   Hard Disk: {laptop.harddisksize}</h4>
+                <h4>   Warranty: {laptop.warranty}</h4>
                 <button onClick={()=> addCart(laptop)}>Add to cart</button>
             </div>
         </div>
