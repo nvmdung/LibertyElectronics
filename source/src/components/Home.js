@@ -2,7 +2,6 @@ import Itemasus from "./Item";
 import '../css/Home.css';
 import CarouselHome from "./Carousel";
 import { useState } from "react";
-import MenuHome from "./MenuHome";
 function Home({
     avatarLaptopsAsus,
     avatarLaptopsLenovo,
@@ -21,11 +20,11 @@ function Home({
         {showAd && (
                 <div className="Ads"> 
                     <div className="Ads-content"><img src="./image/banner/Asus.png" width="auto" height="500px"/></div>
-                    <button  className="Ads-button" onClick={handleCloseAd}><img src="./image/banner/X.png"width="10px"height="auto"/></button> {/* Nút đóng */}
+                    <button  className="Ads-button" onClick={handleCloseAd}>X</button>
                 </div>
             )}
             </div>
-            <MenuHome/>
+           
             <div className="CarouselHome" >
             <CarouselHome/>
             </div>     

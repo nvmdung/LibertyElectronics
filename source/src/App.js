@@ -181,12 +181,17 @@ function App() {
     
     <div className="App">
       <nav>
-        <Link className="header" to="/">Home</Link>
-        <Link className="header" to="/product">Product</Link>
-        <Link className="header" to="/about">About us</Link>
-        <Link className="header" to="/contact">Contact us</Link>
-        <Link className="header" to="/blog">Blog</Link>
-        <Link className="header1" to="/cart">Cart</Link>
+      <div className='menuhome'>
+          <button className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
+          <div className='menuhome-content'>
+        <Link className='header' to="/">Home</Link>
+        <Link className='header' to="/product">Product</Link>
+        <Link className='header' to="/about">About us</Link>
+        <Link className='header' to="/contact">Contact us</Link>
+        <Link className='header' to="/blog">Blog</Link>
+        <Link className='header' to="/cart">Cart </Link>
+        </div>
+        </div>
         {localStorage.getItem('username') ?
         (<span>
           Hello {localStorage.getItem('username')},
