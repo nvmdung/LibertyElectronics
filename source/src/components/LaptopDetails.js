@@ -18,6 +18,7 @@ function LaptopDetails({laptop,addCart}){
                 <h4>   Hard Disk: {laptop.harddisksize}</h4>
                 <h4>   Warranty: {laptop.warranty}</h4>
                 <button onClick={()=> addCart(laptop)}>Add to cart</button>
+                <a href="www.google.com" download="laptop_detail">Download</a>       
             </div>
         </div>
     )
