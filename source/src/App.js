@@ -214,18 +214,23 @@ function App() {
   
   return (   
     <div className="App">
-      <nav className="menu123">
+      <label className='hamburger-menu'>
+        <input type='checkbox'/>
+        </label>
+           <aside className='sidebar'>
+            <nav>
+       <div><Link className='headerHome' to="/">Home</Link></div> 
+       <div>  <Link className='headerProduct' to="/product">Product</Link></div>
+       <div>  <Link className='headerAbout' to="/about">About us</Link></div> 
+       <div>    <Link className='headerContact' to="/contact">Contact us</Link></div>
+        <div>   <Link className='headerBlog' to="/blog">Blog</Link></div>
+        <div> <Link className='headerCart' to="/cart">Cart </Link></div> 
+        </nav>
+        </aside>
       <div className='menuhome'>
-          <button  className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
-          <div className='menuhome-content'>
-        <Link className='headerHome' to="/">Home</Link>
-        <Link className='headerProduct' to="/product">Product</Link>
-        <Link className='headerAbout' to="/about">About us</Link>
-        <Link className='headerContact' to="/contact">Contact us</Link>
-        <Link className='headerBlog' to="/blog">Blog</Link>
-        <Link className='headerCart' to="/cart">Cart </Link>
+       
         </div>
-        </div>
+        <nav className="menu123">
         {localStorage.getItem('registeredUser') ?
         (<span>
           Hello {localStorage.getItem('User')},
