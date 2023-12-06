@@ -1,36 +1,52 @@
+
+import { Link } from 'react-router-dom';
+import '../css/Login.css';
 import { useState } from "react";
-import style from '../css/Home.css'
-function Login({checkLogin,errorlogin}){
-    const [username,setUsername] = useState('')
-    const [password,setPassword] = useState('')
-    const handleLogin = (e) =>{
+
+function Login() {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+
+    const handleLogin = (e) => {
         e.preventDefault();
-        const checkUser = {username,password};
-        checkLogin(checkUser);
-        setUsername('');
-        setPassword('')
-    }
-    return(
-        <form onSubmit={handleLogin}>
-            <table className="login">
-            <h4>{errorlogin}</h4>
-            <tr>
-                
-                <td>Username</td>
-                <td><input type="text" value={username} 
-                onChange={(e)=> setUsername(e.target.value)}/></td>
-            </tr> 
-            <tr>   
-                <td>Password</td>
-                <td><input type="password" value={password} 
-                onChange={(e)=> setPassword(e.target.value)}/></td>
-            </tr>
-            <tr>
-                <td colSpan="2"><input type="submit"/></td>
-            </tr>
-            </table>
-        </form>
-        
-    )
+
+        // Lấy thông tin từ Local Storage
+        const storedUser = JSON.parse(localStorage.getItem('registeredUser'));
+
+        // Kiểm tra xem thông tin nhập vào có trùng khớp với Local Storage không
+        if (storedUser && username === storedUser.username && password === storedUser.password) {
+            setError('');
+            alert('Đăng nhập thành công!');
+            // Thực hiện hành động sau khi đăng nhập thành công, ví dụ: chuyển hướng trang
+        } else {
+            setError('Tên người dùng hoặc mật khẩu không đúng.');
+        }
+    };
+
+    return (
+        <div className='logindev'>
+            <div className="login-container">
+                <form onSubmit={handleLogin}>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <button type="submit">Đăng nhập</button>
+                    {error && <p>{error}</p>}
+                </form>
+                <div>Dont have account? <Link to="/register">Register</Link></div>
+            </div>
+        </div>
+    );
 }
+
 export default Login;

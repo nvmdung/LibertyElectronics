@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import './css/Home.css'
-import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate,Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
 import './css/Sort.css'
@@ -21,8 +21,10 @@ import GIGABYTE from './components/brand/Gigabyte';
 import Lenovo from './components/brand/Lenovo';
 import WavingSanta from './components/Noelami.js'
 import Footer from './components/Footer.js';
+import Register from './components/Register.js';
 function App() {
   const [users,setUsers] = useState([]);
+  const [showModal, setShowModal] = useState(false);
   const [avatarLaptopsAsus, setAvatarLaptopsAsus] = useState([]);
   const [avatarLaptopsLenovo, setAvatarLaptopsLenovo] = useState([]);
   const [avatarLaptopsGigabyte, setAvatarLaptopsGigabyte] = useState([]);
@@ -89,10 +91,10 @@ function App() {
  
   const fetcData = async () => {
     try{
-      const dataJson = await fetch('avatar.json');
-      const avatarData = await dataJson.json();
-      setAvatars(avatarData);
-      setFilerAvatars(avatarData);
+      const dataJson = await fetch('user.json');
+      const userData = await dataJson.json();
+      setUsers(userData);
+      setFilerAvatars(userData);
     }catch (error){
       console.log('error reading json');
     }
@@ -122,7 +124,11 @@ function App() {
       navigate('/');
       localStorage.setItem('username',checkUser.username)
     }else{
-      console.log("Login Fail");
+      {showModal && (
+        <div className="modal">
+            Error login
+        </div>
+    )}
       navigate('/login');
       // setErrorlogin("Wrong password or pass");
     }
@@ -173,8 +179,15 @@ function App() {
     const DeleteCart = carts.filter(c => c.id !== id);
     setCarts(DeleteCart);
   }
- 
-  
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered('./image/banner/right.png');
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
   
   
   return (
@@ -182,14 +195,14 @@ function App() {
     <div className="App">
       <nav>
       <div className='menuhome'>
-          <button className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
+          <button  className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
           <div className='menuhome-content'>
-        <Link className='header' to="/">Home</Link>
-        <Link className='header' to="/product">Product</Link>
-        <Link className='header' to="/about">About us</Link>
-        <Link className='header' to="/contact">Contact us</Link>
-        <Link className='header' to="/blog">Blog</Link>
-        <Link className='header' to="/cart">Cart </Link>
+        <Link className='headerHome' to="/">Home</Link>
+        <Link className='headerProduct' to="/product">Product</Link>
+        <Link className='headerAbout' to="/about">About us</Link>
+        <Link className='headerContact' to="/contact">Contact us</Link>
+        <Link className='headerBlog' to="/blog">Blog</Link>
+        <Link className='headerCart' to="/cart">Cart </Link>
         </div>
         </div>
         {localStorage.getItem('username') ?
@@ -216,54 +229,53 @@ function App() {
               /> 
         </div>
       }/>
+        <Route path='/register' element={<Register/>}/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
        
         <Route path="/product" element={
-          
-          <div>
-         
-            <div className='container-product'>
-            <div>
-              <tr>
-                <td><button onClick={() => {
-                  navigate('/asus');
-                }}>ASUS</button></td>
-                <td><button onClick={()=>{
-                  navigate('/lenovo');
-                }}>LENOVO</button></td>
-                <td><button>MSI</button></td>
-                <td><button>GIGABYE</button></td>
-                <td><button>HP</button></td>
-                <td><button>DELL</button></td>
-              </tr>
-            </div>
-            <Search onSearch={handleSearch}/>
-            <div className='container-sort'>
-          <div className='sort'>
-            <button className='btn-sort'>Sort</button>
-            <div className='sort-content'>
-          <button className='sort-price' onClick={handleSortByPrice}>
-        Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
-      </button>
-          <button className='sort-name' onClick={handleSort}>Sort By Name</button>
-          </div>
-          </div>
-          </div>
-        <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
-        <div className='container-satan'>
-            <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
-            </div>
-       
-        </div>
-        </div>
-      }/>
+           localStorage.getItem('username') ? (
+        <div>       
+         <div className='container-product'>
+         <div>
+           <tr>
+             <td><button onClick={() => {
+               navigate('/asus');
+             }}>ASUS</button></td>
+             <td><button onClick={()=>{
+               navigate('/lenovo');
+             }}>LENOVO</button></td>
+             <td><button>MSI</button></td>
+             <td><button>GIGABYE</button></td>
+             <td><button>HP</button></td>
+             <td><button>DELL</button></td>
+           </tr>
+         </div>
+         <Search onSearch={handleSearch}/>
+         <div className='container-sort'>
+       <div className='sort'>
+         <button className='btn-sort'>Sort</button>
+         <div className='sort-content'>
+       <button className='sort-price' onClick={handleSortByPrice}>
+     Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
+   </button>
+       <button className='sort-name' onClick={handleSort}>Sort By Name</button>
+       </div>
+       </div>
+       </div>
+     <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
+     <div className='container-satan'>
+         <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
+         </div>   
+     </div>
+     </div>) : (<Navigate to="/login"/>)}/>
+          {/*         
+     <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
+     <Route path="/details/:id" element={<Details/>}/> */}
+     {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
      
-{/*         
-        <Route path="/create" element={<Create onAdd={handleAdd}/>}/>
-        <Route path="/details/:id" element={<Details/>}/> */}
-        {/* <Route path="/edit/:id" element={<Edit onEdit={handleEdit}/>}/> */}
-        
+     
       <Route path='/asus' element={
+
         <div>
             <AsusVideo/>
             <Asus asusProduct={asusProduct}/>
@@ -273,7 +285,14 @@ function App() {
         <Route path='/gigabyte' element={<GIGABYTE gigabyteProduct={gigabyteProduct}/>}/>
         <Route path='/lenovo' element={<Lenovo lenovoProduct={lenovoProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
-        <Route path="/login" element={<Login checkLogin={checkLogin}/>}/>
+        <Route path="/login" element={<>
+                            <Login checkLogin={checkLogin} setShowModal={setShowModal} errorlogin="Error message" />
+                            {showModal && (
+                                <div className="modal">
+                                    Error login
+                                </div>
+                            )}
+                        </>}/>
       </Routes>
       <footer><Footer/></footer>
     </div>

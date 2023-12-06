@@ -67,9 +67,33 @@ tbody{
   align-items: center;
   padding-left: 20px;
 }
-.login{
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1095c1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
   text-align: center;
 }
+
 .menu {
   position: relative;
   display: inline-block;
@@ -119,6 +143,7 @@ tbody{
 nav {
   color: black;
   width: 100%;
+  height: 30px;
   position: fixed;
   justify-content: space-between;
   align-items: center;
@@ -132,6 +157,7 @@ nav {
  padding-left: 20%;
  padding-right: 20%;
  margin: 0;
+
 }
 .header1{
   color: white;
@@ -145,18 +171,7 @@ nav {
   text-align: center;
   border-radius: 5px;
   }
-.header{
-  color: black;
-  margin-right: 20px;
-  float:left
 
-  }
-  header:hover{
-    color: black;
-  margin-right: 20px;
-  float:left;
-  background-image: url('right.png') ;
-  }
   .menuhome {
     position: relative;
     display: inline-block;
@@ -167,6 +182,7 @@ nav {
     width: auto;
     height: auto;
     background-color: transparent;
+    
   }
   .menuhome-content {
     display: none;
@@ -175,18 +191,43 @@ nav {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     transition: 0.5s;
-    
+    width: 120px;
   }
-  
+  .menuhome-content:hover {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.5s;
+    width: 120px;
+  }
   .menuhome-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    --b: 0.1em;   
+  --c: #1095c1; 
+  
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
    
   }
   
-  .menuhome-content a:hover {background-color: white;}
+  .menuhome-content a:hover {background-color: white;
+    --_p: 100%;
+    --_s: .3s;
+    background-color: #1095c1;
+    color: #ffffff;
+    text-shadow: -0.1px -0.1px 0 #000, 0.1px -0.1px 0 #000, -0.1px 1px 0 #000, 0.1px 0.1px 0 #000; 
+  }
 
   .menuhome:hover .menuhome-content {display: block;}
   
