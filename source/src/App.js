@@ -193,7 +193,6 @@ function App() {
     <div className="App">
       <nav className="menu123">
       <div className='menuhome'>
-          <button  className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
           <div className='menuhome-content'>
         <Link className='headerHome' to="/">Home</Link>
         <Link className='headerProduct' to="/product">Product</Link>
