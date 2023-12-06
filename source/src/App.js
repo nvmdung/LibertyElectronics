@@ -189,10 +189,9 @@ function App() {
   };
   
   
-  return (
-    
+  return (   
     <div className="App">
-      <nav>
+      <nav className="menu123">
       <div className='menuhome'>
           <button  className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
           <div className='menuhome-content'>
@@ -204,9 +203,9 @@ function App() {
         <Link className='headerCart' to="/cart">Cart </Link>
         </div>
         </div>
-        {localStorage.getItem('username') ?
+        {localStorage.getItem('registeredUser') ?
         (<span>
-          Hello {localStorage.getItem('username')},
+          Hello {localStorage.getItem('User')},
         <Link className="header1" to="/login" onClick={()=> DeletelocalStorage()}>
           Logout
         </Link>

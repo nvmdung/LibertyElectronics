@@ -17,19 +17,19 @@ function Register() {
         e.preventDefault();
         
         if (!USER_REGEX.test(username)) {
-            setError('Not valid username');
+            alert('Not valid username');
             setShowModal(true);
             return;
         }
 
         if (!PWD_REGEX.test(password)) {
-            setError('Invalid password');
+            alert('Invalid password');
             setShowModal(true);
             return;
         }
 
         if (password !== confirmPassword) {
-            setError('Passwords do not match');
+            alert('Passwords do not match');
             setShowModal(true);
             return;
         }
