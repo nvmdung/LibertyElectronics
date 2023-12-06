@@ -236,17 +236,25 @@ function App() {
         <div>       
          <div className='container-product'>
          <div>
-           <tr>
+           <tr className='container-productbutton'>
              <td><button onClick={() => {
                navigate('/asus');
              }}>ASUS</button></td>
              <td><button onClick={()=>{
                navigate('/lenovo');
              }}>LENOVO</button></td>
-             <td><button>MSI</button></td>
-             <td><button>GIGABYE</button></td>
-             <td><button>HP</button></td>
-             <td><button>DELL</button></td>
+             <td><button onClick={() => {
+              navigate('/msi');
+             }}>MSI</button></td>
+             <td><button onClick={() => {
+              navigate('/gigabyte');
+             }}>GIGABYE</button></td>
+             <td><button onClick={() =>{ 
+              navigate('/hp');
+            }}>HP</button></td>
+             <td><button onClick={() => {
+              navigate('/dell');
+             }}>DELL</button></td>
            </tr>
          </div>
          <Search onSearch={handleSearch}/>
