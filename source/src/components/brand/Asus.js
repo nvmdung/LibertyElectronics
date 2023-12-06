@@ -1,7 +1,7 @@
+import './Asus.css';
 function Asus({asusProduct}){
     return(
-        <div>
-        <h1>Asus</h1>
+        <div className='item-asus'>
         {asusProduct.map(pro => (
             <div>
                 {pro.name}
