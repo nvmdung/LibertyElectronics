@@ -26,7 +26,7 @@ function Item({ laptop, addCart }) {
             <div className="laptopprice">${laptop.price}</div>
             {showButton && (
                 <button onClick={() => handleAddToCart(laptop)} className="addcart">
-                    Add to Cart
+                    <p>Add Cart</p>
                 </button>
             )}
         </div>

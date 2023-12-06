@@ -259,8 +259,15 @@ nav {
   border-radius: 20px;
   background-color: rgb(183, 118, 118);
   transition: 0.5s;
+  font-size: 15px;
+  height: 30px;
+  text-align: center;
+ 
 }
-
+.addcart p{
+  top: 0;
+  bottom: 0;
+}
 
 
 

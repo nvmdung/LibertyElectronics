@@ -94,7 +94,6 @@ function App() {
       const dataJson = await fetch('user.json');
       const userData = await dataJson.json();
       setUsers(userData);
-      setFilerAvatars(userData);
     }catch (error){
       console.log('error reading json');
     }
@@ -233,7 +232,7 @@ function App() {
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
        
         <Route path="/product" element={
-           localStorage.getItem('username') ? (
+           localStorage.getItem('registeredUser') ? (
         <div>       
          <div className='container-product'>
          <div>
