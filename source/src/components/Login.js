@@ -10,15 +10,12 @@ function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-
-        // Lấy thông tin từ Local Storage
         const storedUser = JSON.parse(localStorage.getItem('registeredUser'));
 
-        // Kiểm tra xem thông tin nhập vào có trùng khớp với Local Storage không
         if (storedUser && username === storedUser.username && password === storedUser.password) {
             setError('');
             alert('Đăng nhập thành công!');
-            // Thực hiện hành động sau khi đăng nhập thành công, ví dụ: chuyển hướng trang
+         
         } else {
             setError('Tên người dùng hoặc mật khẩu không đúng.');
         }
