@@ -44,7 +44,8 @@ function App() {
   const [laptopDetails, setLaptopDetails] = useState(null);
   const [sortOrder, setSortOrder] = useState('asc');
   const [carts, setCarts] = useState([]);
-  
+  const [selectedBrands, setSelectedBrands] = useState([]);
+
   
   useEffect(()=>{
     fetch('item.json')
@@ -187,12 +188,35 @@ function App() {
   const handleMouseLeave = () => {
     setHovered(false);
   };
+  const handleSortByBrand = (brand) => {
+    let updatedSelectedBrands;
+
+    if (selectedBrands.includes(brand)) {
+      // If brand is already selected, remove it
+      updatedSelectedBrands = selectedBrands.filter((selectedBrand) => selectedBrand !== brand);
+    } else {
+      // If brand is not selected, add it
+      updatedSelectedBrands = [...selectedBrands, brand];
+    }
+
+    // Apply filters based on selected brands
+    let filteredProducts = [...laptops];
+
+    if (updatedSelectedBrands.length > 0) {
+      filteredProducts = filteredProducts.filter((product) =>
+        updatedSelectedBrands.includes(product.brand)
+      );
+
+      setFilerLaptops(filteredProducts);
+      setSelectedBrands(updatedSelectedBrands);
+    };    }
   
   
   return (   
     <div className="App">
       <nav className="menu123">
       <div className='menuhome'>
+          <button  className='menubtnhome'><img src="./image/banner/menu.png" width="60px" height="auto"/></button>
           <div className='menuhome-content'>
         <Link className='headerHome' to="/">Home</Link>
         <Link className='headerProduct' to="/product">Product</Link>
@@ -263,6 +287,12 @@ function App() {
        <button className='sort-price' onClick={handleSortByPrice}>
      Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
    </button>
+   <button onClick={() => handleSortByBrand('Asus')}>Asus</button>
+   <button onClick={() => handleSortByBrand('DELL')}>DELL</button>
+   <button onClick={() => handleSortByBrand('GIGABYE')}>GIGABYE</button>
+   <button onClick={() => handleSortByBrand('Lenovo')}>LENOVO</button>
+   <button onClick={() => handleSortByBrand('HP')}>HP</button>
+   <button onClick={() => handleSortByBrand('MSI')}>MSI</button>
        <button className='sort-name' onClick={handleSort}>Sort By Name</button>
        </div>
        </div>
