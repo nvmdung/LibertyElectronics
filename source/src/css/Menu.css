@@ -13,8 +13,9 @@
   width: 100%;
   display: flex;
   padding: 1.3rem 10%;
-  background: rgba(0, 0, 0, .1);
-  backdrop-filter: blur(50px);
+  background: url('../background/menuheader.jpg');
+  background-size: cover;
+  background-position: center;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
