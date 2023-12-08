@@ -1,0 +1,40 @@
+.containertwobox {
+    display: flex;
+
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .twobox {
+    position: relative;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  
+  }
+  
+  .image2box {
+    width:60%;
+    height: 60%;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .image2box:hover{
+    transform: scale(1.4);
+  }
+  .contenttwobox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .twobox:hover .contenttwobox {
+    transform: translateY(0);
+    opacity:1;
+  }

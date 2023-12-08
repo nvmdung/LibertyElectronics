@@ -1,101 +1,22 @@
-import Itemasus from "./Item";
-import '../css/Home.css';
+
 import CarouselHome from "./Carousel";
-import { useState } from "react";
-function Home({
-    avatarLaptopsAsus,
-    avatarLaptopsLenovo,
-    avatarLaptopsGigabyte,
-    avatarLaptopsMSI,
-    avatarLaptopsHP,
-    addCart
-})
-{    const [showAd, setShowAd] = useState(true);
-    const handleCloseAd = () => {
-        setShowAd(false);
-    };
+import Images from "./Fourboxhome";
+import { Link } from "react-router-dom";
+import BrandLogos from "./BrandLogo";
+import Twobox from "./Twoboxhome";
+import Item from "./Item";
+function Home(avatarLaptopsAsus){
     return(
         <>
-        <div>
-        {showAd && (
-                <div className="Ads"> 
-                    <div className="Ads-content"><img src="./image/banner/Asus.png" width="auto" height="500px"/></div>
-                    <button  className="Ads-button" onClick={handleCloseAd}>X</button>
-                </div>
-            )}
-            </div>
-           
-            <div className="CarouselHome" >
-            <CarouselHome/>
-            </div>     
-        <div className="box-phone">
-                <tr className="phone-num">
-                    <td><img src="./image/imgcall/call1.png" width="22px"/>0707185xxx</td>
-                </tr>
-            </div>
-        <table>
-            <tbody> 
-            <div className="bestoffer">BEST OFFER IN CHRISTMAS</div>
-            <div className="container">
-               {
-                    avatarLaptopsAsus.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsLenovo.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsGigabyte.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsMSI.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsHP.slice(2,3).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                </div>
-                <div className="bestoffer">Powerful GAMING LAPTOP</div>
-            <div className="container">
-               {
-                    avatarLaptopsAsus.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsAsus.slice(0,1 ).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsGigabyte.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsMSI.slice(1,2).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart} laptop={a}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsMSI.slice(0,1).map(a => (
-                        <div className="box-image"><Itemasus key={a.id} addCart={addCart}  laptop={a}/></div>
-                    )) 
-                }
-                </div>
-            </tbody>
-        </table>            
-        
-       <footer></footer>
-       
+     <CarouselHome/>
+      <Images/>
+      <Link to="/product"><div className="showproduct">Show all Products</div></Link>
+      <BrandLogos/>
+      <Twobox/>
+      <div>
+        {avatarLaptopsAsus.slice(1,2).map(a => (
+            <div><Item key={a.id}  laptop={a}/></div>
+        ))}</div>
     </>
     )
 }export default Home;

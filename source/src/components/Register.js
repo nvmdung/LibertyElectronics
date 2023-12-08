@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Register.css';
 import { Link } from "react-router-dom";
 
@@ -15,25 +17,25 @@ function Register() {
 
     const handleRegister = (e) => {
         e.preventDefault();
-        
+
         if (!USER_REGEX.test(username)) {
-            alert('Not valid username');
+            setError('Invalid username');
             setShowModal(true);
             return;
         }
 
         if (!PWD_REGEX.test(password)) {
-            alert('Invalid password');
+            setError('Invalid password');
             setShowModal(true);
             return;
         }
 
         if (password !== confirmPassword) {
-            alert('Passwords do not match');
+            setError('Passwords do not match');
             setShowModal(true);
             return;
         }
-        
+
         // Dữ liệu hợp lệ, lưu vào Local Storage
         const user = {
             username,
@@ -63,6 +65,7 @@ function Register() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
+                        
                         <input
                             type="password"
                             placeholder="Confirm Password"
@@ -70,7 +73,19 @@ function Register() {
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
                         <button type="submit">Register</button>
-                        {showModal && <div className="modal">Error: {error}</div>}
+
+                        {/* Modal */}
+                        <Modal show={showModal} onHide={() => setShowModal(false)}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Error</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>{error}</Modal.Body>
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                                    Ok
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
                     </form>
                 )}
             </div>

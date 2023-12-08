@@ -1,6 +1,5 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import './css/Home.css'
 import { Link, Route, Routes, useNavigate,Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
@@ -31,10 +30,8 @@ function App() {
   const [avatarLaptopsMSI, setAvatarLaptopsMSI] = useState([]);
   const [avatarLaptopsHP, setAvatarLaptopsHP] = useState([]);
   const navigate=useNavigate();
-  const [avatars, setAvatars] = useState([]);
   const [laptops, setLaptops] = useState([]);
   const [filterLaptops, setFilerLaptops] = useState([])
-  const [filterAvatars, setFilerAvatars] = useState([])
   const [value, setValue] = useState('');
   const [asusProduct, setAsusProduct] = useState([]);
   const [dellProduct, setDellProduct] = useState([]);
@@ -118,17 +115,12 @@ function App() {
     setFilerLaptops(deleted);
   }
   const checkLogin = (checkUser) =>{
-    const Finduser = users.find(u => u.username==checkUser.username && u.password==checkUser.password);
+    const Finduser = users.find(u => u.username==checkUser.username && u.password==checkUser.password );
     if(Finduser != null){
       console.log("Login success");
       navigate('/');
       localStorage.setItem('username',checkUser.username)
     }else{
-      {showModal && (
-        <div className="modal">
-            Error login
-        </div>
-    )}
       navigate('/login');
       // setErrorlogin("Wrong password or pass");
     }
@@ -227,13 +219,10 @@ function App() {
         <div> <Link className='headerCart' to="/cart">Cart </Link></div> 
         </nav>
         </aside>
-      <div className='menuhome'>
-       
-        </div>
         <nav className="menu123">
         {localStorage.getItem('registeredUser') ?
         (<span>
-          Hello {localStorage.getItem('User')},
+          Hello {localStorage.getItem('username')},
         <Link className="header1" to="/login" onClick={()=> DeletelocalStorage()}>
           Logout
         </Link>
@@ -245,7 +234,7 @@ function App() {
       <Routes>
      
      <Route path="/" element={
-          <div>
+          
           <Home avatarLaptopsAsus={avatarLaptopsAsus}
                 avatarLaptopsLenovo={avatarLaptopsLenovo}
                 avatarLaptopsGigabyte={avatarLaptopsGigabyte}
@@ -253,7 +242,7 @@ function App() {
                 avatarLaptopsMSI={avatarLaptopsMSI}
                 laptops={filterLaptops} addCart={addCart}
               /> 
-        </div>
+        
       }/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
@@ -326,13 +315,14 @@ function App() {
         <Route path='/lenovo' element={<Lenovo lenovoProduct={lenovoProduct}/>}/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
         <Route path="/login" element={<>
-                            <Login checkLogin={checkLogin} setShowModal={setShowModal} errorlogin="Error message" />
+                            <Login  setShowModal={setShowModal} errorlogin="Error message" />
                             {showModal && (
                                 <div className="modal">
                                     Error login
                                 </div>
                             )}
                         </>}/>
+                        
       </Routes>
       <footer><Footer/></footer>
     </div>

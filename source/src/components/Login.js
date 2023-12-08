@@ -16,7 +16,7 @@ function Login() {
 
         // Kiểm tra xem thông tin nhập vào có trùng khớp với Local Storage không
         if (storedUser && username === storedUser.username && password === storedUser.password) {
-            setError(<Navigate to="/product"/>);
+            setError(<Navigate to="/"/>);
             
             // Thực hiện hành động sau khi đăng nhập thành công, ví dụ: chuyển hướng trang
         } else {
