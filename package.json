@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "react-router-dom": "^6.20.0"
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.20",
+    "react-router-dom": "^6.20.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   }
 }

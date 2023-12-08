@@ -1,0 +1,17 @@
+import { Link } from "react-router-dom";
+function Menu(){
+    return(
+        <tr className="headermenu">
+            <a href="#" className="logo">logo</a>
+            <nav className="navbar">
+            <Link className='headerHome' to="/">Home</Link>
+         <Link className='headerProduct' to="/product">Product</Link>
+         <Link className='headerAbout' to="/about">About us</Link> 
+           <Link className='headerContact' to="/contact">Contact us</Link>
+           <Link className='headerBlog' to="/blog">Blog</Link>
+              <Link className='headerCart' to="/cart">Cart </Link>
+            </nav>
+        </tr>
+    )
+}
+export default Menu;

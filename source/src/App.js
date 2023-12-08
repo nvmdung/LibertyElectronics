@@ -4,6 +4,7 @@ import { Link, Route, Routes, useNavigate,Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
 import './css/Sort.css'
+import Menu from './components/Menu.js';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
@@ -206,19 +207,9 @@ function App() {
   
   return (   
     <div className="App">
-      <label className='hamburger-menu'>
-        <input type='checkbox'/>
-        </label>
-           <aside className='sidebar'>
-            <nav>
-       <div><Link className='headerHome' to="/">Home</Link></div> 
-       <div>  <Link className='headerProduct' to="/product">Product</Link></div>
-       <div>  <Link className='headerAbout' to="/about">About us</Link></div> 
-       <div>    <Link className='headerContact' to="/contact">Contact us</Link></div>
-        <div>   <Link className='headerBlog' to="/blog">Blog</Link></div>
-        <div> <Link className='headerCart' to="/cart">Cart </Link></div> 
-        </nav>
-        </aside>
+      
+      <Menu/><br/>
+      
         <nav className="menu123">
         {localStorage.getItem('registeredUser') ?
         (<span>

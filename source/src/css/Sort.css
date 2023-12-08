@@ -61,12 +61,12 @@
   .sort:hover .sort-content {display: block;}
   
   .sort:hover .btn-sort {background-color: #f73838;}
-  .container-satan{
-  background-image: url("https://i.pinimg.com/564x/e1/ea/90/e1ea905ca97791eac231e8b55237d96d.jpg");
-  }
   .container-noellight{
     background-image: url("https://mir-s3-cdn-cf.behance.net/projects/404/7ed318172223177.Y3JvcCwxMjg3LDEwMDYsMzI4LDM1.png");
   }
   .container-product{
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background: url("../background/130.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
   }
