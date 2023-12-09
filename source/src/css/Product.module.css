@@ -6,7 +6,9 @@
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  background-color: rgb(252, 150, 167);
+  background: url('../background/4884841.jpg');
+  background-size: cover;
+  background-position: 100px;
   &:hover {
     transform: scale(1.05);
   }
@@ -21,11 +23,12 @@
 }
 
 .productName {
-  font-size: 20px;
+  font-size: 30px;
   display: flex;
   font-weight: bold;
   flex-direction: column;
-  bottom: 220%;
+  bottom: 150%;
+  color: white;  
 }
 
 .productPrice {
@@ -103,3 +106,33 @@
 .container-productbutton{
   margin-top: 50px;
 }
+.productItem {
+  /* ... (your existing styles) */
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent; /* Border ban đầu là một dòng màu trong suốt */
+    /* Đặt border-radius thành 50% để tạo hình tròn */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transform: scale(0); /* Border bắt đầu không có chiều rộng và chiều cao */
+  }
+
+  &:hover:before {
+    transform: scale(1); /* Border mở rộng đến toàn bộ chiều rộng và chiều cao */
+    border-color: #4caf50; /* Màu sắc của border khi hover */
+  }
+}
+
+/* ... (your existing styles) */

@@ -1,10 +1,11 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { Link, Route, Routes, useNavigate,Navigate } from 'react-router-dom';
+import {  Route, Routes, useNavigate,Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
 import './css/Sort.css'
 import Menu from './components/Menu.js';
+import Button from './components/Button.js';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
@@ -126,9 +127,7 @@ function App() {
       // setErrorlogin("Wrong password or pass");
     }
   }
-   const DeletelocalStorage = () => {
-    localStorage.clear()
-   } 
+
 
   // const handleEdit = (newLaptop) => {
   //   console.log(newLaptop);
@@ -211,15 +210,7 @@ function App() {
       <Menu/><br/>
       
         <nav className="menu123">
-        {localStorage.getItem('registeredUser') ?
-        (<span>
-          Hello {localStorage.getItem('username')},
-        <Link className="header1" to="/login" onClick={()=> DeletelocalStorage()}>
-          Logout
-        </Link>
-        </span>) :
-        (<Link className="header1" to="/login">Login</Link>)
-}
+ 
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
@@ -242,28 +233,7 @@ function App() {
            localStorage.getItem('registeredUser') ? (
         <div>       
          <div className='container-product'>
-         <div>
-           <tr className='container-productbutton'>
-             <td><button onClick={() => {
-               navigate('/asus');
-             }}>ASUS</button></td>
-             <td><button onClick={()=>{
-               navigate('/lenovo');
-             }}>LENOVO</button></td>
-             <td><button onClick={() => {
-              navigate('/msi');
-             }}>MSI</button></td>
-             <td><button onClick={() => {
-              navigate('/gigabyte');
-             }}>GIGABYE</button></td>
-             <td><button onClick={() =>{ 
-              navigate('/hp');
-            }}>HP</button></td>
-             <td><button onClick={() => {
-              navigate('/dell');
-             }}>DELL</button></td>
-           </tr>
-         </div>
+          <Button/>
          <Search onSearch={handleSearch}/>
          <div className='container-sort'>
        <div className='sort'>
