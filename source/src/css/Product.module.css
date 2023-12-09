@@ -55,7 +55,9 @@
   width: 120px;
   flex-direction: column;
   &:hover {
-    background-color: #45a049;
+    background: url('../background/6239597.jpg');
+    background-size: cover;
+    background-position: center;
   }
   
 }
@@ -91,11 +93,15 @@
 }
 
 .pagination button:hover {
-  background-color: #45a049;
+  background: url('../background/6239597.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .pagination button.active {
-  background-color: #45a049;
+  background: url('../background/6239597.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* CSS cho trạng thái hover và active */
