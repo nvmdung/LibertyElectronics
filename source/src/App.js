@@ -25,6 +25,7 @@ import WavingSanta from './components/Noelami.js'
 import Footer from './components/Footer.js';
 import Register from './components/Register.js';
 import CardASUS from './components/Asusstyle/CardAsus.js';
+import MsiCard from './components/MsiStyle/CardMsi.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -273,7 +274,11 @@ function App() {
             <AsusVideo/> <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
           
       </div>}/>
-      <Route path='/msi' element={<Msi msiProduct={msiProduct}/>}/>
+      <Route path='/msi' element={
+        <div>
+          <MsiCard/>
+      <Msi msiProduct={msiProduct}/>
+      </div>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
         <Route path='/gigabyte' element={<GIGABYTE gigabyteProduct={gigabyteProduct}/>}/>
         <Route path='/lenovo' element={<Lenovo lenovoProduct={lenovoProduct}/>}/>

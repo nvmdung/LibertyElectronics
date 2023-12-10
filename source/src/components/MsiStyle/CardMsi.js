@@ -1,11 +1,11 @@
 
-import './Asusvideo.css'
+import './Msistyle.css'
 
 
-function CardASUS () {
+function MsiCard () {
   return (
     <div className='body'>
-      <div className='cardasus'>
+      <div className='card'>
         <div className='content'>
       <h2>jet</h2>
       <p>        
@@ -16,9 +16,9 @@ Let go <br/>
       </p>
       <a href='#'>Read More</a>
       </div>
-      <img src='../imagestyle/jet.png' alt='image1'/>
+      <img src='../imagestyle/luffy.webp'  alt='image1'/>
       </div>
-      <div className='cardasus'>
+      <div className='card'>
         <div className='content'>
       <h2>jet</h2>
       <p>        
@@ -29,11 +29,11 @@ Let go <br/>
       </p>
       <a href='#'>Read More</a>
       </div>
-      <img src='../imagestyle/jet.png' alt='image1'/>
+      <img src='../imagestyle/Zoro.png' alt='image1'/>
       </div>
       
     </div>
   );
 };
 
-export default CardASUS;
+export default MsiCard;
