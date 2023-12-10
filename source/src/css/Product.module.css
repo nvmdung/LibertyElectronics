@@ -140,5 +140,10 @@
     border-color: #4caf50; /* Màu sắc của border khi hover */
   }
 }
+.originalPrice {
+  text-decoration: line-through;
+  /* Các kiểu chữ khác nếu cần */
+  color: rgb(106, 105, 105);
+}
 
 /* ... (your existing styles) */

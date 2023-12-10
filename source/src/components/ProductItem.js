@@ -11,7 +11,13 @@ function ProductItem({ laptop, addCart, getDetails }) {
       return name.substring(0, maxLength) + '...';
     }
   };
+// Hàm để tính giá sau khi giảm giá
+const calculateDiscountedPrice = (price, discount) => {
+  return (price * (100 - discount)) / 100;
+};
 
+// Giả sử laptop.discount là phần trăm giảm giá
+const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount || 0);
   return (
     <div className={classes.containerboxes}>
       <div className={classes.productItem} onClick={() => {
@@ -22,7 +28,15 @@ function ProductItem({ laptop, addCart, getDetails }) {
         <td>
         <div className={classes.productInfo}>
           <div className={classes.productName}>{shortenProductName(laptop.name, 50)}</div>
-          <div className={classes.productPrice}>${laptop.price}</div>
+                 {/* Hiển thị giá sau khi giảm giá nếu có giảm giá */}
+                 {laptop.discount ? (
+              <div className={classes.productPrice}>
+                <span className={classes.originalPrice}>${laptop.price}</span><br/>
+                ${discountedPrice.toFixed(2)} (-{laptop.discount}%)
+              </div>
+            ) : (
+              <div className={classes.productPrice}>${laptop.price}</div>
+            )}
           <button className={classes.addToCart} onClick={() => addCart(laptop)}>Add to Cart</button>
         </div>
         </td>
