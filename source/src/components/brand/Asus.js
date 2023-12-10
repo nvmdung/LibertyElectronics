@@ -1,12 +1,10 @@
 import './Asus.css';
-function Asus({asusProduct}){
+import ProductItem from '../ProductItem';
+function Asus({asusProduct,addCart,getDetails}){
     return(
         <div className='item-asus'>
-        {asusProduct.map(pro => (
-            <div>
-                {pro.name}
-                <div><img src={pro.image[0]} width="10%" alt="image"/></div>
-            </div>
+     {asusProduct.map((p) => (
+          <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
         ))}
         </div>
     );

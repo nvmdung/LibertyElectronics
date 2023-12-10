@@ -12,6 +12,7 @@
         "pin":"3 Cells 50WHrs",
         "screensize":"14 inch WUXGA (1920 x 1200) 16:10 aspect ratio, LED Backlit, IPS-level Panel, 60Hz, 300nits, 45% NTSC color gamut, Glossy display, TÜV Rheinland-certified, Touch screen, Screen-to-body ratio: 85%",
         "harddisksize":"512GB SSD M.2 PCIE G3X4",
+        "discount": "25",
         "warranty": "2YEAR",
         "image":[
             "./image/asus/asusflip/0.png",
@@ -55,9 +56,11 @@
     "cpuchip":"Intel® Core™ i9-13900H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads)",
     "chip":"Intel® Core™ i9-13900H",
     "pin":"4 Cells 76WHrs",
+    
     "screensize":"15.6 inch FHD (1920 x 1080) 16:9 IPS, 144Hz, Wide View, 250nits, Narrow Bezel, Non-Glare with 72% NTSC, 100% sRGB, G-Sync",
     "harddisksize":"1TB M.2 NVMe™ PCIe® 4.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
+    "discount": "10",
     "image":[
         "./image/asus/asus14duo/0.png",
         "./image/asus/asus14duo/1.png",
@@ -77,6 +80,7 @@
     "cpuchip":"Intel® Core™ i9-13900H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads)",
     "chip":"Intel® Core™ i9-13900H",
     "pin":"63WHrs, 3S1P, 3-cell Li-ion",
+    "discount": "20",
     "screensize":"14 inch, 2.8K (2880 x 1800) OLED 16:10 aspect ratio, 0.2ms, 90Hz, 600nits HDR peak brightness, 100% DCI-P3, PANTONE Validated, VESA CERTIFIED Display HDR True Black 600 Glossy display",
     "harddisksize":"512GB M.2 NVMe PCIe 3.0 Performance SSD (1 slot)",
     "warranty": "2YEAR",
@@ -99,6 +103,7 @@
     "cpuchip":"11th Gen Intel Core i3-1115G4",
     "chip":"Intel Core i3-1115G4",
     "pin":"70wh",
+    "discount": "12",
     "screensize":"15.6 inches",
     "harddisksize":"256GB PCIe NVMe SSD",
     "warranty": "2YEAR",
@@ -165,6 +170,7 @@
     "cpuchip":" Intel i7-1365U vPro",
     "chip":"Intel i7-1365U",
     "pin":"73WHrs ",
+    "discount": "50",
     "screensize":"14 inches",
     "harddisksize":" 1TB SSD",
     "warranty": "2YEAR",

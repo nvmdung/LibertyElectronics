@@ -4,6 +4,7 @@ import {  Route, Routes, useNavigate,Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Product from './components/ProductList';
 import './css/Sort.css'
+import './css/Asuscontainer.css'
 import Menu from './components/Menu.js';
 import Button from './components/Button.js';
 // import Edit from './components/Edit';
@@ -16,13 +17,14 @@ import LaptopDetails from './components/LaptopDetails';
 import DELL from './components/brand/Dell';
 import CartList from './components/CartList';
 import './css/Menu.css'
-import AsusVideo from './components/video/video';
+import AsusVideo from './components/Asusstyle/Asusvideo.js';
 import Msi from './components/brand/Msi';
 import GIGABYTE from './components/brand/Gigabyte';
 import Lenovo from './components/brand/Lenovo';
 import WavingSanta from './components/Noelami.js'
 import Footer from './components/Footer.js';
 import Register from './components/Register.js';
+import CardASUS from './components/Asusstyle/CardAsus.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -254,7 +256,7 @@ function App() {
        </div>
      <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
      <div className='container-satan'>
-     <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
+     <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
          </div>   
      </div>
      </div>) : (<Navigate to="/login"/>)}/>
@@ -266,9 +268,10 @@ function App() {
      
       <Route path='/asus' element={
 
-        <div>
-            <AsusVideo/>
-            <Asus asusProduct={asusProduct}/>
+        <div className='asus-container1'>
+          
+            <AsusVideo/> <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
+          
       </div>}/>
       <Route path='/msi' element={<Msi msiProduct={msiProduct}/>}/>
         <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
