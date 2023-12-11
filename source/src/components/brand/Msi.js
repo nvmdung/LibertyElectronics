@@ -1,14 +1,12 @@
-function Msi({msiProduct}){
+import './Asus.css';
+import ProductItem from '../ProductItem';
+function Msi({msiProduct,addCart,getDetails}){
     return(
-        <div>
-        <h1>MSI</h1>
-        {msiProduct.map(pro => (
-            <div>
-                {pro.name}
-                <div><img src={pro.image[0]} width="10%" alt="image"/></div>
-            </div>
-        ))}
-        </div>
+        <div className='item-asus'>
+        {msiProduct.map((p) => (
+             <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
+           ))}
+           </div>
     );
 }
 export default Msi;

@@ -4,3 +4,33 @@
     background-size: cover;
     background-position: center;
 }
+.msi-container1{
+    width: 100%;
+    background: url('../background/4562472.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.gigabyte-container1{
+    width: 100%;
+    background: url('../background/123456.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.lenovo-container1{
+    width: 100%;
+    background: url('../background/02012001.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.dell-container1{
+    width: 100%;
+    background: url('../background/02012001.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hp-container1{
+    width: 100%;
+    background: url('../background/run.jpg');
+    background-size: cover;
+    background-position: center;
+}

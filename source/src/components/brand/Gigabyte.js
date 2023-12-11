@@ -1,14 +1,11 @@
-function GIGABYTE({gigabyteProduct}){
+import ProductItem from "../ProductItem";
+function GIGABYTE({gigabyteProduct,addCart,getDetails}){
     return(
-        <div>
-        <h1>MSI</h1>
-        {gigabyteProduct.map(pro => (
-            <div>
-                {pro.name}
-                <div><img src={pro.image[0]} width="10%" alt="image"/></div>
-            </div>
-        ))}
-        </div>
+        <div className='item-asus'>
+        {gigabyteProduct.map((p) => (
+             <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
+           ))}
+           </div>
     );
 }
 export default GIGABYTE;

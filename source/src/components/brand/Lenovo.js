@@ -1,14 +1,11 @@
-function Lenovo({lenovoProduct}){
+import ProductItem from "../ProductItem";
+function Lenovo({lenovoProduct,addCart,getDetails}){
     return(
-        <div>
-        <h1>LENOVO</h1>
-        {lenovoProduct.map(pro => (
-            <div>
-                {pro.name}
-                <div><img src={pro.image[0]} width="10%" alt="image"/></div>
-            </div>
-        ))}
-        </div>
+        <div className='item-asus'>
+        {lenovoProduct.map((p) => (
+             <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
+           ))}
+           </div>
     );
 }
 export default Lenovo;

@@ -1,14 +1,11 @@
-function DELL({dellProduct}){
+import ProductItem from "../ProductItem";
+function DELL({dellProduct,addCart,getDetails}){
     return(
-        <div>
-        <h1>DELL</h1>
-        {dellProduct.map(del => (
-            <div>
-                {del.name}
-                <div><img src={del.image[0]} width="10%" alt="image"/></div>
-            </div>
-        ))}
-        </div>
+        <div className='item-asus'>
+        {dellProduct.map((p) => (
+             <ProductItem key={p.id} laptop={p} addCart={addCart} getDetails={getDetails}/>
+           ))}
+           </div>
     );
 }
 export default DELL;

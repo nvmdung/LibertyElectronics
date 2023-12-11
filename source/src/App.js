@@ -28,6 +28,11 @@ import CardASUS from './components/Asusstyle/CardAsus.js';
 import MsiCard from './components/MsiStyle/CardMsi.js';
 import Gaminglaptop from './components/Gaminglaptop.js';
 import Officelaptop from './components/Office.js';
+import DELLCard from './components/Dellstyle/CardDELL.js';
+import GIGABYEcarD from './components/GIGABYTESTYE/gigabyte.js';
+import Lenovocard from './components/Lenovostyle/Cardlenovo.js';
+import HP from './components/brand/HP.js';
+import HPcard from './components/HPstyle/hpstyle.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -45,6 +50,7 @@ function App() {
   const [msiProduct, setMsiProduct] = useState([]);
   const [gigabyteProduct, setGigabyteProduct] = useState([]);
   const [lenovoProduct, setLenovoProduct] = useState([]);
+  const [HpProduct, setHpProduct] = useState([]);
   const [laptopDetails, setLaptopDetails] = useState(null);
   const [sortOrder, setSortOrder] = useState('asc');
   const [carts, setCarts] = useState([]);
@@ -60,6 +66,7 @@ function App() {
       const productdata3 = data;
       const productdata4 = data;
       const productdata5 = data;
+      const productdata6 = data;
       setLaptops(data);
       setFilerLaptops(data);
       setAsusProduct(productdata1.filter(p => p.brand == "Asus").slice(0,25));
@@ -67,6 +74,7 @@ function App() {
       setMsiProduct(productdata3.filter(p => p.brand == "MSI").slice(0,25)); 
       setGigabyteProduct(productdata4.filter(p => p.brand == "GIGABYE").slice(0,25)); 
       setLenovoProduct(productdata5.filter(p => p.brand == "Lenovo").slice(0,25)); 
+      setHpProduct(productdata6.filter(p => p.brand == "HP").slice(0,25)); 
     })
     .catch(error=>console.log('error reading json',error));
   },[]);
@@ -132,24 +140,6 @@ function App() {
       // setErrorlogin("Wrong password or pass");
     }
   }
-
-
-  // const handleEdit = (newLaptop) => {
-  //   console.log(newLaptop);
-  //   const index = laptops.findIndex((d) => d.id == newLaptop.id);
-  //   if(!newLaptop.name){
-  //     alert("Name is required");
-  //   }else{
-  //     laptops[index] = newLaptop;
-  //   }
-  // }
-
-  // const handleSearch = (value) => {
-  //   setValue(value);
-  //   const filterLaptops = laptops.filter(d => d.name.includes(value))
-  //   setFilerLaptops(filterLaptops);
-  // }
-
   const getDetails = (pro) => {
     setLaptopDetails(pro);
   }
@@ -276,7 +266,7 @@ function App() {
        </div>
      <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
      <div className='container-satan'>
-     <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
+     <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/><WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
          </div>   
      </div>
      </div>) : (<Navigate to="/login"/>)}/>
@@ -287,20 +277,60 @@ function App() {
      
      
       <Route path='/asus' element={
+        
 
         <div className='asus-container1'>
+          <Button/>
           
-            <AsusVideo/> <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
+          <Button/>   <AsusVideo/> <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
+           
           
       </div>}/>
       <Route path='/msi' element={
-        <div>
-          <MsiCard/>
-      <Msi msiProduct={msiProduct}/>
+        <div className='msi-container1'>
+          
+          <Button/>
+          
+          <Button/>      <MsiCard/><Msi msiProduct={msiProduct} addCart={addCart} getDetails={getDetails}/>
       </div>}/>
-        <Route path='/dell' element={<DELL dellProduct={dellProduct}/>}/>
-        <Route path='/gigabyte' element={<GIGABYTE gigabyteProduct={gigabyteProduct}/>}/>
-        <Route path='/lenovo' element={<Lenovo lenovoProduct={lenovoProduct}/>}/>
+        <Route path='/dell' element=
+        {
+          <div className='dell-container1'>
+              <Button/>
+          
+          <Button/> 
+            <DELLCard/>
+        <DELL dellProduct={dellProduct} addCart={addCart} getDetails={getDetails} />
+        </div>
+        }/>
+        <Route path='/gigabyte' element={
+          <div className='gigabyte-container1'>
+               <Button/>
+          
+          <Button/> 
+          <GIGABYEcarD/>
+       
+        <GIGABYTE gigabyteProduct={gigabyteProduct} addCart={addCart} getDetails={getDetails}/>
+        </div>
+        }/>
+        <Route path='/lenovo' element={
+          <div className='lenovo-container1'>
+              <Button/>
+          
+          <Button/> 
+            <Lenovocard/>
+        <Lenovo lenovoProduct={lenovoProduct} addCart={addCart} getDetails={getDetails}/>
+        </div>
+        }/>
+            <Route path='/hp' element={
+          <div className='hp-container1'>
+              <Button/>
+          
+          <Button/> 
+           <HPcard/>
+        <HP HpProduct={HpProduct} addCart={addCart} getDetails={getDetails}/>
+        </div>
+        }/>
         <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
         <Route path="/login" element={<>
                             <Login  setShowModal={setShowModal} errorlogin="Error message" />

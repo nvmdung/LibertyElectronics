@@ -33,6 +33,7 @@
         "cpuchip":"AMD Ryzen™ 7 7735HS Mobile Processor (8-core/16-thread, 16MB L3 cache, up to 4.7 GHz max boost)",
         "chip":"AMD Ryzen™ 7 7735HS",
         "pin":"90WHrs, 4S1P, 4-cell Li-ion",
+        "discount": "25",
         "screensize":"15.6 inch FHD (1920 x 1080) 16:9 IPS, 144Hz, Wide View, 250nits, Narrow Bezel, Non-Glare with 72% NTSC, 100% sRGB, G-Sync",
         "harddisksize":"512GB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
         "warranty": "2YEAR",
