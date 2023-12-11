@@ -26,6 +26,8 @@ import Footer from './components/Footer.js';
 import Register from './components/Register.js';
 import CardASUS from './components/Asusstyle/CardAsus.js';
 import MsiCard from './components/MsiStyle/CardMsi.js';
+import Gaminglaptop from './components/Gaminglaptop.js';
+import Officelaptop from './components/Office.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -227,8 +229,25 @@ function App() {
                 avatarLaptopsMSI={avatarLaptopsMSI}
                 laptops={filterLaptops} addCart={addCart}
               /> 
-        
       }/>
+       <Route path="/gaming" element={          
+          <Gaminglaptop avatarLaptopsAsus={avatarLaptopsAsus}
+                avatarLaptopsLenovo={avatarLaptopsLenovo}
+                avatarLaptopsGigabyte={avatarLaptopsGigabyte}
+                avatarLaptopsHP={avatarLaptopsHP}
+                avatarLaptopsMSI={avatarLaptopsMSI}
+                laptops={filterLaptops} addCart={addCart}
+                getDetails={getDetails}
+             />}/>
+      <Route path="/office" element={          
+          <Officelaptop avatarLaptopsAsus={avatarLaptopsAsus}
+                avatarLaptopsLenovo={avatarLaptopsLenovo}
+                avatarLaptopsGigabyte={avatarLaptopsGigabyte}
+                avatarLaptopsHP={avatarLaptopsHP}
+                avatarLaptopsMSI={avatarLaptopsMSI}
+                laptops={filterLaptops} addCart={addCart}
+                getDetails={getDetails}
+             />}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
        

@@ -6,26 +6,31 @@ const BrandLogos = () => {
   return (
     <div className="brand-logos-container">
       <div className="brand-logos">
+        <div className='boxlogo'>
         <Link to="/asus" className="brand-logo">
-          <img src="./image/logo/Asuslogo.png"  alt="Asus Logo" className="brand-logo-image" />
+          <img src="./image/logo/Asuslogo.png" width="150px" height="75px" alt="Asus Logo" className="brand-logo-image" />
           <span className="brand-logo-text"></span>
-        </Link>
+        </Link></div>
+        <div className='boxlogo'>
         <Link to="/msi" className="brand-logo">
-          <img src="./image/logo/Msilogo.png" alt="MSI Logo" className="brand-logo-image" />
+          <img src="./image/logo/Msilogo.png" width="150px" height="75px" alt="MSI Logo" className="brand-logo-image" />
           <span className="brand-logo-text"></span>
-        </Link>
+        </Link></div>
+        <div className='boxlogo'>
         <Link to="/lenovo" className="brand-logo">
-          <img src="./image/logo/Lenovologo.png" alt="MSI Logo" className="brand-logo-image" />
+          <img src="./image/logo/Lenovologo.png" width="200px" height="75px" alt="MSI Logo" className="brand-logo-image" />
           <span className="brand-logo-text"></span>
-        </Link>
+        </Link></div>
+        <div className='boxlogo'>
         <Link to="/hp" className="brand-logo">
-          <img src="./image/logo/HPlogo.png" alt="MSI Logo" className="brand-logo-image" />
+          <img src="./image/logo/HPlogo.png"width="150px" height="75px" alt="MSI Logo" className="brand-logo-image" />
           <span className="brand-logo-text"></span>
-        </Link>
+        </Link></div>
+        <div className='boxlogo'>
         <Link to="/dell" className="brand-logo">
-          <img src="./image/logo/Delllogo.png" alt="MSI Logo" className="brand-logo-image" />
+          <img src="./image/logo/Delllogo.png" width="150px" height="75px" alt="MSI Logo" className="brand-logo-image" />
           <span className="brand-logo-text"></span>
-        </Link>
+        </Link></div>
         
       </div>
     </div>

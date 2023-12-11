@@ -10,7 +10,7 @@ const Images = () => {
       alt: "Image 1",
       text: "Office Laptop",
       isHovered: false,
-      link:"/asus",
+      link:"/office",
     },
     {
       id: 2,
@@ -18,6 +18,7 @@ const Images = () => {
       alt: "Image 2",
       text: "Laptop Gaming",
       isHovered: false,
+      link:"/gaming",
     },
     {
       id: 3,
@@ -25,6 +26,7 @@ const Images = () => {
       alt: "Image 3",
       text: "Best Seller",
       isHovered: false,
+      link:"/office",
     },
     {
       id: 4,
@@ -32,6 +34,7 @@ const Images = () => {
       alt: "Image 4",
       text: "Description 4",
       isHovered: false,
+      link:"/office", 
     },
   ]);
 

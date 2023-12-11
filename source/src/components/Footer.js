@@ -9,6 +9,7 @@ function Footer() {
         window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
     };
     return (
+        <div className='foot'>
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-content">
@@ -38,9 +39,11 @@ function Footer() {
                 </div>
                 <div className="footer-bottom">
                     <p>&copy; 2023 Elecrtronic. All rights reserved.</p>
+                    
                 </div>
             </div>
         </footer>
+        </div>
     );
 }
 

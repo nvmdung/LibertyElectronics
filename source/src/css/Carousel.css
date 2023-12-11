@@ -1,5 +1,6 @@
 .imageCarousel-container img {
   width: 100%;
+  padding-top: 2.5%;
   height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
 }
 .slider-container {

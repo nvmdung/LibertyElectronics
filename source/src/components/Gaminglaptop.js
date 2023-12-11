@@ -1,25 +1,11 @@
-
-import CarouselHome from "./Carousel";
-import Images from "./Fourboxhome";
-import { Link } from "react-router-dom";
-import BrandLogos from "./BrandLogo";
-
 import Item from "./Item";
 import '../css/Home.css'
-function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLaptopsLenovo,avatarLaptopsMSI,addCart,getDetails}){
+function Gaminglaptop({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLaptopsLenovo,avatarLaptopsMSI,addCart,getDetails}){ 
     return(
-        <>
-     <CarouselHome/>
-      <Images/>
-      <Link to="/product"><div className="showproduct">Show all Products</div></Link>
-      <BrandLogos/>
-
-      <div className="Brandhome">Some Special Laptop</div>
-      
-           
-            <div className="containerlaptophome">
+        <div>
+<div className="containerlaptophome">
                {
-                    avatarLaptopsAsus.slice(1,2).map(a => (
+                    avatarLaptopsAsus.slice(2,3).map(a => (
                         <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
                     )) 
                 }
@@ -50,8 +36,9 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
                 }
                 </div>
             
-                
-                    
-    </>
+
+
+
+        </div>
     )
-}export default Home;
+}export default Gaminglaptop;
