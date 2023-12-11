@@ -249,19 +249,15 @@ function App() {
          <Search onSearch={handleSearch}/>
          <div className='container-sort'>
        <div className='sort'>
-         <button className='btn-sort'>Sort</button>
-         <div className='sort-content'>
        <button className='sort-price' onClick={handleSortByPrice}>
      Sort by Price {sortOrder === 'asc' ? '↑' : '↓'}
    </button>
-   <button onClick={() => handleSortByBrand('Asus')}>Asus</button>
-   <button onClick={() => handleSortByBrand('DELL')}>DELL</button>
-   <button onClick={() => handleSortByBrand('GIGABYE')}>GIGABYE</button>
-   <button onClick={() => handleSortByBrand('Lenovo')}>LENOVO</button>
-   <button onClick={() => handleSortByBrand('HP')}>HP</button>
-   <button onClick={() => handleSortByBrand('MSI')}>MSI</button>
-       <button className='sort-name' onClick={handleSort}>Sort By Name</button>
-       </div>
+   <button className='sort-price' onClick={() => handleSortByBrand('Asus')}>Asus</button>
+   <button className='sort-price' onClick={() => handleSortByBrand('DELL')}>DELL</button>
+   <button className='sort-price' onClick={() => handleSortByBrand('GIGABYE')}>GIGABYE</button>
+   <button className='sort-price' onClick={() => handleSortByBrand('Lenovo')}>LENOVO</button>
+   <button className='sort-price' onClick={() => handleSortByBrand('HP')}>HP</button>
+   <button className='sort-price' onClick={() => handleSortByBrand('MSI')}>MSI</button>
        </div>
        </div>
      <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
