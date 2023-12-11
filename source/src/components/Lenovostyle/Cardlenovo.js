@@ -2,32 +2,40 @@ import './lenovo.css'
 function Lenovocard () {
     return (
       <div className='body'>
-        <div className='card-gigabyte'>
-          <div className='content'>
-        <h2>jet</h2>
-        <p>        
-  You want the game to be super smooth?<br/>
-  Why not try your hand at laptops from Asus?<br/>
-  Let go <br/>
-  
-        </p>
-        <a href='#'>Read More</a>
-        </div>
-        <img src='../imagestyle/Franky.png'  alt='image1'/>
-        </div>
-        <div className='card-gigabyte'>
-          <div className='content'>
-        <h2>jet</h2>
-        <p>        
-  You want the game to be super smooth?<br/>
-  Why not try your hand at laptops from Asus?<br/>
-  Let go <br/>
-  
-        </p>
-        <a href='#'>Read More</a>
-        </div>
-        <img src='../imagestyle/Brook.png' alt='image1'/>
-        </div>
+        <div className='card-lenovo'>
+        <div className='content'>
+      <h2>Main</h2>
+      <p>        
+      Every aspect of ProArt Series <br/>
+      motherboards is designed to  <br/>
+      remove barriers and deliver <br/>
+      optimal performance for <br/>
+      content creators <br/>
+      working on modeling and  <br/>
+      rendering tasks <br/>
+
+      </p>
+      <a href='#'>Read More</a>
+      </div>
+      <img src='../imagestyle/asus.webp'  alt='image1'/>
+      </div>
+      <div className='card-lenovo'>
+        <div className='content'>
+      <h2>Card</h2>
+      <p>        
+      Leveraging advanced <br/>
+      thermal technology <br/>
+      derived from top-quality graphics cards <br/>
+      , the ASUS Dual series<br/>
+      delivers the most modern <br/>
+      experiences in its original <br/>
+      form factor...<br/>
+
+      </p>
+      <a href='#'>Read More</a>
+      </div>
+      <img src='../imagestyle/cardasus.webp' alt='image1'/>
+      </div>
         
       </div>
     );

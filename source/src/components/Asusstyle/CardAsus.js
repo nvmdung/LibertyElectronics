@@ -9,9 +9,13 @@ function CardASUS () {
         <div className='content'>
       <h2>Main</h2>
       <p>        
-You want the game to be super smooth?<br/>
-Why not try your hand at laptops from Asus?<br/>
-Let go <br/>
+      Every aspect of ProArt Series <br/>
+      motherboards is designed to  <br/>
+      remove barriers and deliver <br/>
+      optimal performance for <br/>
+      content creators <br/>
+      working on modeling and  <br/>
+      rendering tasks <br/>
 
       </p>
       <a href='#'>Read More</a>
@@ -20,16 +24,20 @@ Let go <br/>
       </div>
       <div className='cardasus'>
         <div className='content'>
-      <h2>jet</h2>
+      <h2>Card</h2>
       <p>        
-You want the game to be super smooth?<br/>
-Why not try your hand at laptops from Asus?<br/>
-Let go <br/>
+      Leveraging advanced <br/>
+      thermal technology <br/>
+      derived from top-quality graphics cards <br/>
+      , the ASUS Dual series<br/>
+      delivers the most modern <br/>
+      experiences in its original <br/>
+      form factor...<br/>
 
       </p>
       <a href='#'>Read More</a>
       </div>
-      <img src='../image/asus/asus14duo/0.png' alt='image1'/>
+      <img src='../imagestyle/cardasus.webp' alt='image1'/>
       </div>
       
     </div>

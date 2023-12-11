@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sars-serif;
+  }
+.body{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 100vh;
+    max-width: 100%;
+}
+.card-lenovo{
+    margin: 200px;
+    margin-bottom: 0;
+    margin-top: 210px;
+    position: relative;
+    width: 600px;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#f8c718, #8c30e2);
+}
+.card-lenovo img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+.card-lenovo:hover img{
+    left: 80%;
+    height: 450px;
+}
+.card-lenovo .content{
+    position: relative;
+    width: 80%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card-lenovo:hover .content{
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+.card-lenovo .content h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 1.5em;
+}
+.card-lenovo .content p{
+    color: white;
+    padding-left: 2px;
+}
+.card-lenovo .content a{
+    position: relative;
+    display: inline-block;
+    background: white;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+.card-lenovo .content a:hover {
+    background-color: #03cad8;
+    color: white;
+}
+@media (max-witdh: 756px){
+    .card-lenovo {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        transition: 0.5s;
+        align-items: flex-start;
+    }
+    .card-lenovo:hover{
+        height: 600px;
+    }
+    .card-lenovo:hover img{
+        left: 50%;
+        height: 300px;
+    }
+    .card-lenovo .content{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+    .card-lenovo .content h2{
+        font-size: 2rem;
+    }
+    .card-lenovo .content p {
+        font-size: 0.9rem;
+    }
+}
+.video-asus{
+    text-align: center;
+    margin-top: 60px;
+}
