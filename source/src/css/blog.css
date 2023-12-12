@@ -1,0 +1,28 @@
+.Blog_container {
+    text-align: center;
+  }
+  
+  .peach_content {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .peach_content .blog_item img {
+    border-radius: 30px;
+  }
+  .peach_overlay {
+    background-color: #feeff3;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .peach_overlay > h4 {
+    font-weight: bold;
+    text-align: center;
+  }
+  .sub_title{
+    color: brown;
+  }
+
