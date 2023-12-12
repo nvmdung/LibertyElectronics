@@ -11,12 +11,15 @@
   width: 1000px;
   height: 100px;
   margin:30px;
-  border:1px solid ;
+  
   text-align: center;
+}
+.boxlogo img{
+padding-top: 10%;
+margin-bottom: 10%;
 }
 .brand-logos {
   width: 100%;
-  
   margin-left:10% ;
   margin-right: 10%;
   display: flex;

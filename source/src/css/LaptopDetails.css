@@ -1,4 +1,28 @@
-.productDetails{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
+.panel-info {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    margin-bottom: 5px;
+  }
+  
+  .col-xs-4 {
+   display: grid;
+   grid-template-columns: 50% 50%;
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+    .col-xs-4 {
+      text-align: left;
+    }
+  }     

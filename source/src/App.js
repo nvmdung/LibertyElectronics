@@ -218,6 +218,7 @@ function App() {
                 avatarLaptopsHP={avatarLaptopsHP}
                 avatarLaptopsMSI={avatarLaptopsMSI}
                 laptops={filterLaptops} addCart={addCart}
+                getDetails={getDetails}
               /> 
       }/>
        <Route path="/gaming" element={          
