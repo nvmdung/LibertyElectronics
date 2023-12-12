@@ -18,11 +18,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
       
            
             <div className="containerlaptophome">
-               {
-                    avatarLaptopsAsus.slice(1,2).map(a => (
-                        <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
-                    )) 
-                }
+             
                  {
                     avatarLaptopsLenovo.slice(1,2).map(a => (
                         <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
@@ -35,11 +31,6 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
                 }
                  {
                     avatarLaptopsMSI.slice(1,2).map(a => (
-                        <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
-                    )) 
-                }
-                 {
-                    avatarLaptopsHP.slice(2,3).map(a => (
                         <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
                     )) 
                 }
