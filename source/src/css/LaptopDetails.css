@@ -1,24 +1,33 @@
 .image-gallery-container {
   display: grid;
 padding-top: 4%;
-
-
+padding-left: 5%;
 }
-.large-image {
-  width: 300px;
-  height: 300px;
-  border: 1px solid #ccc;
 
+.gridimagebrand{
+  display: grid;
+  grid-template-columns:40% 60%;
+}
+
+.detailnamelaptop{
+  font-size: 40px;
+  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.large-image {
+  width: 330px;
+  height: 330px;
  float: left;
 }
-  .large-detailimg{
+
+.large-detailimg{
 width: 100%;
-  }
+}
 
 .small-images {
   display: flex;
   width: 100%;
-
 }
 
 .small-image {
@@ -28,47 +37,224 @@ width: 100%;
   margin: 5px;
 }
 
-
-
 .selected-image {
 width: 100%;
   object-fit: cover;
 }
 
-
-
 .laptopDetails{
     padding-top: 4%;
 }
-.panel-info {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
+
+  .h3laptopdetail {
     font-size: 1.2em;
     margin-bottom: 10px;
   }
   
   .row {
-    margin-bottom: 5px;
-
+    margin-bottom: 5px
   }
   
   .col-xs-4 {
    display: grid;
    grid-template-columns: 30% 70%;
    border: 1px solid rgba(0, 0, 0, 0.295);
+   margin-left: 5%; 
+   margin-right: 5%;
   }
   
   .col-xs-8 {
     padding-left: 5px;
     display: grid;
-       border: 1px solid rgba(0, 0, 0, 0.295);  
+       border: 1px solid rgba(0, 0, 0, 0.295);
+
+       margin-right: 5%;
   }
   
+  .laptopdetailprice {
+    font-size: 15px;
+    color: rgb(249, 19, 19)  ;
+    flex-direction: column;
+    text-align: left;
+    font-size: 28px;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000; 
+  }
+
+.laptopdetailprice .originallaptopdetailprice {
+  text-shadow: -0.01px -0.01px 0 #000, 0.01px -0.01px 0 #000, -0.01px 0.01px 0 #000, 0.01px 0.01px 0 #000; 
+   color:#555;
+    font-size: 22px;
+    text-decoration:line-through;
+}
+
+.addcartdetail{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+  .buttondetaillaptop {
+        display: grid;
+      --width: 163px;
+      --height: 48px;
+      --tooltip-height: 35px;
+      --tooltip-width: 90px;
+      --gap-between-tooltip-to-button: 18px;
+      --button-color: #222;
+      --tooltip-color: #fff;
+      width: var(--width);
+      height: var(--height);
+      background: var(--button-color);
+      position: relative;
+      text-align: center;
+      font-family: "Arial";
+      transition:  0.7s;
+      cursor: pointer;
+    }
+    
+    .buttondetaillaptop::before {
+      position: absolute;
+      content: attr(data-tooltip);
+      width: var(--tooltip-width);
+      height: var(--tooltip-height);
+      background-color: #555;
+      font-size: 0.9rem;
+      color: #fff;
+      line-height: var(--tooltip-height);
+      bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+      left: calc(50% - var(--tooltip-width) / 2);
+    }
+    
+    .buttondetaillaptop::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top-color: #555;
+      left: calc(50% - 10px);
+      bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+    }
+    
+    .buttondetaillaptop::after,
+    .buttondetaillaptop::before {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s;
+    }
+    
+    .textdetaillaptop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      
+      
+    }
+    
+    .buttondetaillaptop-wrapper,
+    .textdetaillaptop,
+    .icondetaillaptop {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      color: #fff;
+    }
+    
+    .textdetaillaptop {
+      top: 0;
+    }
+    
+    .textdetaillaptop,
+    .icondetaillaptop {
+      transition: top 0.5s;
+    }
+    
+    .icondetaillaptop {
+      color: #fff;
+      top: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .icondetaillaptop svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .buttondetaillaptop:hover {
+      background: #e10404;
+    }
+    
+    .buttondetaillaptop:hover .textdetaillaptop {
+      top: -100%;
+    }
+    
+    .buttondetaillaptop:hover .icondetaillaptop {
+      top: 0;
+    }
+    
+    .buttondetaillaptop:hover:before,
+    .buttondetaillaptop:hover:after {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .buttondetaillaptop:hover:after {
+      bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+    }
+    
+    .buttondetaillaptop:hover:before {
+      bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+    }
+    .purchase-info{
+      margin: 1.5rem 0;
+  }
+  .purchase-info input,
+  .purchase-info .btn{
+      border: 1.5px solid #ddd;
+      border-radius: 25px;
+      text-align: center;
+      padding: 0.45rem 0.8rem;
+      outline: 0;
+      margin-right: 0.2rem;
+      margin-bottom: 1rem;
+  }
+  .purchase-info input{
+      width: 60px;
+  }
+  .purchase-info .btn{
+      cursor: pointer;
+      color: #fff;
+  }
+  .purchase-info .btn:first-of-type{
+      background: #256eff;
+  }
+  .purchase-info .btn:last-of-type{
+      background: #f64749;
+  }
+  .purchase-info .btn:hover{
+      opacity: 0.9;
+  }
+
+  .product-detail-order ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail-order ul li{
+    margin: 0;
+    list-style: none;
+    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail-order ul li span{
+    font-weight: 400;
+}
   @media (min-width: 768px) {
     .col-xs-4 {
       text-align: left;
