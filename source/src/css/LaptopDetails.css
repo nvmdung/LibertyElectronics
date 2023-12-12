@@ -1,3 +1,45 @@
+.image-gallery-container {
+  display: grid;
+padding-top: 4%;
+
+
+}
+.large-image {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+
+ float: left;
+}
+  .large-detailimg{
+width: 100%;
+  }
+
+.small-images {
+  display: flex;
+  width: 100%;
+
+}
+
+.small-image {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+
+
+.selected-image {
+width: 100%;
+  object-fit: cover;
+}
+
+
+
+.laptopDetails{
+    padding-top: 4%;
+}
 .panel-info {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -12,14 +54,20 @@
   
   .row {
     margin-bottom: 5px;
+
   }
   
   .col-xs-4 {
    display: grid;
-   grid-template-columns: 50% 50%;
+   grid-template-columns: 30% 70%;
+   border: 1px solid rgba(0, 0, 0, 0.295);
   }
   
-  
+  .col-xs-8 {
+    padding-left: 5px;
+    display: grid;
+       border: 1px solid rgba(0, 0, 0, 0.295);  
+  }
   
   @media (min-width: 768px) {
     .col-xs-4 {
