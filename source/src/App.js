@@ -33,17 +33,6 @@ import GIGABYEcarD from './components/GIGABYTESTYE/gigabyte.js';
 import Lenovocard from './components/Lenovostyle/Cardlenovo.js';
 import HP from './components/brand/HP.js';
 import HPcard from './components/HPstyle/hpstyle.js';
-import Contact from './components/Contact';
-import Blog from './components/Blog';
-import BlogDetailsMSI from './components/BlogDetailsMSI';
-import BlogDetailsGIGABYTE from './components/BlogDetailsGIGABYTE';
-import BlogDetailsDELL from './components/BlogDetailsDELL';
-import BlogDetailsHP from './components/BlogDetailsHP';
-import BlogDetailsLENOVO from './components/BlogDetailsLENOVO';
-import BlogDetailsASUS from './components/BlogDetailsASUS';
-import NotFound from './components/NotFound';
-import About from './components/About';
-import "./App.css";
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
