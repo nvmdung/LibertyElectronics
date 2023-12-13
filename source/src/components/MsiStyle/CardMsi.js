@@ -37,7 +37,7 @@ function MsiCard () {
       </p>
       <a href='#'>Read More</a>
       </div>
-      <img src='../imagestyle/cardasus.webp' alt='image1'/>
+      <img src='../imagestyle/msi.png' alt='image1'/>
       </div>
       
     </div>
