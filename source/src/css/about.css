@@ -1,0 +1,99 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+.h33{
+    color: aliceblue;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px 20px;
+    /* border-radius: 5px; */
+    
+  }
+  .about-section {
+    padding: 20px;
+  }
+.container{
+  width: 100%;
+}  
+.about_content{
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+} 
+  .container .about_item img{
+    border-radius: 30px;
+  }
+  .about_overlay{
+   
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .image-container {
+    
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border-radius: 4px; */
+    width: 100%;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Định nghĩa văn bản trên biểu ngữ */
+  .text {
+    /* Đặt màu văn bản */
+    color: black;
+    /* Đặt phông chữ cho văn bản */
+    font-family: sans-serif;
+    /* Đặt kích thước phông chữ cho văn bản */
+    font-size: 24px;
+    /* Đặt vị trí văn bản ở trung tâm của biểu ngữ */
+    text-align: center;
+  }
+  
+  .container .about_item .but{
+    display: grid;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1.2px;
+    font:message-box;
+    
+    /* text-transform: uppercase; */
+    
+    text-transform: none;    
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    
+  }
+  .img{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
