@@ -33,6 +33,15 @@ import GIGABYEcarD from './components/GIGABYTESTYE/gigabyte.js';
 import Lenovocard from './components/Lenovostyle/Cardlenovo.js';
 import HP from './components/brand/HP.js';
 import HPcard from './components/HPstyle/hpstyle.js';
+import Contact from './components/Contact';
+import Blog from './components/Blog';
+import BlogDetailsMSI from './components/BlogDetailsMSI';
+import BlogDetailsGIGABYTE from './components/BlogDetailsGIGABYTE';
+import BlogDetailsDELL from './components/BlogDetailsDELL';
+import BlogDetailsHP from './components/BlogDetailsHP';
+import BlogDetailsLENOVO from './components/BlogDetailsLENOVO';
+import BlogDetailsASUS from './components/BlogDetailsASUS';
+import About from './components/About';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -55,6 +64,8 @@ function App() {
   const [sortOrder, setSortOrder] = useState('asc');
   const [carts, setCarts] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
+  const [input, setInput] = useState({});
+  const [errors, setErrors] = useState({});
 
   
   useEffect(()=>{
@@ -197,6 +208,34 @@ function App() {
       setFilerLaptops(filteredProducts);
       setSelectedBrands(updatedSelectedBrands);
     };    }
+
+    const validate = () => {
+      let isValid = true;
+      let newErrors = {};
+  
+      if (!input['username']) {
+        isValid = false;
+        newErrors['username'] = 'Please enter your username.';
+      } else if (input['username'].length < 6) {
+        isValid = false;
+        newErrors['username'] = 'Username must be at least 6 characters long.';
+      }
+  
+      if (!input['email']) {
+        isValid = false;
+        newErrors['email'] = 'Please enter your email address.';
+      } else {
+        // Simple email format validation using a regular expression
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(input['email'])) {
+          isValid = false;
+          newErrors['email'] = 'Please enter a valid email address.';
+        }
+      }
+    
+      setErrors(newErrors);
+      return isValid;
+    };
   
   
   return (   
@@ -337,7 +376,15 @@ function App() {
                                 </div>
                             )}
                         </>}/>
-                        
+                        <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blog />}/>
+        <Route path="/blogs/msi" element={<BlogDetailsMSI />}/>
+        <Route path="/blogs/gigabyte" element={<BlogDetailsGIGABYTE />}/>
+        <Route path="/blogs/lenovo" element={<BlogDetailsLENOVO />}/>
+        <Route path="/blogs/dell" element={<BlogDetailsDELL />}/>
+        <Route path="/blogs/hp" element={<BlogDetailsHP />}/>
+        <Route path="/blogs/asus" element={<BlogDetailsASUS />}/>
+        <Route path="/about" element={<About/>}/>                  
       </Routes>
       <footer><Footer/></footer>
     </div>

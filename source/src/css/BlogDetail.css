@@ -1,0 +1,40 @@
+/* .BlogDetail_container{
+  text-align: center;
+  display: flex;
+  justify-content: center; /* căn giữa theo chiều ngang */
+  /* align-items: center; */
+  */
+  .a{
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+  }
+  /* .peach_overlay{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .blog_item{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  } */
+  .Blog_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .blogdetail_overlay {
+    background-color: #feeff3;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+  }
+  
+  .blog_text {
+    text-align: center;
+  }
