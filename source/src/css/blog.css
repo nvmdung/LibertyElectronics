@@ -23,10 +23,14 @@
     text-align: center;
   }
   .sub_title{
-    color: brown;
+    color: white;
+    
   }
   .blog_item{
     text-align: center;
     justify-content: center;
+  }
+  img{
+    position: absolute;
   }
 

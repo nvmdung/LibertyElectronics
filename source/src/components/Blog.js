@@ -31,6 +31,7 @@ function Blog() {
   return (
     <>
       <div class="Blog_container">
+      <img className="image" src="./img/4K.png" alt="laptop1" width="1500px" height="500px"></img>
         <div class="section_head">
           <h1 class="sub_title">Our Blog</h1>
         </div>

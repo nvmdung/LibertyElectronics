@@ -376,6 +376,7 @@ function App() {
                                 </div>
                             )}
                         </>}/>
+                        
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blog />}/>
         <Route path="/blogs/msi" element={<BlogDetailsMSI />}/>
