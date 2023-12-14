@@ -33,11 +33,6 @@ import GIGABYEcarD from './components/GIGABYTESTYE/gigabyte.js';
 import Lenovocard from './components/Lenovostyle/Cardlenovo.js';
 import HP from './components/brand/HP.js';
 import HPcard from './components/HPstyle/hpstyle.js';
-import LenovoVideo from './components/Lenovostyle/Lenovovideo.js';
-import MsiVideo from './components/MsiStyle/Msivideo.js';
-import GigabyteVideo from './components/GIGABYTESTYE/gigabytevideo.js';
-import DellVideo from './components/Dellstyle/Dellvideo.js';
-import HpVideo from './components/HPstyle/HPvideo.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -293,7 +288,7 @@ function App() {
           
           <Button/>
           
-          <Button/>  <MsiVideo/>    <MsiCard/><Msi msiProduct={msiProduct} addCart={addCart} getDetails={getDetails}/>
+          <Button/>      <MsiCard/><Msi msiProduct={msiProduct} addCart={addCart} getDetails={getDetails}/>
       </div>}/>
         <Route path='/dell' element=
         {
@@ -301,7 +296,6 @@ function App() {
               <Button/>
           
           <Button/> 
-          <DellVideo/>
             <DELLCard/>
         <DELL dellProduct={dellProduct} addCart={addCart} getDetails={getDetails} />
         </div>
@@ -311,9 +305,7 @@ function App() {
                <Button/>
           
           <Button/> 
-          <GigabyteVideo/>
           <GIGABYEcarD/>
-         
        
         <GIGABYTE gigabyteProduct={gigabyteProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
@@ -323,7 +315,6 @@ function App() {
               <Button/>
           
           <Button/> 
-          <LenovoVideo/>
             <Lenovocard/>
         <Lenovo lenovoProduct={lenovoProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
@@ -333,7 +324,6 @@ function App() {
               <Button/>
           
           <Button/> 
-          <HpVideo/>
            <HPcard/>
         <HP HpProduct={HpProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
