@@ -20,7 +20,8 @@
             "./image/asus/asusflip/2.png",
             "./image/asus/asusflip/3.png",
             "./image/asus/asusflip/4.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":2,
@@ -43,8 +44,8 @@
             "./image/asus/asustuf/2.png",
             "./image/asus/asustuf/3.png",
             "./image/asus/asustuf/4.png"
-        ]
-        
+        ],
+        "type":"gaming"
     },
     {
         "id":3,
@@ -68,7 +69,8 @@
         "./image/asus/asus14duo/2.png",
         "./image/asus/asus14duo/3.png",
         "./image/asus/asus14duo/4.png"
-    ]
+    ],
+    "type":"ofice"
     },
     {
     "id":4,
@@ -91,7 +93,8 @@
         "./image/asus/asus14xoled/2.png",
         "./image/asus/asus14xoled/3.png",
         "./image/asus/asus14xoled/4.png"
-    ]
+    ],
+    "type":"ofice"
     },
     {
      "id":5,
@@ -114,7 +117,8 @@
         "./image/lenovo/lenovonewest/2.png",
         "./image/lenovo/lenovonewest/3.png",
         "./image/lenovo/lenovonewest/4.png"
-    ]
+    ],
+    "type":"ofice"
     },
     {
       "id":6,
@@ -136,7 +140,8 @@
         "./image/lenovo/lenovoslim7pro/2.png",
         "./image/lenovo/lenovoslim7pro/3.png",
         "./image/lenovo/lenovoslim7pro/4.png"
-    ]
+    ],
+    "type":"ofice"
     },
     {
       "id":7,
@@ -158,7 +163,8 @@
             "./image/lenovo/lenovoslim3/2.png",
             "./image/lenovo/lenovoslim3/3.png",
             "./image/lenovo/lenovoslim3/4.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":8,
@@ -181,7 +187,8 @@
         "./image/lenovo/lenovogen11/2.png",
         "./image/lenovo/lenovogen11/3.png",
         "./image/lenovo/lenovogen11/4.png"
-    ]
+    ],
+    "type":"ofice"
 
     },
     {
@@ -204,7 +211,8 @@
         "./image/lenovo/lenovogaming3/2.png",
         "./image/lenovo/lenovogaming3/3.png",
         "./image/lenovo/lenovogaming3/4.png"
-    ]
+    ],
+    "type":"gaming"
     },
     {
         "id":10,
@@ -225,7 +233,8 @@
         "./image/gigabyte/gigabytea5k1/image2.png",
         "./image/gigabyte/gigabytea5k1/image3.png",
         "./image/gigabyte/gigabytea5k1/image4.png"
-    ]
+    ],
+    "type":"gaming"
     },
     {
         
@@ -247,7 +256,8 @@
     "./image/gigabyte/gigabyteaorus15/image2.png",
     "./image/gigabyte/gigabyteaorus15/image3.png",
     "./image/gigabyte/gigabyteaorus15/image4.png"
-]
+],
+"type":"gaming"
     },
     {
         "id":12,
@@ -268,7 +278,7 @@
         "./image/gigabyte/gigabyteg5kf/image2.png",
         "./image/gigabyte/gigabyteg5kf/image3.png",
         "./image/gigabyte/gigabyteg5kf/image4.png"
-    ]
+    ],"type":"gaming"
     },
     {
         "id":13,
@@ -289,7 +299,8 @@
         "./image/gigabyte/gigabyteg5me/image2.png",
         "./image/gigabyte/gigabyteg5me/image3.png",
         "./image/gigabyte/gigabyteg5me/image4.png"
-    ]
+    ],
+    "type":"gaming"
 
     },
     {
@@ -311,7 +322,8 @@
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image2.png",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image3.png",
         "./image/msi/LaptopgamingMSIKatana15B13VEK252VN/image4.png"
-    ]
+    ],
+    "type":"gaming"
     },
     {
         "id":15,
@@ -332,7 +344,8 @@
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image2.png",
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image3.png",
         "./image/msi/LaptopgamingMSIGF6312UCX841VN/image4.png"
-    ]
+    ],
+    "type":"gaming"
     },
     {
         "id":16,
@@ -353,7 +366,8 @@
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image2.png",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image3.png",
         "./image/msi/LaptopGamingMSIKatana15B13VEK1205VN/image4.png"
-    ]
+    ],
+    "type":"gaming"
     },
     {
         "id":17,
@@ -374,7 +388,8 @@
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image2.png",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image3.png",
         "./image/msi/LaptopgamingMSIKatana15B13VGK1211VN/image4.png"
-    ]
+    ],
+    "type":"gaming"
     },
     {
         "id":18,
@@ -396,7 +411,8 @@
         "./image/hp/hppavilion15eg3112tu8U6L9pa/2.png",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/3.png",
         "./image/hp/hppavilion15eg3112tu8U6L9pa/4.png"
-    ]
+    ],
+    "type":"ofice"
     },
     {
         "id":19,
@@ -418,7 +434,8 @@
         "./image/hp/hppavilion15eg3091tu8C5L2pa/2.png",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/3.png",
         "./image/hp/hppavilion15eg3091tu8C5L2pa/4.png"
-    ]
+    ],
+    "type":"ofice"
     },
     {
         "id":20,
@@ -440,7 +457,8 @@
             "./image/hp/hppavilion15eg3093tu8c5l4pa/2.png",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/3.png",
             "./image/hp/hppavilion15eg3093tu8c5l4pa/4.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":21,
@@ -462,7 +480,8 @@
             "./image/hp/hp240g96l1y2pa/2.png",
             "./image/hp/hp240g96l1y2pa/3.png",
             "./image/hp/hp240g96l1y2pa/4.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":22,
@@ -484,7 +503,8 @@
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU2.png",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU3.png",
             "./image/dell/LaptopDellInspiron153520i3U082W11BLU/DellInspiron153520i3U082W11BLU4.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":23,
@@ -506,7 +526,8 @@
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray2.png",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray3.png",
             "./image/dell/LaptopDellVostro3520V5I3614W1Gray/LaptopDellVostro3520V5I3614W1Gray4.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":24,
@@ -528,7 +549,8 @@
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032642.png",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032643.png",
             "./image/dell/LaptopDellInspiron15352071003264/LaptopDellInspiron153520710032644.png"
-        ]
+        ],
+        "type":"ofice"
     },
     {
         "id":25,
@@ -550,6 +572,7 @@
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black2.png",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black3.png",
             "./image/dell/LaptopDellInspiron153520N5I5122W1Black/LaptopDellInspiron153520N5I5122W1Black4.png"
-        ]
+        ],
+        "type":"ofice"  
     }
 ]

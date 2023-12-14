@@ -1,11 +1,11 @@
 import Item from "./Item";
 import '../css/Home.css'
-function Officelaptop({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLaptopsLenovo,avatarLaptopsMSI,addCart,getDetails}){ 
+function Officelaptop({typeLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLaptopsLenovo,avatarLaptopsMSI,addCart,getDetails}){ 
     return(
         <div>
 <div className="containerlaptophome">
                {
-                    avatarLaptopsAsus.slice(2,3).map(a => (
+                    typeLaptopsAsus.slice(2,3).map(a => (
                         <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
                     )) 
                 }

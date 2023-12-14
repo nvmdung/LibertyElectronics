@@ -15,8 +15,8 @@ function Footer() {
                 <div className="footer-content">
                     <div className="footer-logo">
                         <h1></h1>
-                        <p>We have always been a supplier and distributor</p>
-                        <p>of the world's best electronic components and devices</p>
+                        <p>We have always been a supplier and distributor of the</p>
+                        <p> world's best electronic components and devices</p>
                     </div>
                     <div className="footer-links">
                         <h2>Liên kết</h2>
