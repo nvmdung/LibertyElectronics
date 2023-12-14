@@ -25,4 +25,8 @@
   .sub_title{
     color: brown;
   }
+  .blog_item{
+    text-align: center;
+    justify-content: center;
+  }
 
