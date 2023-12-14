@@ -147,5 +147,13 @@
 .productcontent{
   margin: auto;
 }
+@media only screen and (max-width: 600px) {
+  /* Styles for small screens */
+  .productItem {
+    width: 100%;
+  }
+
+  /* Add more responsive styles as needed */
+}
 
 /* ... (your existing styles) */
