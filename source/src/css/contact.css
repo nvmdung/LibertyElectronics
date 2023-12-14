@@ -41,3 +41,9 @@ h3{
     color: brown;
     text-align: center;
 }
+.google{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+}

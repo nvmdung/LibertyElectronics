@@ -377,7 +377,7 @@ function App() {
                             )}
                         </>}/>
                         
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />}/>
         <Route path="/blogs" element={<Blog />}/>
         <Route path="/blogs/msi" element={<BlogDetailsMSI />}/>
         <Route path="/blogs/gigabyte" element={<BlogDetailsGIGABYTE />}/>
