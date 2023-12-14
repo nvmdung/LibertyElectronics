@@ -20,22 +20,7 @@ const Images = () => {
       isHovered: false,
       link:"/gaming",
     },
-    {
-      id: 3,
-      src: "./image/asus/asustuf/0.png",
-      alt: "Image 3",
-      text: "Best Seller",
-      isHovered: false,
-      link:"/office",
-    },
-    {
-      id: 4,
-      src: "./image/asus/asustuf/0.png",
-      alt: "Image 4",
-      text: "Description 4",
-      isHovered: false,
-      link:"/office", 
-    },
+    
   ]);
 
   const handleHover = (index) => {

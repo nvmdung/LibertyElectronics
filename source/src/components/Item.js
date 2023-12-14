@@ -6,6 +6,10 @@ function Item({ laptop ,addCart,getDetails}){
     const handleAddToCart = (laptop) => {
         addCart(laptop);
     };
+    const calculateDiscountedPrice = (price, discount) => {
+      return (price * (100 - discount)) / 100;
+    };
+    const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount || 0);
     const navigate = useNavigate();
     return (     
         <div>
@@ -13,7 +17,14 @@ function Item({ laptop ,addCart,getDetails}){
                 <img src={laptop.image[0]} width="auto" height="300px" alt="image" />
             
             <div className="laptopnamehome">{laptop.name}</div>
-            <div className="laptoppricehome">{laptop.price}</div>
+            <div className="laptoppricehome">{laptop.discount ? (
+              <div className="laptopdetailprice">
+                <span className="originallaptopdetailprice">${laptop.price}</span><br/>
+                ${discountedPrice.toFixed(2)} (-{laptop.discount}%)
+              </div>
+            ) : (
+              <div className="laptopdetailprice1">${laptop.price}</div>
+            )}</div>
             <div onClick={() => handleAddToCart(laptop)} className="addcarthome">
             <div class="buttonhome" data-tooltip={`$${laptop.price}`}>
   <div class="button-wrapper">
