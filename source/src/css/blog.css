@@ -30,7 +30,7 @@
     text-align: center;
     justify-content: center;
   }
-  img{
+  .Blog_container .image{
     position: absolute;
   }
 

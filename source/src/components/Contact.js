@@ -121,9 +121,9 @@ function Contact() {
           </table>
         </form>
       </div>
-      <div>
+      <div class ="google">
         <h3>Location</h3>
-        <iframe className="google"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2662594211056!2d106.6798453104622!3d10.790907689314379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d4a7c59c09%3A0x8e2f7cbc924be1db!2zMzkxYSDEkC4gTmFtIEvhu7MgS2jhu59pIE5naMSpYSwgUGjGsOG7nW5nIDE0LCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1702018999327!5m2!1svi!2s" title="Google Map"
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2662594211056!2d106.6798453104622!3d10.790907689314379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d4a7c59c09%3A0x8e2f7cbc924be1db!2zMzkxYSDEkC4gTmFtIEvhu7MgS2jhu59pIE5naMSpYSwgUGjGsOG7nW5nIDE0LCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1702018999327!5m2!1svi!2s" title="Google Map"
           width="1200"
           height="1000"
           loading="lazy"

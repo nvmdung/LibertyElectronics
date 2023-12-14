@@ -1,7 +1,4 @@
-.image-container {
-    position: relative;
-    display: inline-block;
-  }
+
 .h33{
     color: aliceblue;
 }
@@ -37,21 +34,12 @@
     border-radius: 30px;
   }
   .about_overlay{
-    text-align: right;
+   text-align: center;
     padding: 20px;
     border-radius: 20px;
-    justify-content: center;
   }
   
-  .image-container {
-    
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* border-radius: 4px; */
-    width: 100%;
-  }
+
   
   p {
     margin: 0;
@@ -98,6 +86,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  h4{
-    text-align: center;
+
+  .image{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border-radius: 4px; */
+    width: 100%;
+    align-items: center;
+
   }
+ 
