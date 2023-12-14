@@ -22,7 +22,7 @@ function About() {
           />
 
           <div className="about_overlay">
-            <h4>OUR STORY</h4>
+            <h4 className="h4">OUR STORY</h4>
             Learn about the ideas, products and awards that shape our rich history as a leading global technology business.
            
           </div>
@@ -46,7 +46,7 @@ function About() {
           />
 
           <div className="about_overlay">
-            <h4>OUR PEOPLE</h4>
+            <h4 className="h4">OUR PEOPLE</h4>
             Meet the leaders, designers and entrepreneurs who guide and inspire our global business.
             
           </div>
@@ -70,7 +70,7 @@ function About() {
           />
 
           <div className="about_overlay">
-            <h4>OUR TARGET</h4>
+            <h4 className="h4">OUR TARGET</h4>
             Learn how we're helping us close the digital divide in communities around the world and how we're at the forefront of sustainable technology efforts.
            
           </div>

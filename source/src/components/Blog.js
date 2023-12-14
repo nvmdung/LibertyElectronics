@@ -32,9 +32,7 @@ function Blog() {
     <>
       <div class="Blog_container">
         <div class="section_head">
-            
           <h1 class="sub_title">Our Blog</h1>
-          
         </div>
       </div>
       <div class="peach_content">
