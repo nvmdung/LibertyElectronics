@@ -7,6 +7,10 @@ function Menu(){
     return(
         <tr className="headermenu">
             <a href="#" className="logo">logo</a>
+            <input type="checkbox" id="check"/>
+            <label for="check"  className="icons"><i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon" ></i>
+            </label>
             <nav className="navbar">
             <Link className='headerHome' to="/">Home</Link>
          <Link className='headerProduct' to="/product">Product</Link>
