@@ -1,16 +1,24 @@
 import '../css/Home.css'
 import '../css/DetailsHome.css'
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 function Item({ laptop ,addCart,getDetails}){ 
     const handleAddToCart = (laptop) => {
         addCart(laptop);
+        setShowModal(true);
     };
     const calculateDiscountedPrice = (price, discount) => {
       return (price * (100 - discount)) / 100;
     };
     const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount || 0);
     const navigate = useNavigate();
+    const [showModal, setShowModal] = useState(false);
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };
     return (     
         <div>
             <div>
@@ -44,6 +52,7 @@ function Item({ laptop ,addCart,getDetails}){
     </span>
   </div>
 </div>
+
 </div>
 <div>
   <div  className="buttondetailhome"  onClick={() => {
@@ -54,6 +63,17 @@ function Item({ laptop ,addCart,getDetails}){
   </div></div>
 </div>
 </div>
+<Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Added To Cart</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your item has been added to the cart.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
         </div>
     );
 }
