@@ -49,6 +49,7 @@ import MsiVideo from './components/MsiStyle/Msivideo.js';
 import GigabyteVideo from './components/GIGABYTESTYE/gigabytevideo.js';
 import DellVideo from './components/Dellstyle/Dellvideo.js';
 import HpVideo from './components/HPstyle/HPvideo.js';
+import ThinAndLightLaptops from './components/Thinalightlaptop.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -176,8 +177,52 @@ function App() {
     setFilerLaptops(sortedProduct);
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
   }
-  const addCart = (pro) => {
-    setCarts([...carts, pro]);
+  const handlePaymentData = (paymentData) => {
+    setCarts([]);
+    navigator('/products');
+  }
+  const sendqtyDetail = (newProd) => {
+    console.log("newProdQty", newProd.quantity);
+    const existingProduct = carts.find(item => item.id === newProd.id);
+    //kiểm tra giỏ hàng có sản phẩm nào có trùng id với newProd.id 
+    if (existingProduct) {
+      //nếu trùng thì giỏ hàng có sản phẩm trùng id với newProd id  thì số lượng của item có trong giỏ hàng đó + thêm số lượng từ newProd
+      const updatedCart = carts.map(item => item.id == newProd.id ? { ...item, quantity: item.quantity + newProd.quantity } : item);
+      //sau đó cập nhật lại giỏ hàng
+      setCarts(updatedCart);
+    } else {
+      //nếu ko có sản phẩm nào tồn tại thì sẽ add thẳng newProd vào giỏ hàng
+      setCarts([...carts, { ...newProd }])
+    }
+  }
+  const addCart = (product) => {
+    const existingProduct = carts.find(item => item.id === product.id);
+    if (existingProduct) {
+      const updatedCart = carts.map(item => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item);
+      setCarts(updatedCart);
+    } else {
+      setCarts([...carts, { ...product, quantity: 1 }]);
+    }
+  };
+  //************************************ DECREASE QUANTITY CART ************************************
+  const decreaseQuantity = (product) => {
+    const updatedCart = carts.map(item => item.id === product.id ? { ...item, quantity: Math.max(item.quantity - 1, 0) } : item);
+    const filteredCart = updatedCart.filter(item => item.quantity > 0);
+    setCarts(filteredCart);
+  }
+  //************************************ INCREASE QUANTITY CART ************************************
+  const increaseQuantity = (product) => {
+    const maxQtyProd = laptops.find(item => item.id == product.id);
+    if (product.quantity < maxQtyProd.quantity) {
+      const updatedCart = carts.map(item => item.id === product.id ? { ...item, quantity: Math.max(item.quantity + 1, 0) } : item);
+      setCarts(updatedCart);
+    }
+  }
+  //************************************  DELETE CART   ************************************ 
+  const deleteCart = (product) => {
+    const deletedCarts = carts.filter(item => item.id !== product.id);
+    setCarts(deletedCarts);
+
   }
 
   const handleDeleteCart = (id) => {
@@ -286,7 +331,7 @@ function App() {
                 getDetails={getDetails}
              />}/>
         <Route path='/register' element={<Register/>}/>
-        <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart}/>}/>
+        <Route path='/details' element={<LaptopDetails laptop={laptopDetails} addCart={addCart} sendqtyDetail={sendqtyDetail}/>}/>
        
         <Route path="/product" element={
            localStorage.getItem('registeredUser') ? (
@@ -379,7 +424,7 @@ function App() {
         <HP HpProduct={HpProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
         }/>
-        <Route path='/cart' element={<CartList carts={carts} deleteCart={handleDeleteCart}/>}/>
+        <Route path='/cart' element={<CartList carts={carts} deleteCart={deleteCart} decreaseQty={decreaseQuantity} increaseQty={increaseQuantity} handlePaymentData={handlePaymentData}/>}/>
         <Route path="/login" element={<>
                             <Login  setShowModal={setShowModal} errorlogin="Error message" />
                             {showModal && (
@@ -397,7 +442,15 @@ function App() {
         <Route path="/blogs/dell" element={<BlogDetailsDELL />}/>
         <Route path="/blogs/hp" element={<BlogDetailsHP />}/>
         <Route path="/blogs/asus" element={<BlogDetailsASUS />}/>
-        <Route path="/about" element={<About/>}/>                  
+        <Route path="/about" element={<About/>}/>            
+        <Route path='/thinandlightlaptop' element={<ThinAndLightLaptops
+        avatarLaptopsAsus={avatarLaptopsAsus}
+        avatarLaptopsLenovo={avatarLaptopsLenovo}
+        avatarLaptopsGigabyte={avatarLaptopsGigabyte}
+        avatarLaptopsHP={avatarLaptopsHP}
+        avatarLaptopsMSI={avatarLaptopsMSI}
+        laptops={filterLaptops} addCart={addCart}
+        getDetails={getDetails}/>}/>      
       </Routes>
       <footer><Footer/></footer>
     </div>

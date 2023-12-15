@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import '../css/LaptopDetails.css';
-
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
 function LaptopDetails({laptop,addCart}){
   const [selectedImage, setSelectedImage] = useState(null);
@@ -8,11 +10,20 @@ function LaptopDetails({laptop,addCart}){
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
-  const handleAddToCart = (laptop) => {
-    addCart(laptop);
-};
 const calculateDiscountedPrice = (price, discount) => {
   return (price * (100 - discount)) / 100;
+};
+const handleAddToCart = (laptop) => {
+  addCart(laptop);
+  setShowModal(true);
+};
+const [showModal, setShowModal] = useState(false);
+const handleCloseModal = () => {
+setShowModal(false);
+};
+const navigate = useNavigate();
+const handleNavigateHome = () => {
+  setShowModal(navigate('/cart'));
 };
 
 const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount || 0);
@@ -50,7 +61,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
     <div class="textdetaillaptop">Add To Cart</div>
     <span class="icondetaillaptop">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
+        
         width="16"
         height="16"
         fill="currentColor"
@@ -61,8 +72,9 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
         ></path>
       </svg>
     </span>
+    
   </div>
-
+  
 </div>
 <div class = "purchase-info">        
         <button class="btn">Compare</ button>
@@ -124,7 +136,20 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
             </div>
         
         </div>
-       
+        <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Added To Cart</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your item has been added to the cart.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+          <Button variant="secondary" onClick={handleNavigateHome}>
+            Cart
+          </Button>
+        </Modal.Footer>
+      </Modal>
                 <a href="www.google.com" download="laptop_detail">Download</a>       
             </div>
         
