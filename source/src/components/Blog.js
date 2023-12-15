@@ -92,6 +92,20 @@ function Blog() {
             </div>
           </div>
         </div>
+        <div class="blog_item" onClick={handleToggleContentDELL}>
+          <img className="img" src="./img/DELL.png" alt="laptop6" />
+          <div class="peach_overlay">
+            <div class="blog_text">
+              <h4>DELL</h4>
+              <p>
+                Dell Inc., global company that designs, develops, and
+                manufactures personal computers (PCs) and a variety of
+                computer-related products. The company is one of the world’s
+                leading computer brands and suppliers of PCs.
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="blog_item" onClick={handleToggleContentHP}>
           <img className="img" src="./img/HP.png" alt="laptop5" />
           <div class="peach_overlay">
@@ -107,20 +121,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div class="blog_item" onClick={handleToggleContentDELL}>
-          <img className="img" src="./img/DELL.png" alt="laptop6" />
-          <div class="peach_overlay">
-            <div class="blog_text">
-              <h4>DELL</h4>
-              <p>
-                Dell Inc., global company that designs, develops, and
-                manufactures personal computers (PCs) and a variety of
-                computer-related products. The company is one of the world’s
-                leading computer brands and suppliers of PCs.
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
       {/* {/* <div className="text-container">
