@@ -12,7 +12,8 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
     return(
         <>
      <CarouselHome/>
-     <Images/>
+     <BrandLogos/>
+    
      <div className="Brandhome">Best seller Laptop</div>
       
            
@@ -41,7 +42,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
           </div>
           <div className="Brandhome">Sale up to 50%</div>
       
-           
+           <div className="paddinghome">
       <div className="containerlaptophome">
        
            {
@@ -65,10 +66,11 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
               )) 
           }
           </div>
-          <BrandLogos/>   
-      
-      <div className="containerMicro">
+          </div>
+          <div className="containerMicro">    
+         
       <div class="containerhomeinfomore">
+      <div className="Whatnew">What News ?</div> 
 <section class="home-cards">
   <div>
     <img src="./image/banner/ASUShome.jpeg" alt="ASUShome"/>
@@ -80,7 +82,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
   </div>
   <div>
     <img src="./image/banner/saleoff.png" alt="" />
-    <h3>Save up to 25% </h3>
+    <h3>Save up to 50% </h3>
     <p>
     During this Christmas, we offer a promotion code of up to 25%
     </p>
@@ -92,7 +94,7 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
     <p>
     We are the most reasonable provider of services and prices.  
     </p>
-    <a href="/contacts">Learn More <i class="fas fa-chevron-right"></i></a>
+    <a href="/contact">Learn More <i class="fas fa-chevron-right"></i></a>
   </div>
   <div>
     <img src="./image/asus/asus14xoled/0.png" alt="" />

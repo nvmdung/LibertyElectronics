@@ -50,17 +50,17 @@ function ThinAndLightLaptops({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLapt
         <div className="containerlaptophome">
        
            {
-              avatarLaptopsLenovo.slice(1,2).map(a => (
+              avatarLaptopsLenovo.slice(2,3).map(a => (
                   <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
               )) 
           }
            {
-              avatarLaptopsGigabyte.slice(1,2).map(a => (
+              avatarLaptopsLenovo.slice(1,2 ).map(a => (
                   <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
               )) 
           }
            {
-              avatarLaptopsMSI.slice(1,2).map(a => (
+              avatarLaptopsHP.slice(3,4).map(a => (
                   <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
               )) 
           }
