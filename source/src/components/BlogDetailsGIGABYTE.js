@@ -10,7 +10,7 @@ function Blog_gigabyte() {
             <div class="blogdetail_overlay">
           <img className="img" src="../img/GIGABYTE.png" alt="laptop1"/>
             <div class="blog_text">
-              <h4>gigabyte</h4>
+              <h4>Gigabyte</h4>
               <p> Gigabyte Technology was established in 1986 by Pei-Cheng Yeh.
 
 One of Gigabyte's key advertised features on its motherboards is its "Ultra Durable" construction, advertised with "all solid capacitors". On 8 August 2006 Gigabyte announced a joint venture with Asus. Gigabyte developed the world's first software-controlled power supply in July 2007.
