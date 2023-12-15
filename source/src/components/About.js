@@ -4,7 +4,7 @@ function About() {
   return (
 
     <setion>
-      <div> <img className="image" src="./img/3333.png" alt="" width="1500px" height="500px"></img>
+      <div> <img className="image" src="./img/hinhanh.png" alt="" width="1500px" height="500px"></img>
         <div className="overlay-text">
           <h3 className="h33">About Our Company</h3>
           To those who are passionate about technology, our company will promote and innovate. We are always looking for the most special ideas and experiences for users. We will help users reach their dreams and succeed on your own path.
@@ -12,14 +12,7 @@ function About() {
         </div>
         </div>
 
-      {/* <div className="image-container">
-        
-        <div className="overlay-text">
-          <h3 className="h33">About Our Company</h3>
-          To those who are passionate about technology, our company will promote and innovate. We are always looking for the most special ideas and experiences for users. We will help users reach their dreams and succeed on your own path.
-
-        </div>
-      </div> */}
+ 
 
       <div class="about_content">
         <div className="container">

@@ -11,16 +11,11 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
 
-        // Lấy thông tin từ Local Storage
         const storedUser = JSON.parse(localStorage.getItem('registeredUser'));
-
-        // Kiểm tra xem thông tin nhập vào có trùng khớp với Local Storage không
         if (storedUser && username === storedUser.username && password === storedUser.password) {
-            setError(<Navigate to="/"/>);
-            
-            // Thực hiện hành động sau khi đăng nhập thành công, ví dụ: chuyển hướng trang
+            setError(<Navigate to="/"/>);          
         } else {
-            setError('Tên người dùng hoặc mật khẩu không đúng.');
+            setError('Wrong UserName or Password');
         }
     };
 
@@ -40,7 +35,7 @@ function Login() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    <button type="submit">Đăng nhập</button>
+                    <button type="submit">Login</button>
                     {error && <p>{error}</p>}
                 </form>
                 <div>Dont have account? <Link to="/register">Register</Link></div>

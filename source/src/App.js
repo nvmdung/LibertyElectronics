@@ -49,6 +49,7 @@ import MsiVideo from './components/MsiStyle/Msivideo.js';
 import GigabyteVideo from './components/GIGABYTESTYE/gigabytevideo.js';
 import DellVideo from './components/Dellstyle/Dellvideo.js';
 import HpVideo from './components/HPstyle/HPvideo.js';
+import ThinAndLightLaptops from './components/Thinalightlaptop.js';
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -441,7 +442,15 @@ function App() {
         <Route path="/blogs/dell" element={<BlogDetailsDELL />}/>
         <Route path="/blogs/hp" element={<BlogDetailsHP />}/>
         <Route path="/blogs/asus" element={<BlogDetailsASUS />}/>
-        <Route path="/about" element={<About/>}/>                  
+        <Route path="/about" element={<About/>}/>            
+        <Route path='/thinandlightlaptop' element={<ThinAndLightLaptops
+        avatarLaptopsAsus={avatarLaptopsAsus}
+        avatarLaptopsLenovo={avatarLaptopsLenovo}
+        avatarLaptopsGigabyte={avatarLaptopsGigabyte}
+        avatarLaptopsHP={avatarLaptopsHP}
+        avatarLaptopsMSI={avatarLaptopsMSI}
+        laptops={filterLaptops} addCart={addCart}
+        getDetails={getDetails}/>}/>      
       </Routes>
       <footer><Footer/></footer>
     </div>

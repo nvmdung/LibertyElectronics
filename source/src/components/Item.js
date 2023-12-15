@@ -10,15 +10,18 @@ function Item({ laptop ,addCart,getDetails}){
         addCart(laptop);
         setShowModal(true);
     };
+    const [showModal, setShowModal] = useState(false);
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };const handleNavigateHome = () => {
+      setShowModal(navigate('/cart'));
+    };
     const calculateDiscountedPrice = (price, discount) => {
       return (price * (100 - discount)) / 100;
     };
     const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount || 0);
     const navigate = useNavigate();
-    const [showModal, setShowModal] = useState(false);
-    const handleCloseModal = () => {
-      setShowModal(false);
-    };
+    
     return (     
         <div>
             <div>
@@ -71,6 +74,9 @@ function Item({ laptop ,addCart,getDetails}){
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
             Close
+          </Button>
+          <Button variant="secondary" onClick={handleNavigateHome}>
+            Cart
           </Button>
         </Modal.Footer>
       </Modal>

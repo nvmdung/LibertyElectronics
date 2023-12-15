@@ -4,7 +4,7 @@
   font-size: 40px;
   font-family: Space Mono, sans-serif;
   text-decoration: none;
-  color: rgb(243, 174, 84);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -13,10 +13,12 @@
   font-size: 40px;
   font-family: Space Mono, sans-serif;
   text-decoration: none;
-  color: rgb(243, 174, 84);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding-left: 30%;
   padding-right: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .containerlaptophome{
   display: flex;
@@ -155,4 +157,11 @@ margin-left: 22.7%;
 .buttonhome:hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
-
+.paddinghome{
+  padding-bottom:6% ;
+}
+.Whatnew{
+  font-size: 30px;
+  padding-bottom: 3%;
+  font-weight: 600;
+}
