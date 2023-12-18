@@ -117,4 +117,17 @@
     justify-content: center;
     width: 100%;
  }
+
+
+@media only screen and (max-width: 768px) {
+  /* Styles for small screens (e.g., tablets and phones) */
+
+  .btn-91 {
+    padding: 0.8rem 1.5rem; /* Further adjust padding for smaller screens */
+  }
+
+  .btn-91 span {
+    font-size: 0.7em; /* Further adjust font size for smaller screens */
+  }
+}
   

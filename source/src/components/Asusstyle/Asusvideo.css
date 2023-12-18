@@ -1,18 +1,19 @@
-
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sars-serif;
+    font-family: "Poppins", sans-serif;
   }
-.body{
+  
+  .body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     min-height: 100vh;
     max-width: 100%;
-}
-.cardasus{
+  }
+  
+  .cardasus {
     margin: 200px;
     margin-bottom: 0;
     margin-top: 210px;
@@ -23,21 +24,24 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background: linear-gradient(135deg,#ddf952, #8c30e2);
-}
-.cardasus img{
+    background: linear-gradient(135deg, #ddf952, #8c30e2);
+  }
+  
+  .cardasus img {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
     height: 400px;
     transition: 0.5s;
-}
-.cardasus:hover img{
+  }
+  
+  .cardasus:hover img {
     left: 80%;
     height: 450px;
-}
-.cardasus .content{
+  }
+  
+  .cardasus .content {
     position: relative;
     width: 80%;
     left: 20%;
@@ -45,23 +49,27 @@
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
-}
-.cardasus:hover .content{
+  }
+  
+  .cardasus:hover .content {
     left: 0%;
     opacity: 1;
     visibility: visible;
-}
-.cardasus .content h2{
+  }
+  
+  .cardasus .content h2 {
     color: white;
     text-transform: uppercase;
     font-size: 2.2rem;
     line-height: 1.5em;
-}
-.cardasus .content p{
+  }
+  
+  .cardasus .content p {
     color: white;
     padding-left: 2px;
-}
-.cardasus .content a{
+  }
+  
+  .cardasus .content a {
     position: relative;
     display: inline-block;
     background: white;
@@ -71,39 +79,48 @@
     border-radius: 10px;
     text-decoration: none;
     color: black;
-}
-.cardasus .content a:hover {
+  }
+  
+  .cardasus .content a:hover {
     background-color: #03cad8;
     color: white;
-}
-@media (max-witdh: 756px){
+  }
+  
+  @media (max-width: 756px) {
     .cardasus {
-        position: relative;
-        width: auto;
-        max-width: 600px;
-        transition: 0.5s;
-        align-items: flex-start;
+      position: relative;
+      width: auto;
+      max-width: 600px;
+      transition: 0.5s;
+      align-items: flex-start;
     }
-    .cardasus:hover{
-        height: 600px;
+  
+    .cardasus:hover {
+      height: 600px;
     }
-    .cardasus:hover img{
-        left: 50%;
-        height: 300px;
+  
+    .cardasus:hover img {
+      left: 50%;
+      height: 300px;
     }
-    .cardasus .content{
-        width: 100%;
-        left: 0;
-        padding: 40px;
+  
+    .cardasus .content {
+      width: 100%;
+      left: 0;
+      padding: 40px;
     }
-    .cardasus .content h2{
-        font-size: 2rem;
+  
+    .cardasus .content h2 {
+      font-size: 2rem;
     }
+  
     .cardasus .content p {
-        font-size: 0.9rem;
+      font-size: 0.9rem;
     }
-}
-.video-asus{
+  }
+  
+  .video-asus {
     text-align: center;
     margin-top: 60px;
-}
+  }
+  

@@ -1,18 +1,19 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sars-serif;
-  }
-.body{
+    font-family: "Poppins", sans-serif;
+}
+
+.body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     min-height: 100vh;
     max-width: 100%;
 }
-.card{
+
+.card {
     margin: 200px;
     margin-bottom: 0;
     margin-top: 210px;
@@ -23,9 +24,10 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background: linear-gradient(135deg,#f8c718, #8c30e2);
+    background: linear-gradient(135deg, #f8c718, #8c30e2);
 }
-.card img{
+
+.card img {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -33,11 +35,13 @@
     height: 400px;
     transition: 0.5s;
 }
-.card:hover img{
+
+.card:hover img {
     left: 80%;
     height: 450px;
 }
-.card .content{
+
+.card .content {
     position: relative;
     width: 80%;
     left: 20%;
@@ -46,22 +50,26 @@
     opacity: 0;
     visibility: hidden;
 }
-.card:hover .content{
+
+.card:hover .content {
     left: 0%;
     opacity: 1;
     visibility: visible;
 }
-.card .content h2{
+
+.card .content h2 {
     color: white;
     text-transform: uppercase;
     font-size: 2.2rem;
     line-height: 1.5em;
 }
-.card .content p{
+
+.card .content p {
     color: white;
     padding-left: 2px;
 }
-.card .content a{
+
+.card .content a {
     position: relative;
     display: inline-block;
     background: white;
@@ -72,11 +80,13 @@
     text-decoration: none;
     color: black;
 }
+
 .card .content a:hover {
     background-color: #03cad8;
     color: white;
 }
-@media (max-witdh: 756px){
+
+@media (max-width: 756px) {
     .card {
         position: relative;
         width: auto;
@@ -84,26 +94,32 @@
         transition: 0.5s;
         align-items: flex-start;
     }
-    .card:hover{
+
+    .card:hover {
         height: 600px;
     }
-    .card:hover img{
+
+    .card:hover img {
         left: 50%;
         height: 300px;
     }
-    .card .content{
+
+    .card .content {
         width: 100%;
         left: 0;
         padding: 40px;
     }
-    .card .content h2{
+
+    .card .content h2 {
         font-size: 2rem;
     }
+
     .card .content p {
         font-size: 0.9rem;
     }
 }
-.video-asus{
+
+.video-asus {
     text-align: center;
     margin-top: 60px;
 }

@@ -1,18 +1,19 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sars-serif;
+    font-family: "Poppins", sans-serif;
   }
-.body{
+  
+  .body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     min-height: 100vh;
     max-width: 100%;
-}
-.card-gigabyte{
+  }
+  
+  .card-gigabyte {
     margin: 200px;
     margin-bottom: 0;
     margin-top: 210px;
@@ -23,21 +24,24 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background: linear-gradient(135deg,#db0376, #8c30e2);
-}
-.card-gigabyte img{
+    background: linear-gradient(135deg, #db0376, #8c30e2);
+  }
+  
+  .card-gigabyte img {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
     height: 400px;
     transition: 0.5s;
-}
-.card-gigabyte:hover img{
+  }
+  
+  .card-gigabyte:hover img {
     left: 80%;
     height: 450px;
-}
-.card-gigabyte .content{
+  }
+  
+  .card-gigabyte .content {
     position: relative;
     width: 80%;
     left: 20%;
@@ -45,23 +49,27 @@
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
-}
-.card-gigabyte:hover .content{
+  }
+  
+  .card-gigabyte:hover .content {
     left: 0%;
     opacity: 1;
     visibility: visible;
-}
-.card-gigabyte .content h2{
+  }
+  
+  .card-gigabyte .content h2 {
     color: white;
     text-transform: uppercase;
     font-size: 2.2rem;
     line-height: 1.5em;
-}
-.card-gigabyte .content p{
+  }
+  
+  .card-gigabyte .content p {
     color: white;
     padding-left: 2px;
-}
-.card-gigabyte .content a{
+  }
+  
+  .card-gigabyte .content a {
     position: relative;
     display: inline-block;
     background: white;
@@ -71,39 +79,48 @@
     border-radius: 10px;
     text-decoration: none;
     color: black;
-}
-.card-gigabyte .content a:hover {
+  }
+  
+  .card-gigabyte .content a:hover {
     background-color: #03cad8;
     color: white;
-}
-@media (max-witdh: 756px){
+  }
+  
+  @media (max-width: 756px) {
     .card-gigabyte {
-        position: relative;
-        width: auto;
-        max-width: 600px;
-        transition: 0.5s;
-        align-items: flex-start;
+      position: relative;
+      width: auto;
+      max-width: 600px;
+      transition: 0.5s;
+      align-items: flex-start;
     }
-    .card-gigabyte:hover{
-        height: 600px;
+  
+    .card-gigabyte:hover {
+      height: 600px;
     }
-    .card-gigabyte:hover img{
-        left: 50%;
-        height: 300px;
+  
+    .card-gigabyte:hover img {
+      left: 50%;
+      height: 300px;
     }
-    .card-gigabyte .content{
-        width: 100%;
-        left: 0;
-        padding: 40px;
+  
+    .card-gigabyte .content {
+      width: 100%;
+      left: 0;
+      padding: 40px;
     }
-    .card-gigabyte .content h2{
-        font-size: 2rem;
+  
+    .card-gigabyte .content h2 {
+      font-size: 2rem;
     }
+  
     .card-gigabyte .content p {
-        font-size: 0.9rem;
+      font-size: 0.9rem;
     }
-}
-.video-asus{
+  }
+  
+  .video-asus {
     text-align: center;
     margin-top: 60px;
-}
+  }
+  
