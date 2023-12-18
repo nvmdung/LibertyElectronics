@@ -34,7 +34,7 @@ function CartItem({ product, deleteCart, decreaseQty, increaseQty }) {
                 </tr>
                 <tr>
               <td></td>
-              <td colSpan={2}>Total</td>
+              <td colSpan={4}>Total</td>
               <td>{formatCurrency(totalPrice)}</td>
         </tr>
             </tbody>
