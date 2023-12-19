@@ -1,18 +1,18 @@
 .asus-container1{
     width: 100%;
-    background: url('../background/3425081.jpg');
+    background: url('../background/02012001.jpg');
     background-size: cover;
     background-position: center;
 }
 .msi-container1{
     width: 100%;
-    background: url('../background/4562472.jpg');
+    background: url('../background/02012001.jpg');
     background-size: cover;
     background-position: center;
 }
 .gigabyte-container1{
     width: 100%;
-    background: url('../background/123456.jpg');
+    background: url('../background/02012001.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -30,7 +30,29 @@
 }
 .hp-container1{
     width: 100%;
-    background: url('../background/run.jpg');
+    background: url('../background/02012001.jpg');
     background-size: cover;
     background-position: center;
+}
+.asus-container1,
+.msi-container1,
+.gigabyte-container1,
+.lenovo-container1,
+.dell-container1,
+.hp-container1 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Quy tắc dành cho màn hình có chiều rộng tối đa 480px (smartphones) */
+@media (max-width: 1000px) {
+    .asus-container1,
+    .msi-container1,
+    .gigabyte-container1,
+    .lenovo-container1,
+    .dell-container1,
+    .hp-container1 {
+        width: 350%; /* hoặc giá trị phù hợp với thiết kế của bạn */
+    }
 }
