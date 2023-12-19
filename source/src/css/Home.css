@@ -171,8 +171,11 @@ margin-left: 22.7%;
 
   .boxlaptophome{
     justify-content: center;
-    width: 200px;
+    width: 188px;
     padding: 5px;
+    margin-left: 1.1%;
+    margin-bottom : 10%;
+   
   }
   .containerlaptophome{
     display: grid;
@@ -183,12 +186,11 @@ margin-left: 22.7%;
   .imageitem img{
     width: 80%;
     height: 80%;
- margin-left: 20px;
+  margin-left: 20px;
   }
   .buttonhome {
-    --width: 50%; /* Điều chỉnh kích thước của nút */
-    margin-left: 10%; /* Điều chỉnh khoảng cách với lề trái */
-   margin-left: 25%;
+    --width: 92.3%; /* Điều chỉnh kích thước của nút */
+   margin-left: 3.92%;
   }
 
   .buttonhome::before {
