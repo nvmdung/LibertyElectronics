@@ -36,7 +36,7 @@ const ProductComparison = ({ productDetail }) => {
             <div>
               <h3>{selectedProduct.name}</h3>
               <p>Type: {selectedProduct.type}</p>
-              <img src={selectedProduct.image} alt={selectedProduct.name} />
+              <img src={`.${selectedProduct.image[0]}`} alt={selectedProduct.name} />
               <p>Price: ${selectedProduct.price}</p>
               <p>Screensize: {selectedProduct.screensize}</p>
               {/* Add more details as needed */}
@@ -50,7 +50,7 @@ const ProductComparison = ({ productDetail }) => {
               <div className="similar-product-details">
                 <h3>{similarProducts[currentIndex].name}</h3>
                 <p>Type: {similarProducts[currentIndex].type}</p>
-                <img src={similarProducts[currentIndex].image} alt={similarProducts[currentIndex].name} />
+                <img src={`.${similarProducts[currentIndex].image[0]}`} alt={similarProducts[currentIndex].name} />
                 <p>Price: ${similarProducts[currentIndex].price}</p>
                 <p>Screensize: {similarProducts[currentIndex].screensize}</p>
                 {/* Add more details as needed */}
