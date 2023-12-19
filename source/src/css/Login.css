@@ -40,3 +40,24 @@
     color: #1095c1;
 }
 
+/* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+@media only screen and (max-width: 768px) {
+    .logindev {
+      padding-top: 25%; /* Giảm khoảng cách padding trên cùng */
+      padding-bottom: 5%; /* Giảm khoảng cách padding dưới cùng */
+    }
+  
+    .login-container {
+      width: 80%; /* Điều chỉnh độ rộng của phần đăng nhập */
+      max-width: 300px; /* Đảm bảo kích thước tối đa */
+      margin: 0 auto;
+      padding: 15px; /* Giảm padding xung quanh */
+    }
+  
+    .login-container input,
+    .login-container button {
+      padding: 8px; /* Giảm padding cho input và button */
+      margin-bottom: 8px; /* Giảm khoảng cách dưới cùng của input và button */
+    }
+  }
+  

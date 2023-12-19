@@ -14,7 +14,7 @@ const calculateDiscountedPrice = (price, discount) => {
   return (price * (100 - discount)) / 100;
 };
 const handleCompare = () => {
-  // Chuyển hướng đến trang so sánh với ID của sản phẩm
+
   navigate(`/compare/${laptop.id}`);
 };
 const handleAddToCart = (laptop) => {
@@ -40,7 +40,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
         {selectedImage ? (
           <img src={selectedImage} alt="Selected" className="selected-image" />
         ) : (
-          <p>{laptop.image.slice(0,1).map((image, index) => (
+          <p className='imagedetail'>{laptop.image.slice(0,1).map((image, index) => (
             <img
               key={index}
               src={image}
@@ -48,6 +48,17 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
               onClick={() => handleImageClick(image)}
             />  ))}</p>
         )}</div>
+         <div className="smallS-images">
+        {laptop.image.slice(0,4).map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Image ${index + 1}`}
+            onClick={() => handleImageClick(image)}
+            className="smallS-image"
+          />
+        ))}
+      </div>
         <div className='detailpro'>
           <p className='detailnamelaptop'>{laptop.name}</p>
           <p >{laptop.discount ? (
@@ -110,33 +121,34 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
           <div>
             <h3 className='h3laptopdetail'>Specifications</h3>
             
-              <div class="row">
-                <div class="col-xs-4">Screensize:
-               <span class="col-xs-8">{laptop.screensize}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">Screensize:</div>
+               <div class="col-xs-8">{laptop.screensize}</div>
               </div>
-              <div class="row">
-                <div class="col-xs-4">Weight:
-                <span class="col-xs-8">{laptop.itemweight}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">Weight:</div>
+                <div class="col-xs-8">{laptop.itemweight}</div>
               </div>
-              <div class="row">
-                <div class="col-xs-4">CPU:
-                <span class="col-xs-8">{laptop.cpuchip}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">CPU:</div>
+                <div class="col-xs-8">{laptop.cpuchip}</div>
               </div>
-              <div class="row">
-                <div class="col-xs-4">RAM:
-                <span class="col-xs-8">{laptop.memorysize}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">RAM:</div>
+                <div class="col-xs-8">{laptop.memorysize}
+                </div>
               </div>
-              <div class="row">
-                <div class="col-xs-4">Hard Disk:
-                <span class="col-xs-8">{laptop.harddisksize}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">Hard Disk:</div>
+                <div class="col-xs-8">{laptop.harddisksize}</div>
               </div>
-              <div class="row">
-                <div class="col-xs-4">Battery:
-                <span class="col-xs-8">{laptop.pin}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">Battery:</div>
+                <div class="col-xs-8">{laptop.pin}</div>
               </div>
-              <div class="row">
-                <div class="col-xs-4">Warranty:
-                <span class="col-xs-8">{laptop.warranty}</span></div>
+              <div class="rowdetail">
+                <div class="col-xs-4">Warranty:</div>
+                <div class="col-xs-8">{laptop.warranty}</div>
               </div>
             </div>
         
@@ -157,6 +169,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
       </Modal>
                 <a href="www.google.com" download="laptop_detail">Download</a>       
             </div>
+            
         
     )
 }

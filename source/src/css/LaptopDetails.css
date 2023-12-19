@@ -6,7 +6,7 @@ padding-left: 5%;
 
 .gridimagebrand{
   display: grid;
-  grid-template-columns:40% 60%;
+  grid-template-columns: 40%  60%;
 }
 
 .detailnamelaptop{
@@ -17,7 +17,7 @@ padding-left: 5%;
 
 .large-image {
   width: 330px;
-  height: 330px;
+  height: 264px;
  float: left;
 }
 
@@ -28,6 +28,7 @@ width: 100%;
 .small-images {
   display: flex;
   width: 100%;
+  margin-top: 0%;
 }
 
 .small-image {
@@ -51,13 +52,14 @@ width: 100%;
     margin-bottom: 10px;
   }
   
-  .row {
-    margin-bottom: 5px
+  .rowdetail {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
   }
   
   .col-xs-4 {
-   display: grid;
-   grid-template-columns: 30% 70%;
+
    border: 1px solid rgba(0, 0, 0, 0.295);
    margin-left: 5%; 
    margin-right: 5%;
@@ -66,9 +68,8 @@ width: 100%;
   .col-xs-8 {
     padding-left: 5px;
     display: grid;
-       border: 1px solid rgba(0, 0, 0, 0.295);
-
-       margin-right: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    margin-right: 5%;
   }
   
   .laptopdetailprice {
@@ -245,12 +246,18 @@ width: 100%;
 .product-detail-order ul li{
     margin: 0;
     list-style: none;
-    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background: url(../background//checked.png) left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;
     font-weight: 600;
     opacity: 0.9;
+}
+.smallS-images{
+  display: none;
+}
+.smallS-image{
+  display: none;
 }
 .product-detail-order ul li span{
     font-weight: 400;
@@ -259,4 +266,86 @@ width: 100%;
     .col-xs-4 {
       text-align: left;
     }
-  }     
+  }   /* Thiết lập responsive cho màn hình nhỏ hơn hoặc bằng 768px */
+  @media (max-width: 768px) {
+    .image-gallery-container {
+      padding-top: 16%; /* Giảm khoảng cách padding trên cùng */
+      padding-left: 3%; /* Giảm khoảng cách padding bên trái */
+    }
+  
+    .gridimagebrand {
+      grid-template-columns: 100%; /* Hiển thị các cột theo chiều dọc */
+    }
+  
+    .large-image {
+      width: 60%; /* Điều chỉnh kích thước ảnh lớn */
+      height: auto; /* Chiều cao tự động để giữ tỉ lệ */
+      float: none; /* Không sử dụng float */
+    }
+  
+    .laptopDetails {
+      padding-top: 2%; /* Giảm khoảng cách padding trên cùng */
+    }
+  
+    .col-xs-4,
+    .col-xs-8 {
+      grid-template-columns: 100%; /* Hiển thị các cột theo chiều dọc */
+      margin-left: 0; /* Xóa margin bên trái */
+      margin-right: 0; /* Xóa margin bên phải */
+    }
+  
+    .buttondetaillaptop {
+      --width: 140px; /* Điều chỉnh kích thước nút */
+      --height: 40px;
+      font-size: 14px; /* Giảm kích thước chữ */
+    }
+  
+    .purchase-info input {
+      width: 50px; /* Điều chỉnh kích thước input */
+    }
+  
+    .product-detail-order ul li {
+      background-size: 15px; /* Điều chỉnh kích thước icon checked */
+      padding-left: 1.5rem; /* Giảm khoảng cách bên trái */
+      margin: 0.3rem 0; /* Giảm khoảng cách giữa các mục */
+    }
+    .imagedetail img{
+      width: 60%;
+      
+    }
+   
+    .smallS-images {
+      display: flex;
+      width: 100%;
+      margin-top: 0%;
+    }
+    
+    .smallS-image {
+      cursor: pointer;
+      width: 80px;
+      height: 80px;
+      margin: 5px;
+      display: block;
+    }
+    .small-images {
+      display: none;
+    
+    }
+    
+    .small-image {
+      display: none;
+    
+    }
+    .detailnamelaptop{
+      font-size: 30px;
+    }
+    .h3laptopdetail{
+      
+      padding-left: 20px;
+    }
+    .row{
+      overflow-x: auto;
+      padding-left: 20px;
+    }
+  }
+    
