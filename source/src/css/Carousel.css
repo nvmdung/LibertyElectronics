@@ -1,7 +1,7 @@
 .imageCarousel-container img {
   width: 100%;
   padding-top: 5%;
-  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+  height: auto; 
 }
 .slider-container {
     width: 100%;
@@ -36,12 +36,12 @@
   }
   .imageCarousel-text {
     position: absolute;
-    bottom: 10px; /* Điều chỉnh vị trí của text */
-    left: 10px; /* Điều chỉnh vị trí của text */
+    bottom: 10px; 
+    left: 10px; 
     color: white;
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px black; /* Hiệu ứng shadow cho text */
+    text-shadow: 1px 1px 2px black; 
   }
   .imageCarousel-container {
     position: relative;

@@ -11,7 +11,7 @@ function BrandLogos(){
                     <div>
                 <div class="slidehome">
                 <img src="./image/logo/Asuslogo.png" width="150px" height="75px" alt="Asus Logo" className="brand-logo-image" />
-                </div>z
+                </div>
                 </div>
                 </Link>
 
