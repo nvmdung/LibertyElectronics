@@ -3,7 +3,7 @@ import '../css/LaptopDetails.css';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 function LaptopDetails({laptop,addCart}){
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -12,6 +12,10 @@ function LaptopDetails({laptop,addCart}){
   };
 const calculateDiscountedPrice = (price, discount) => {
   return (price * (100 - discount)) / 100;
+};
+const handleCompare = () => {
+  // Chuyển hướng đến trang so sánh với ID của sản phẩm
+  navigate(`/compare/${laptop.id}`);
 };
 const handleAddToCart = (laptop) => {
   addCart(laptop);
@@ -76,9 +80,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
   </div>
   
 </div>
-<div class = "purchase-info">        
-        <div class="btn">Compare</ div>
-      </div>
+
 </div>
 <div class = "product-detail-order">
 <ul>
@@ -90,6 +92,9 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
         </div>
         </div>
       </div>
+      <Link to={`/compare/${laptop.id}`} onClick={handleCompare} className="compare-link">
+              So sánh
+            </Link>
       <div className="small-images">
         {laptop.image.slice(0,4).map((image, index) => (
           <img

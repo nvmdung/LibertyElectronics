@@ -1,0 +1,35 @@
+.product-comparison-container {
+    display: flex;
+  }
+  
+  .product-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-product {
+    background-color: #f2f2f2;
+  }
+  
+  .similar-products {
+    background-color: #e6e6e6;
+  }
+  
+  .product-column img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .navigation-buttons {
+    margin-top: 10px;
+  }
+  
+  .compare-link-container {
+    margin-top: 20px;
+  }
+  
+  .compare-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }

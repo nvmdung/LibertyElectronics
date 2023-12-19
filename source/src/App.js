@@ -10,6 +10,7 @@ import Button from './components/Button.js';
 // import Edit from './components/Edit';
 // import Create from './components/Create';
 // import Details from './components/Details';
+import ProductComparison from './components/ProductComparison'; // Import component mới
 import Home from './components/Home';
 import Search from './components/Search';
 import Asus from './components/brand/Asus';
@@ -300,7 +301,7 @@ function App() {
         {/* <Link to="/create">Add new Laptop</Link> */}
       </nav>
       <Routes>
-     
+      <Route path="/compare/:id" element={<ProductComparison productDetail={filterLaptops} />} />
      <Route path="/" element={
           
           <Home avatarLaptopsAsus={avatarLaptopsAsus}
@@ -424,16 +425,7 @@ function App() {
         <HP HpProduct={HpProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
         }/>
-        <Route path='/cart' element={
-           localStorage.getItem('registeredUser') ? (
-            <div>
-        <CartList carts={carts}
-         deleteCart={deleteCart} 
-         decreaseQty={decreaseQuantity} 
-         increaseQty={increaseQuantity} 
-         handlePaymentData={handlePaymentData}/>
-         </div>)     : (<Navigate to="/login"/>)}/>
-  
+        <Route path='/cart' element={<CartList carts={carts} deleteCart={deleteCart} decreaseQty={decreaseQuantity} increaseQty={increaseQuantity} handlePaymentData={handlePaymentData}/>}/>
         <Route path="/login" element={<>
                             <Login  setShowModal={setShowModal} errorlogin="Error message" />
                             {showModal && (

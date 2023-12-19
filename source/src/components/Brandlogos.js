@@ -1,4 +1,4 @@
-import '../css/Brandlogo.css';
+import '../css/BrandLogo.css';
 import { Link } from "react-router-dom";
 
 function BrandLogos(){
