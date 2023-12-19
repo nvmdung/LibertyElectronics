@@ -1,4 +1,11 @@
 .waving-santa {
-    width: 120px; /* Điều chỉnh kích thước ảnh tùy thuộc vào kích thước bạn muốn */
-    cursor: pointer; /* Thêm con trỏ khi đưa chuột vào ảnh */
+  width: 120px; /* Điều chỉnh kích thước ảnh tùy thuộc vào kích thước bạn muốn */
+  cursor: pointer; /* Thêm con trỏ khi đưa chuột vào ảnh */
+}
+
+/* Quy tắc dành cho màn hình có chiều rộng tối đa 600px (điện thoại di động) */
+@media (max-width: 600px) {
+  .waving-santa {
+      width: 80px; /* hoặc giá trị phù hợp với thiết kế của bạn */
   }
+}

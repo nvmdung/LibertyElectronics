@@ -214,7 +214,7 @@ function App() {
   //************************************ INCREASE QUANTITY CART ************************************
   const increaseQuantity = (product) => {
     const maxQtyProd = laptops.find(item => item.id == product.id);
-    if (product.quantity < maxQtyProd.quantity) {
+    if ( maxQtyProd) {
       const updatedCart = carts.map(item => item.id === product.id ? { ...item, quantity: Math.max(item.quantity + 1, 0) } : item);
       setCarts(updatedCart);
     }
@@ -355,7 +355,7 @@ function App() {
        </div>
      <Product laptops={filterLaptops} addCart={addCart} getDetails={getDetails}/>
      <div className='container-satan'>
-     <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/><WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
+     <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>  <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>   <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/> <WavingSanta imagePath="../image1/satan.png"/>
          </div>   
      </div>
      </div>) : (<Navigate to="/login"/>)}/>
