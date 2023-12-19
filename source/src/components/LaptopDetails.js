@@ -93,7 +93,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
         </div>
       </div>
       <Link to={`/compare/${laptop.id}`} onClick={handleCompare} className="compare-link">
-              So sánh
+              Compare
             </Link>
       <div className="small-images">
         {laptop.image.slice(0,4).map((image, index) => (
