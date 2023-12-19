@@ -2,17 +2,16 @@
 import CarouselHome from "./Carousel";
 import Images from "./Fourboxhome";
 import { Link } from "react-router-dom";
-import BrandLogos from "./BrandLogo";
-
 import Item from "./Item";
 import '../css/Home.css'
 import '../css/Homeinfomore.css'
+import BrandLogos from "./Brandlogo";
 function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLaptopsLenovo,avatarLaptopsMSI,addCart,getDetails}){
   
     return(
         <>
      <CarouselHome/>
-     <BrandLogos/>
+    <BrandLogos/>
     
      <div className="Brandhome">Best seller Laptop</div>
       

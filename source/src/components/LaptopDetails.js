@@ -77,7 +77,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
   
 </div>
 <div class = "purchase-info">        
-        <button class="btn">Compare</ button>
+        <div class="btn">Compare</ div>
       </div>
 </div>
 <div class = "product-detail-order">
