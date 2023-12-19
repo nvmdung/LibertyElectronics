@@ -25,8 +25,7 @@ function Item({ laptop ,addCart,getDetails}){
     return (     
         <div>
             <div>
-                <img src={laptop.image[0]} width="auto" height="300px" alt="image" />
-            
+            <div className='imageitem'><img src={laptop.image[0]}  alt="image" /></div>           
             <div className="laptopnamehome">{laptop.name}</div>
             <div className="laptoppricehome">{laptop.discount ? (
               <div className="laptopdetailprice">

@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@300;400;500;700&display=swap');
-.showproduct{
-  font-weight: 700;
-  font-size: 40px;
-  font-family: Space Mono, sans-serif;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
 .Brandhome{
   font-weight: 700;
   font-size: 40px;
@@ -26,6 +17,10 @@
   align-items: center;
   cursor:auto;
   
+}
+.imageitem img{
+  width: auto;
+  height: 300px;
 }
 .boxlaptophome{
   justify-content: center;
@@ -164,4 +159,64 @@ margin-left: 22.7%;
   font-size: 30px;
   padding-bottom: 3%;
   font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .Brandhome {
+    font-size: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .boxlaptophome{
+    justify-content: center;
+    width: 200px;
+    padding: 5px;
+  }
+  .containerlaptophome{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    
+  }
+  .imageitem img{
+    width: 80%;
+    height: 80%;
+ margin-left: 20px;
+  }
+  .buttonhome {
+    --width: 50%; /* Điều chỉnh kích thước của nút */
+    margin-left: 10%; /* Điều chỉnh khoảng cách với lề trái */
+   margin-left: 25%;
+  }
+
+  .buttonhome::before {
+    width: 100px; /* Điều chỉnh kích thước tooltip */
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 8px); /* Điều chỉnh vị trí tooltip */
+  }
+
+  .buttonhome::after {
+    left: calc(50% - 8px); /* Điều chỉnh vị trí của mũi tên tooltip */
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 8px); /* Điều chỉnh vị trí của mũi tên tooltip */
+  }
+  .laptoppricehome{
+    font-family:Arial, Helvetica, sans-serif ;
+    color:rgb(22, 71, 218);
+    text-align: center;
+    font-size: 50;
+  }
+  .Brandhome{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Space Mono, sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+  }
 }

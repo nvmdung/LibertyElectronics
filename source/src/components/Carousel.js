@@ -21,9 +21,9 @@ function ImageSlider ()  {
   };
 
   const image = [
-    { id: 1, url: './image/banner/banner_tuf.png', alt: 'Image 1', text: 'Text for Image 1' },
-    { id: 2, url: './image/banner/Zenbook2.jpg', alt: 'Image 2', text: 'Text for Image 2'},
-    { id: 3, url:'./image/banner/banner_tuf.png', alt: 'Image 3', text: 'Text for Image 3' },
+    { id: 1, url: './image/banner/banner_tuf.png', alt: 'Image 1'  },
+    { id: 2, url: './image/banner/Zenbook2.jpg', alt: 'Image 2'},
+    { id: 3, url:'./image/banner/banner_tuf.png', alt: 'Image 3' },
   ];
 
   return (
@@ -32,7 +32,6 @@ function ImageSlider ()  {
     <Slider {...settings}>
       {image.map((images) => (
         <div key={images.id} className="imageCarousel-container">
-          <div className="imageCarousel-text">{images.text}</div>
           <img src={images.url} alt={images.alt} />
         </div>
       ))}

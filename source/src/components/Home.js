@@ -20,12 +20,12 @@ function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLap
       <div className="containerlaptophome">
        
            {
-              avatarLaptopsLenovo.slice(1,2).map(a => (
+              avatarLaptopsGigabyte.slice(0,1).map(a => (
                   <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
               )) 
           }
            {
-              avatarLaptopsGigabyte.slice(1,2).map(a => (
+              avatarLaptopsGigabyte.slice(3,4).map(a => (
                   <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
               )) 
           }
