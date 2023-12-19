@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import Item from "./Item";
 import '../css/Home.css'
 import '../css/Homeinfomore.css'
-import BrandLogos from "./Brandlogo";
+import BrandLogos from "./Brandlogos";
+
 function Home({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLaptopsHP,avatarLaptopsLenovo,avatarLaptopsMSI,addCart,getDetails}){
   
     return(
