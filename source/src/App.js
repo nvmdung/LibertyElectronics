@@ -425,7 +425,15 @@ function App() {
         <HP HpProduct={HpProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
         }/>
-        <Route path='/cart' element={<CartList carts={carts} deleteCart={deleteCart} decreaseQty={decreaseQuantity} increaseQty={increaseQuantity} handlePaymentData={handlePaymentData}/>}/>
+        <Route path='/cart' element={
+            localStorage.getItem('registeredUser') ? (
+              <div>
+        <CartList 
+        carts={carts}
+        deleteCart={deleteCart} decreaseQty={decreaseQuantity}
+        increaseQty={increaseQuantity}
+        handlePaymentData={handlePaymentData}/>
+        </div>) : (<Navigate to="/login"/>)}/>
         <Route path="/login" element={<>
                             <Login  setShowModal={setShowModal} errorlogin="Error message" />
                             {showModal && (

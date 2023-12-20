@@ -20,7 +20,6 @@ function Menu(){
               <Link className='headerCart' to="/cart">Cart </Link>
               {localStorage.getItem('registeredUser') ?
         (<span>
-          Hello {localStorage.getItem('username')},
         <Link className="header1" to="/login" onClick={()=> DeletelocalStorage()}>
           Logout
         </Link>
