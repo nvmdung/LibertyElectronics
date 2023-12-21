@@ -43,28 +43,27 @@
     text-decoration: none;
     color: #1095c1;
 }
-/* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+
 @media only screen and (max-width: 768px) {
     .devregister {
-      padding-top: 50%; /* Giảm khoảng cách padding trên cùng */
-      padding-bottom: 50%; /* Giảm khoảng cách padding dưới cùng */
+      padding-top: 50%; 
+      padding-bottom: 50%; 
     }
   
     .register-container {
-      width: 80%; /* Điều chỉnh độ rộng của phần đăng ký */
-      max-width: 300px; /* Đảm bảo kích thước tối đa */
+      width: 80%; 
+      max-width: 300px;
       margin: 0 auto;
-      padding: 15px; /* Giảm padding xung quanh */
+      padding: 15px; 
     }
   
     .register-container input,
-    .register-container button {
-      padding: 8px; /* Giảm padding cho input và button */
-      margin-bottom: 8px; /* Giảm khoảng cách dưới cùng của input và button */
+    .register-container button {  
+      padding: 8px; 
+      margin-bottom: 8px; 
     }
   
     .register-container p {
-      font-size: 14px; /* Giảm kích thước chữ */
-    }
+      font-size: 14px; 
   }
-  
+}
