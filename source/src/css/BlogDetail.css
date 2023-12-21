@@ -38,19 +38,19 @@
   }
   @media only screen and (max-width: 768px) {
     .Blog_container {
-      padding-top: 100px; /* Adjust top padding for smaller screens */
-      padding-bottom: 100px; /* Adjust bottom padding for smaller screens */
+      padding-top: 100px; 
+      padding-bottom: 100px;
     }
   
     .blogdetail_overlay {
-      padding: 15px; /* Adjust padding for smaller screens */
-      border-radius: 15px; /* Adjust border radius for smaller screens */
-      max-width: 90%; /* Adjust max-width for smaller screens */
-      margin: 0 auto; /* Center the container */
+      padding: 15px; 
+      border-radius: 15px;
+      max-width: 90%;
+      margin: 0 auto; 
     }
   
     .section_head {
-      padding-top: 10%; /* Adjust top padding for smaller screens */
-      padding-bottom: 20%; /* Adjust bottom padding for smaller screens */
+      padding-top: 10%;
+      padding-bottom: 20%;
     }
   }

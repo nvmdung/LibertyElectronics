@@ -52,22 +52,22 @@
 	  transform: translateX(calc(-250px * 7));
 	}
   }
-  /* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+
 @media only screen and (max-width: 768px) {
 	.sliderhome {
 	  width: 90%;
-	  max-width: 100%; /* Để slider sở hữu toàn bộ không gian có thể */
-	  height: 50%; /* Để slider điều chỉnh chiều cao tự động */
+	  max-width: 100%; 
+	  height: 50%;
 	  overflow: hidden;
 	}
 	
 	.slide-track {
-	  width: calc(150px * 24); /* Điều chỉnh độ rộng của slide-track */
+	  width: calc(150px * 24); 
 	}
   
 	.slidehome {
-	  width: 100%; /* Điều chỉnh kích thước của các logo */
-	  margin: 10px; /* Điều chỉnh khoảng cách giữa các logo */
+	  width: 100%; 
+	  margin: 10px; 
 	}
 	.slidehome img{
 		width: 60%;
