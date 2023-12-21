@@ -3,42 +3,32 @@ import Table from 'react-bootstrap/Table';
 import '../css/Cart.css'
 
 function CartItem({ product, deleteCart, decreaseQty, increaseQty }) {
-    const totalPrice = product.price * product.quantity;
 
     return (
-        <Table striped bordered hover>
-            <thead className="cartlist">
-                <tr>
-                    <th>id</th>
-                    <th>Name</th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
+     <div>
+       
+           
             <tbody>
                 <tr>
-                    <th>{product.id}</th>
-                    <th>{product.name}</th>
-                    <th><img src={product.image[0]} alt="image" width="150px" /></th>
-                    <th>$ {product.price}</th>
-                    <th>
-                        <button onClick={() => decreaseQty(product)}>-</button>
+                    <td className="cartlistid"><div>{product.id}</div></td>
+                    <th className="cartlistproduct"><img src={product.image[0]} alt="image" width="140px" /></th>
+                    <td className="cartlistname"><div>{product.name}</div></td>
+                    <th className="cartlistprice"><div>${product.price}</div></th>
+                    <th className="cartlistquantity">
+                        <div className="buttonminus" onClick={() => decreaseQty(product)}>-</div>
                         {product.quantity}
-                        <button onClick={() => increaseQty(product)}>+</button>
+                        <div className="buttonminus" onClick={() => increaseQty(product)}>+</div>
                     </th>
-                    <th>{formatCurrency(product.quantity * product.price)}</th>
-                    <th><button onClick={() => deleteCart(product)}>Delete</button></th>
+                    <th className="cartlisttotal">{formatCurrency(product.quantity * product.price)}</th>
+                    <th className="cartlistaction">
+                    <div class=" delete-button-box" onClick={() => deleteCart(product)}>                 
+                            <button class=" delete-button" >Delete</button>
+                    </div>
+                    </th>
                 </tr>
-                <tr>
-              <td></td>
-              <td colSpan={4}>Total</td>
-              <td>{formatCurrency(totalPrice)}</td>
-        </tr>
             </tbody>
-        </Table>
+           
+            </div>
     );
 }
 

@@ -1,3 +1,132 @@
 .cartlist{
     padding-top: 6%;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cartlistid{
+
+    border: solid black 1px;
+    width: 5%;
+}
+
+.cartlistname{
+
+
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    width: 11%;
+}
+.cartlistproduct{
+ 
+    align-items: center;
+    justify-content: center;
+    border: solid black 0.5px;
+    width: 20%;
+}
+.cartlistprice{
+
+  
+    text-align: center;
+    justify-content: center;
+    border: solid black 1px;
+    width: 10%;
+}
+.cartlistquantity{
+ 
+
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    width: 13%;
+}
+.cartlisttotal{
+
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    width: 10%;
+}
+.cartlistaction{
+  
+    text-align: center;
+    align-items: center;
+    border: solid black 1px;
+    width:10%;
+    
+}
+
+.buttonminus{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+.cartlisttotaliall1{
+    text-align: left;
+    padding-top: 100px;
+    
+}
+.cartlisttotaliall2{
+    text-align: left;
+    padding-top: 6px;
+    
+}
+.delete-button{
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .cartlistid,
+    .cartlistname,
+    .cartlistproduct,
+    .cartlistprice,
+    .cartlistquantity,
+    .cartlisttotal,
+    .cartlistaction {
+        
+        font-size: 7px;
+  
+    }
+    .cartlistid{
+        display: none;
+    }
+   
+    .cartlistproduct img{
+        width: 90%;
+    }
+    .cartlist {
+        overflow-x: auto;
+        padding-top: 19%;
+    }
+    .cartlistname{
+        width: 25%;
+       
+    }
+    .cartlistaction{
+        width: 10%;
+    }
+  
+    .buttonminus{
+    padding: 6px;
+    margin:0;
+    width: 3px;
+    height: 0;
+    color: black;
+    border: none;
+    background-color: white;
+    }
+    .cartlistquantity{
+       
+    }
+    .delete-button {
+   
+      }
 }
