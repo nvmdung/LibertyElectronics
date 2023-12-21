@@ -45,3 +45,40 @@
 .google {
     text-align: center;
 }
+@media only screen and (max-width: 768px) {
+    .contact {
+        width: 90%; 
+        max-width: 100%; 
+        padding: 10px; 
+    }
+
+    .button,
+    .input,
+    .textarea {
+        width: 100%; 
+        max-width: 100%;
+        margin-bottom: 8px; 
+    }
+
+    .button {
+        height: 35px;
+    }
+
+    .textarea {
+        height: 80px; 
+    }
+
+    .form {
+        padding-top: 20px; 
+    }
+
+    .ad {
+        
+        font-size: 30px; 
+    }
+    .google iframe{
+        width: 90%; 
+        max-width: 100%;
+        height: 200px;
+    }
+}

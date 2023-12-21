@@ -41,11 +41,7 @@
   
 
   
-  p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-  }
+
 
   /* Định nghĩa văn bản trên biểu ngữ */
   .text {
@@ -97,4 +93,32 @@
     align-items: center;
 
   }
- 
+ /* Your existing CSS */
+
+/* Media query for screens up to 768px */
+@media only screen and (max-width: 768px) {
+  .container .about_item {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about_content {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+  
+  .img {
+    height: auto;
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 100%;
+  }
+
+  .overlay-text {
+    padding: 0;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .text {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}

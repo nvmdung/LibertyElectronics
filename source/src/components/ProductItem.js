@@ -11,12 +11,12 @@ function ProductItem({ laptop, addCart, getDetails }) {
       return name.substring(0, maxLength) + '...';
     }
   };
-// Hàm để tính giá sau khi giảm giá
+
 const calculateDiscountedPrice = (price, discount) => {
   return (price * (100 - discount)) / 100;
 };
 
-// Giả sử laptop.discount là phần trăm giảm giá
+
 const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount || 0);
   return (
     <div className={classes.containerboxes}>
@@ -28,7 +28,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
         <td>
         <div className={classes.productInfo}>
           <div className={classes.productName}>{shortenProductName(laptop.name, 50)}</div>
-                 {/* Hiển thị giá sau khi giảm giá nếu có giảm giá */}
+                
                  {laptop.discount ? (
               <div className={classes.productPrice}>
                 <span className={classes.originalPrice}>${laptop.price}</span><br/>

@@ -43,29 +43,7 @@ function Contact() {
       setMessage('');
       setErrors({});
     }
-  // const [message, setMessage] = useState('');
-  // const [messageSent, setMessageSent] = useState(false);
-
-  // const handleMessageChange = (e) => {
-  //   setMessage(e.target.value);
-  // };
-
-  const sendMessage = () => {
-    // Gửi tin nhắn ở đây (có thể làm qua API hoặc các xử lý khác)
-    // Ví dụ: 
-    // sendFunction(message)
-    //   .then(() => {
-    //     setMessageSent(true);
-    //   })
-    //   .catch((error) => {
-    //     console.error('Gửi tin nhắn không thành công:', error);
-    //   });
-
-    // Trong ví dụ này, mình sẽ chỉ đặt trạng thái thành đã gửi thành công sau 2 giây
-    setTimeout(() => {
-      setMessageSent(false);
-    }, 2000);
-  };
+  
   };
 
   return (
