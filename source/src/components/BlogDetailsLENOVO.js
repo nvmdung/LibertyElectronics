@@ -2,7 +2,7 @@ import "../css/BlogDetail.css"
 
 function Blog_lenovo() {
     return (
-      <div class="Blog_container">
+      
       <div class="section_head">
         <br></br>
         <div class="blogdetail_content">
@@ -21,7 +21,7 @@ Lenovo has operations in over 60 countries and sells its products in around 180+
         </div>
         </div>
         </div>
-      </div>
+     
 
                
                  

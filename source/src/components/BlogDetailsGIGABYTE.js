@@ -2,7 +2,7 @@ import "../css/BlogDetail.css"
 
 function Blog_gigabyte() {
     return (
-      <div class="Blog_container">
+  
       <div class="section_head">
         <br></br>
         <div class="blogdetail_content">
@@ -25,7 +25,7 @@ In 2023, researchers at firmware-focused cybersecurity company Eclypsium said 27
         </div>
         </div>
         </div>
-      </div>
+     
 
                
                  

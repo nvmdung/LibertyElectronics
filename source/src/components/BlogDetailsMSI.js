@@ -2,7 +2,7 @@ import "../css/BlogDetail.css"
 
 function Blog_msi() {
     return (
-      <div class="Blog_container">
+     
       <div class="section_head">
         <br></br>
         <div class="blogdetail_content">
@@ -19,7 +19,7 @@ function Blog_msi() {
         </div>
         </div>
         </div>
-      </div>
+      
 
                
                  

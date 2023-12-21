@@ -2,7 +2,7 @@ import "../css/BlogDetail.css"
 
 function Blog_hp() {
     return (
-      <div class="Blog_container">
+     
       <div class="section_head">
         <br></br>
         <div class="blogdetail_content">
@@ -21,7 +21,7 @@ function Blog_hp() {
         </div>
         </div>
         </div>
-      </div>
+    
 
                
                  

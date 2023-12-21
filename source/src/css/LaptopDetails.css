@@ -266,48 +266,51 @@ width: 100%;
     .col-xs-4 {
       text-align: left;
     }
-  }   /* Thiết lập responsive cho màn hình nhỏ hơn hoặc bằng 768px */
+  } 
   @media (max-width: 768px) {
     .image-gallery-container {
-      padding-top: 16%; /* Giảm khoảng cách padding trên cùng */
-      padding-left: 3%; /* Giảm khoảng cách padding bên trái */
+      padding-top: 16%; 
+      padding-left: 3%; 
     }
   
     .gridimagebrand {
-      grid-template-columns: 100%; /* Hiển thị các cột theo chiều dọc */
+      grid-template-columns: 100%; 
     }
   
     .large-image {
-      width: 60%; /* Điều chỉnh kích thước ảnh lớn */
-      height: auto; /* Chiều cao tự động để giữ tỉ lệ */
-      float: none; /* Không sử dụng float */
+      width: 60%; 
+      height: auto;
+      float: none; 
     }
   
     .laptopDetails {
-      padding-top: 2%; /* Giảm khoảng cách padding trên cùng */
+      padding-top: 2%; 
     }
   
     .col-xs-4,
     .col-xs-8 {
-      grid-template-columns: 100%; /* Hiển thị các cột theo chiều dọc */
-      margin-left: 0; /* Xóa margin bên trái */
-      margin-right: 0; /* Xóa margin bên phải */
+      
+      margin-left: 2%; 
+      margin-right: 2%; 
+      font-size: 10px;
+      align-items: center;
+      text-align: center;
     }
   
     .buttondetaillaptop {
-      --width: 140px; /* Điều chỉnh kích thước nút */
+      --width: 140px;
       --height: 40px;
-      font-size: 14px; /* Giảm kích thước chữ */
+      font-size: 14px; 
     }
   
     .purchase-info input {
-      width: 50px; /* Điều chỉnh kích thước input */
+      width: 50px;
     }
   
     .product-detail-order ul li {
-      background-size: 15px; /* Điều chỉnh kích thước icon checked */
-      padding-left: 1.5rem; /* Giảm khoảng cách bên trái */
-      margin: 0.3rem 0; /* Giảm khoảng cách giữa các mục */
+      background-size: 15px; 
+      padding-left: 1.5rem; 
+      margin: 0.3rem 0; 
     }
     .imagedetail img{
       width: 60%;
@@ -340,8 +343,9 @@ width: 100%;
       font-size: 30px;
     }
     .h3laptopdetail{
-      
-      padding-left: 20px;
+      margin: 2px;
+      padding-left: 10px;
+      padding-bottom: 5%;
     }
     .row{
       overflow-x: auto;

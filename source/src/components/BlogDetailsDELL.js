@@ -2,7 +2,7 @@ import "../css/BlogDetail.css"
 
 function Blog_dell() {
   return (
-    <div class="Blog_container">
+   
       <div class="section_head">
         <br></br>
         <div class="blogdetail_content">
@@ -21,8 +21,7 @@ The company, first named PC’s Limited, was founded in 1984 by American Michael
           </div>
         </div>
       </div>
-    </div>
-    
+  
 
 
 
