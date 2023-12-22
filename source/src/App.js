@@ -369,7 +369,7 @@ function App() {
         
 
         <div className='asus-container1'>
-          <Button/>
+        
           
           <Button/>   <AsusVideo/> <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
            
@@ -378,14 +378,14 @@ function App() {
       <Route path='/msi' element={
         <div className='msi-container1'>
           
-          <Button/>
+     
           
           <Button/>  <MsiVideo/>    <MsiCard/><Msi msiProduct={msiProduct} addCart={addCart} getDetails={getDetails}/>
       </div>}/>
         <Route path='/dell' element=
         {
           <div className='dell-container1'>
-              <Button/>
+            
           
           <Button/> 
           <DellVideo/>
@@ -395,7 +395,7 @@ function App() {
         }/>
         <Route path='/gigabyte' element={
           <div className='gigabyte-container1'>
-               <Button/>
+             
           
           <Button/> 
           <GigabyteVideo/>
@@ -407,7 +407,7 @@ function App() {
         }/>
         <Route path='/lenovo' element={
           <div className='lenovo-container1'>
-              <Button/>
+      
           
           <Button/> 
           <LenovoVideo/>
@@ -417,7 +417,7 @@ function App() {
         }/>
             <Route path='/hp' element={
           <div className='hp-container1'>
-              <Button/>
+            
           
           <Button/> 
           <HpVideo/>
