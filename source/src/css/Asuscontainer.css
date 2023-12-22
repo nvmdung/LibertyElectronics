@@ -53,6 +53,6 @@
     .lenovo-container1,
     .dell-container1,
     .hp-container1 {
-        width: 350%; /* hoặc giá trị phù hợp với thiết kế của bạn */
+        width: 100%; /* hoặc giá trị phù hợp với thiết kế của bạn */
     }
 }
