@@ -6,7 +6,7 @@ import { Table } from "react-bootstrap";
 
 function CartList({carts,deleteCart, decreaseQty, increaseQty}){
     const totalPrice = carts.reduce((total, product) => {
-        return total + (product.price * product.quantity);
+        return total + (product.quantity * (product.discount ? (product.price - (product.price * (product.discount / 100))) : product.price));
     }, 0);
    
     if (!carts || carts.length === 0) {
