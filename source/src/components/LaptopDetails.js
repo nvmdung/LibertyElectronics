@@ -167,7 +167,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
           </Button>
         </Modal.Footer>
       </Modal>
-                <a href="www.google.com" download="laptop_detail">Download</a>       
+                <a href="www.google.com" download="laptop_detail.doc">Download</a>       
             </div>
             
         
