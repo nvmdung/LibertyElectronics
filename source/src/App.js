@@ -51,6 +51,7 @@ import GigabyteVideo from './components/GIGABYTESTYE/gigabytevideo.js';
 import DellVideo from './components/Dellstyle/Dellvideo.js';
 import HpVideo from './components/HPstyle/HPvideo.js';
 import ThinAndLightLaptops from './components/Thinalightlaptop.js';
+import {initializeApp} from "firebase/app"
 function App() {
   const [users,setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -75,6 +76,18 @@ function App() {
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [input, setInput] = useState({});
   const [errors, setErrors] = useState({});
+  const firebaseConfig = {
+    apiKey: "AIzaSyAznl7GtdEI9paKWzk92YEsyCDtQghPmdg",
+    authDomain: "libertyelectronics-a7b85.firebaseapp.com",
+    projectId: "libertyelectronics-a7b85",
+    storageBucket: "libertyelectronics-a7b85.appspot.com",
+    messagingSenderId: "502085832708",
+    appId: "1:502085832708:web:e11e9983266c8b10c2e551"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  
 
   
   useEffect(()=>{
