@@ -72,7 +72,11 @@
   position: absolute;
   z-index: -1;
 }
-
+.container-productbutton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .btn-91:after {
   border-color: blue;
 }
@@ -127,26 +131,24 @@
   }
 }
 
-.container-productbutton {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+
 
 /* ... Your existing styles ... */
 
 /* Media query specifically for iPhone 12 Pro */
-@media only screen 
-  and (min-device-width: 428px) 
-  and (max-device-width: 926px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
+@media (max-width: 400px) {
+  .container-btn5 {
+    /* Điều chỉnh kiểu dáng hoặc thuộc tính cho container-btn5 ở đây nếu cần thiết */
+  }
 
   .container-productbutton {
     display: block;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .btn-91 {
-    margin-bottom: 10px; /* Adjust the spacing between buttons as needed */
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
