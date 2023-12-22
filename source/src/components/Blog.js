@@ -42,7 +42,7 @@ function Blog() {
           <div class="peach_overlay">
             <div class="blog_text">
               <h4>MSI</h4>
-              <p> "City, Taiwan. It designs, develops and provides computerhardware, related products and services, including laptops,desktops, motherboards, graphics cards, all-in-one PCs, servers,industrial computers, PC peripherals, car infotainment products, among other products. </p>
+              <p> City, Taiwan. It designs, develops and provides computerhardware, related products and services, including laptops,desktops, motherboards, graphics cards, all-in-one PCs, servers,industrial computers, PC peripherals, car infotainment products, among other products. </p>
           
    
             </div>
@@ -83,7 +83,7 @@ function Blog() {
             <div class="blog_text">
               <h4>ASUS</h4>
               <p>
-                Asus was founded in Taipei in 1989[14] by T.H. Tung, Ted Hsu,
+                Asus was founded in Taipei in 1989 by T.H. Tung, Ted Hsu,
                 Wayne Hsieh and M.T. Liao, all four having previously worked at
                 Acer as hardware engineers. At this time, Taiwan had yet to
                 establish a leading position in the computer hardware business.
