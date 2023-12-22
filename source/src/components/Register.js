@@ -86,8 +86,9 @@ function Register() {
                                 </Button>
                             </Modal.Footer>
                         </Modal>
-                    </form>
+                    </form>              
                 )}
+                <div>Already have an account? <Link to="/login">Log in</Link></div>
             </div>
         </div>
     );
