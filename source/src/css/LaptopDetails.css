@@ -258,6 +258,8 @@ width: 100%;
 }
 .smallS-image{
   display: none;
+  border: solid black 1px;
+  
 }
 .product-detail-order ul li span{
     font-weight: 400;
