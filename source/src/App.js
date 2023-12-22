@@ -371,34 +371,34 @@ function App() {
         <div className='asus-container1'>
         
           
-          <Button/>   <AsusVideo/> <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
+            <AsusVideo/> <Button/>  <CardASUS/>  <Asus asusProduct={asusProduct} addCart={addCart} getDetails={getDetails}/>
            
           
       </div>}/>
       <Route path='/msi' element={
         <div className='msi-container1'>
           
-     
+        
           
-          <Button/>  <MsiVideo/>    <MsiCard/><Msi msiProduct={msiProduct} addCart={addCart} getDetails={getDetails}/>
+          <MsiVideo/>  <Button/>   <MsiCard/><Msi msiProduct={msiProduct} addCart={addCart} getDetails={getDetails}/>
       </div>}/>
         <Route path='/dell' element=
         {
           <div className='dell-container1'>
-            
           
-          <Button/> 
+          
           <DellVideo/>
+          <Button/> 
             <DELLCard/>
         <DELL dellProduct={dellProduct} addCart={addCart} getDetails={getDetails} />
         </div>
         }/>
         <Route path='/gigabyte' element={
           <div className='gigabyte-container1'>
-             
           
-          <Button/> 
+          
           <GigabyteVideo/>
+          <Button/> 
           <GIGABYEcarD/>
          
        
@@ -407,20 +407,20 @@ function App() {
         }/>
         <Route path='/lenovo' element={
           <div className='lenovo-container1'>
-      
           
-          <Button/> 
+         
           <LenovoVideo/>
+          <Button/> 
             <Lenovocard/>
         <Lenovo lenovoProduct={lenovoProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
         }/>
             <Route path='/hp' element={
           <div className='hp-container1'>
-            
           
-          <Button/> 
+         
           <HpVideo/>
+          <Button/> 
            <HPcard/>
         <HP HpProduct={HpProduct} addCart={addCart} getDetails={getDetails}/>
         </div>
