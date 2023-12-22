@@ -21,9 +21,9 @@ function ImageSlider ()  {
   };
 
   const image = [
-    { id: 1, url: './image/banner/banner_tuf.png', alt: 'Image 1'  },
+    { id: 1, url: './image/banner/banner_tuf.png', alt: 'Image 1'},
     { id: 2, url: './image/banner/Zenbook2.jpg', alt: 'Image 2'},
-    { id: 3, url:'./image/banner/lenovobanner.jpg', alt: 'Image 3' },
+    { id: 3, url:'./image/banner/lenovobanner.jpg', alt: 'Image 3'},
   ];
 
   return (
