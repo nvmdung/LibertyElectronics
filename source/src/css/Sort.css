@@ -72,3 +72,10 @@
   
   .sort:hover .btn-sort {background-color: #f73838;}
 
+/* Responsive styles for iPhone 12 Pro */
+@media only screen and (max-width: 375px) {
+  .container-product {
+    margin-top: 50px; /* Giảm khoảng trống trên cùng cho màn hình nhỏ hơn */
+    min-height: calc(100vh - 50px); /* Giảm chiều cao cho phù hợp với khoảng trống trên cùng */
+  }
+}

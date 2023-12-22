@@ -7,6 +7,7 @@
   border: 0 solid;
   box-sizing: border-box;
 }
+
 .btn-91 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
@@ -24,23 +25,28 @@
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
 }
+
 .btn-91:disabled {
   cursor: default;
 }
+
 .btn-91:-moz-focusring {
   outline: auto;
 }
+
 .btn-91 svg {
   display: block;
   vertical-align: middle;
 }
+
 .btn-91 [hidden] {
   display: none;
 }
+
 .btn-91 {
-    background: url('../background/backgoundcss.jpg');
-    background-size: cover;
-    background-position: center;
+  background: url('../background/backgoundcss.jpg');
+  background-size: cover;
+  background-position: center;
   border: 2px solid;
   border-radius: 999px;
   box-sizing: border-box;
@@ -48,13 +54,15 @@
   padding: 1.2rem 3rem;
   position: relative;
   text-transform: uppercase;
-  
+  margin-bottom: 10px;
 }
+
 .btn-91 span {
-    font-weight: 900;
-    background: url('../background/backgoundcss.jpg');
-    color: white;
+  font-weight: 900;
+  background: url('../background/backgoundcss.jpg');
+  color: white;
 }
+
 .btn-91:after,
 .btn-91:before {
   border: 2px solid red;
@@ -64,29 +72,34 @@
   position: absolute;
   z-index: -1;
 }
+
 .btn-91:after {
   border-color: blue;
 }
+
 .btn-91:hover:before {
   -webkit-animation: glitch-border 0.2s infinite;
   animation: glitch-border 0.2s infinite;
 }
+
 .btn-91:hover:after {
   animation: glitch-border 0.2s infinite reverse;
 }
+
 .btn-91:hover span {
   -webkit-animation: glitch-text 0.2s infinite;
- 
   animation: glitch-text 0.2s infinite;
 }
+
 @-webkit-keyframes glitch-text {
-    0% {
-        text-shadow: none; /* Updated to remove text shadow */
-      }
+  0% {
+    text-shadow: none;
+  }
   to {
     text-shadow: -2px 1px 0 red, 2px -1px 0 blue;
   }
 }
+
 @keyframes glitch-text {
   0% {
     text-shadow: 0 0 0 red, 0 0 0 blue;
@@ -95,6 +108,7 @@
     text-shadow: -2px 1px 0 red, 2px -1px 0 blue;
   }
 }
+
 @-webkit-keyframes glitch-border {
   0% {
     transform: translate(2px, -1px);
@@ -103,6 +117,7 @@
     transform: translate(-2px, -1px);
   }
 }
+
 @keyframes glitch-border {
   0% {
     transform: translate(2px, -1px);
@@ -112,22 +127,21 @@
   }
 }
 
- .container-productbutton{
-    display: flex;
-    justify-content: center;
-    width: 100%;
- }
+.container-productbutton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-
-@media only screen and (max-width: 768px) {
-  /* Styles for small screens (e.g., tablets and phones) */
-
+/* Responsive styles for iPhone 12 Pro */
+@media only screen and (max-width: 375px) {
   .btn-91 {
-    padding: 0.8rem 1.5rem; /* Further adjust padding for smaller screens */
+    padding: 0.8rem 1.5rem;
+    font-size: 80%; /* Adjust the font size as needed */
   }
 
   .btn-91 span {
-    font-size: 0.7em; /* Further adjust font size for smaller screens */
+    font-size: 0.7em;
   }
 }
-  
+
