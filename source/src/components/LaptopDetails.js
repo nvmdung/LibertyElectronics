@@ -93,7 +93,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
 </div>
 
 </div>
-<div class = "product-detail-order">
+<div class="product-detail-order">
 <ul>
           <li>Available: <span>in stock</span></li>
           <li>Category: <span>Laptop</span></li>

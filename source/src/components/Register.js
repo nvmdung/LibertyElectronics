@@ -12,20 +12,20 @@ function Register() {
     const [error, setError] = useState('');
     const [showModal, setShowModal] = useState(false);
 
-    const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-    const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,24}$/;
+    const USER_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
 
     const handleRegister = (e) => {
         e.preventDefault();
 
         if (!USER_REGEX.test(username)) {
-            setError('Invalid username');
+            setError('Username must have at least one uppercase letter, one lowercase letter and one number. Minimum length is 8 characters');
             setShowModal(true);
             return;
         }
 
         if (!PWD_REGEX.test(password)) {
-            setError('Invalid password');
+            setError('Password must have at least one uppercase letter, one lowercase letter, one number and one special character. Minimum length is 8 characters');
             setShowModal(true);
             return;
         }
@@ -47,8 +47,9 @@ function Register() {
     };
 
     return (
-        <div className="devregister">
+        <div className="devregister">       
             <div className="register-container">
+            <div className="registertext">Register</div>
                 {registered ? (
                     <p><Link to="/login">Go to login</Link> Success register!</p>
                 ) : (
@@ -73,6 +74,7 @@ function Register() {
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
                         <button type="submit">Register</button>
+                        <div>Already have an account? <Link to="/login">Log in</Link></div>
 
                         {/* Modal */}
                         <Modal show={showModal} onHide={() => setShowModal(false)}>
@@ -88,7 +90,7 @@ function Register() {
                         </Modal>
                     </form>              
                 )}
-                <div>Already have an account? <Link to="/login">Log in</Link></div>
+               
             </div>
         </div>
     );
