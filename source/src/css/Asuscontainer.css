@@ -45,7 +45,7 @@
     background-position: center;
 }
 
-/* Quy tắc dành cho màn hình có chiều rộng tối đa 480px (smartphones) */
+/* Media query for screens up to 1000px wide */
 @media (max-width: 1000px) {
     .asus-container1,
     .msi-container1,
@@ -53,6 +53,23 @@
     .lenovo-container1,
     .dell-container1,
     .hp-container1 {
-        width: 100%; /* hoặc giá trị phù hợp với thiết kế của bạn */
+        width: 100%; /* or adjust the width as needed for smaller screens */
+    }
+}
+
+/* Media query specifically for iPhone 12 Pro */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .asus-container1,
+    .msi-container1,
+    .gigabyte-container1,
+    .lenovo-container1,
+    .dell-container1,
+    .hp-container1 {
+        /* Adjust styles for iPhone 12 Pro */
+        /* For example, you might want to reduce the width or make other adjustments */
+        width: 80%;
     }
 }

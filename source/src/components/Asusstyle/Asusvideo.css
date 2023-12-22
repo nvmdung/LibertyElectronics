@@ -86,41 +86,51 @@
     color: white;
   }
   
-  @media (max-width: 756px) {
-    .cardasus {
-      position: relative;
-      width: auto;
-      max-width: 600px;
-      transition: 0.5s;
-      align-items: flex-start;
-    }
+ /* ... Your existing styles ... */
+
+/* Media query specifically for iPhone 12 Pro */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
   
-    .cardasus:hover {
-      height: 600px;
-    }
-  
-    .cardasus:hover img {
-      left: 50%;
-      height: 300px;
-    }
-  
-    .cardasus .content {
-      width: 100%;
-      left: 0;
-      padding: 40px;
-    }
-  
-    .cardasus .content h2 {
-      font-size: 2rem;
-    }
-  
-    .cardasus .content p {
-      font-size: 0.9rem;
-    }
+  .cardasus {
+    width: 90%;
+    margin: 50px auto;
+    height: 500px; /* Adjust the height as needed */
+    margin-top: 100px;
   }
+
+  .cardasus img {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+  }
+
+  .cardasus:hover img {
+    left: 50%;
+    height: 350px; /* Adjust the height as needed */
+  }
+
+  .cardasus .content {
+    width: 100%;
+    left: 0;
+    padding: 20px;
+  }
+
+  .cardasus .content h2 {
+    font-size: 1.8rem; /* Adjust the font size as needed */
+  }
+
+  .cardasus .content p {
+    font-size: 0.8rem; /* Adjust the font size as needed */
+  }
+}
+
   
   .video-asus {
     text-align: center;
     margin-top: 100px;
+    width: 100%;
   }
   
