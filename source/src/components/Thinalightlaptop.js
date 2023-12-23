@@ -65,7 +65,7 @@ function ThinAndLightLaptops({avatarLaptopsAsus,avatarLaptopsGigabyte,avatarLapt
               )) 
           }
            {
-              avatarLaptopsHP.slice(3,4).map(a => (
+              avatarLaptopsHP.slice(1,2).map(a => (
                   <div className="boxlaptophome"><Item key={a.id} addCart={addCart} laptop={a} getDetails={getDetails}/></div>
               )) 
           }
