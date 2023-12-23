@@ -1,6 +1,6 @@
 /* Common styles for product items */
 .productItem {
-  width: 80%;
+  width: 50%;
   border: 3px solid #ddd;
   border-radius: 20px;
   overflow: hidden;
@@ -48,7 +48,7 @@
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
-  width: 100%;
+  width: 40%;
 }
 
 /* Container for product items */
@@ -57,7 +57,7 @@
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  
 }
 
 /* Image styling */
@@ -76,7 +76,7 @@
 /* Responsive styles for small screens */
 @media only screen and (max-width: 768px) {
   .productItem {
-    width: 100%;
+    width: 90%;
     margin: 5px;
   }
 

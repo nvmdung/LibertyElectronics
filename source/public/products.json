@@ -98,7 +98,7 @@
     },
     {
      "id":5,
-    "name":"Lenovo 2022 Newest Ideapad 3 ",
+    "name":"Lenovo 2022 Newest Ideapad 3 pro",
     "brand":"Lenovo",
     "price":418,
     "itemweight":"1.8 kg",
@@ -122,7 +122,7 @@
     },
     {
       "id":6,
-    "name":"Lenovo Slim 7 Pro X Laptop",
+    "name":"Lenovo Slim 7 Pro X proprie",
     "brand":"Lenovo",
     "price":1199,
     "itemweight":"2.2 kg",
@@ -145,7 +145,7 @@
     },
     {
       "id":7,
-        "name":"Lenovo IdeaPad Slim 3  ",
+        "name":"Lenovo IdeaPad Slim 3 Xpro  ",
         "brand":"Lenovo",
         "price":396,
         "itemweight":"2.3 kg",
@@ -193,7 +193,7 @@
     },
     {
         "id":9,
-    "name":"Lenovo IdeaPad Gaming 3",
+    "name":"Lenovo IdeaPad Gaming 3 63AOZ",
     "brand":"Lenovo",
     "price":794,
     "itemweight":"1.4 kg",
@@ -462,7 +462,7 @@
     },
     {
         "id":21,
-        "name":"Laptop HP 240 G9 6L1Y2PA",
+        "name":"Laptop HP 240 G9 6L1Y2PA EPU",
         "brand":"HP",
         "price":1499,
         "itemweight":"1.74 kg",
