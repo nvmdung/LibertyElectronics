@@ -1,19 +1,33 @@
 import CartItem from "./CartItem";
 import { formatCurrency } from "./Currency";
 import '../css/Cart.css'
-import { Table } from "react-bootstrap";
-
+import { Button, Table } from "react-bootstrap";
+import {  Modal } from "react-bootstrap";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function CartList({carts,deleteCart, decreaseQty, increaseQty}){
+    const navigate = useNavigate();
+    const handleNavigateHome = () => {
+        setShowModal(navigate('/'));
+      };
+    const [showModal, setShowModal] = useState(false);
     const totalPrice = carts.reduce((total, product) => {
         return total + (product.quantity * (product.discount ? (product.price - (product.price * (product.discount / 100))) : product.price));
     }, 0);
    
     if (!carts || carts.length === 0) {
         return (
-            <div className="cartlist">
-                <h3>No products in cart</h3>
-            </div>
+            <Modal  show={true} onHide={() => setShowModal(false)}>
+            <Modal.Header closeButton>
+                <Modal.Title>No products in cart</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <p>Your cart is empty. Please add some products.</p>
+                <Button variant="secondary"  onClick={handleNavigateHome}>Ok</Button>
+            </Modal.Body>
+        </Modal>
         );
     }
     return(
