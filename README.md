@@ -4,7 +4,7 @@ LibertyElectronics
 eProject-2023 Batch no: T3.2308.A0
 
 Project title: LibertyElectronics
-========> Group 01 <=========
+========> Group 05 <=========
 
 4 collaborators:
 
@@ -20,9 +20,6 @@ Student1507632	Nguyễn Ngọc Tuấn
 
 eProject documentation at https://github.com/nvmdung/libertyelectronics/tree/main/document
 
-============================
-
-eProject published at https://lnnhi1310.github.io/Kitchen-Appliances/index.html
 
 ============================
 
