@@ -34,12 +34,43 @@ const ProductComparison = ({ productDetail }) => {
           <h2>Selected Product</h2>
           {selectedProduct && (
             <div>
+            <div>
               <h3>{selectedProduct.name}</h3>
               <p>Type: {selectedProduct.type}</p>
               <img src={`.${selectedProduct.image[0]}`} width="50%" alt={selectedProduct.name} />
-              <p>Price: ${selectedProduct.price}</p>
-              <p>Screensize: {selectedProduct.screensize}</p>
-              {/* Add more details as needed */}
+              <p>Price: ${selectedProduct.price}</p>        
+            </div>
+                <div>      
+                <div class="rowdetail">
+                  <div class="col-xs-4">Screensize:</div>
+                 <div class="col-xs-8">{selectedProduct.screensize}</div>
+                </div>
+                <div class="rowdetail">
+                  <div class="col-xs-4">Weight:</div>
+                  <div class="col-xs-8">{selectedProduct.itemweight}</div>
+                </div>
+                <div class="rowdetail">
+                  <div class="col-xs-4">CPU:</div>
+                  <div class="col-xs-8">{selectedProduct.cpuchip}</div>
+                </div>
+                <div class="rowdetail">
+                  <div class="col-xs-4">RAM:</div>
+                  <div class="col-xs-8">{selectedProduct.memorysize}
+                  </div>
+                </div>
+                <div class="rowdetail">
+                  <div class="col-xs-4">Hard Disk:</div>
+                  <div class="col-xs-8">{selectedProduct.harddisksize}</div>
+                </div>
+                <div class="rowdetail">
+                  <div class="col-xs-4">Battery:</div>
+                  <div class="col-xs-8">{selectedProduct.pin}</div>
+                </div>
+                <div class="rowdetail">
+                  <div class="col-xs-4">Warranty:</div>
+                  <div class="col-xs-8">{selectedProduct.warranty}</div>
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -51,9 +82,38 @@ const ProductComparison = ({ productDetail }) => {
                 <h3>{similarProducts[currentIndex].name}</h3>
                 <p>Type: {similarProducts[currentIndex].type}</p>
                 <img src={`.${similarProducts[currentIndex].image[0]}`} width="50%" alt={similarProducts[currentIndex].name} />
-                <p>Price: ${similarProducts[currentIndex].price}</p>
-                <p>Screensize: {similarProducts[currentIndex].screensize}</p>
-                {/* Add more details as needed */}
+                <p>Price: ${similarProducts[currentIndex].price}</p>            
+                <div>      
+            <div class="rowdetail">
+              <div class="col-xs-4">Screensize:</div>
+             <div class="col-xs-8">{similarProducts[currentIndex].screensize}</div>
+            </div>
+            <div class="rowdetail">
+              <div class="col-xs-4">Weight:</div>
+              <div class="col-xs-8">{similarProducts[currentIndex].itemweight}</div>
+            </div>
+            <div class="rowdetail">
+              <div class="col-xs-4">CPU:</div>
+              <div class="col-xs-8">{similarProducts[currentIndex].cpuchip}</div>
+            </div>
+            <div class="rowdetail">
+              <div class="col-xs-4">RAM:</div>
+              <div class="col-xs-8">{similarProducts[currentIndex].memorysize}
+              </div>
+            </div>
+            <div class="rowdetail">
+              <div class="col-xs-4">Hard Disk:</div>
+              <div class="col-xs-8">{similarProducts[currentIndex].harddisksize}</div>
+            </div>
+            <div class="rowdetail">
+              <div class="col-xs-4">Battery:</div>
+              <div class="col-xs-8">{similarProducts[currentIndex].pin}</div>
+            </div>
+            <div class="rowdetail">
+              <div class="col-xs-4">Warranty:</div>
+              <div class="col-xs-8">{similarProducts[currentIndex].warranty}</div>
+            </div>
+          </div>
               </div>
               <div className="navigation-buttons">
                 <button onClick={handlePrevProduct}>Previous</button>
