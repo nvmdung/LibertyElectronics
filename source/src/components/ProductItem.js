@@ -24,7 +24,7 @@ const discountedPrice = calculateDiscountedPrice(laptop.price, laptop.discount |
         getDetails(laptop);
         navigate('/details');
       }}>
-        <td><img src={laptop.image[0]} width="250px" alt={laptop.name} className={classes.productImage} /></td>
+        <div className={classes.productimg}><td><img src={laptop.image[0]} width="250px" alt={laptop.name} className={classes.productImage} /></td></div>
         <td>
         <div className={classes.productInfo}>
           <div className={classes.productName}>{shortenProductName(laptop.name, 50)}</div>
