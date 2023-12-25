@@ -20,9 +20,6 @@ Student1507632	Nguyễn Ngọc Tuấn
 
 eProject documentation at https://github.com/nvmdung/libertyelectronics/tree/main/document
 
-============================
-
-eProject published at https://lnnhi1310.github.io/Kitchen-Appliances/index.html
 
 ============================
 
