@@ -12,14 +12,14 @@ function Register() {
     const [error, setError] = useState('');
     const [showModal, setShowModal] = useState(false);
 
-    const USER_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,24}$/;
-    const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,24}$/;
+    const USER_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{7,24}$/;
+    const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{7,24}$/;
 
     const handleRegister = (e) => {
         e.preventDefault();
 
         if (!USER_REGEX.test(username)) {
-            setError('Username must have at least one uppercase letter, one lowercase letter and one number. Minimum length is 8 characters');
+            setError('Username must have at least one uppercase letter, one lowercase letter one number and no special character. Minimum length is 8 characters');
             setShowModal(true);
             return;
         }
