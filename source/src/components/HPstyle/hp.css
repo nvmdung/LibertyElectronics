@@ -94,6 +94,9 @@
       transition: 0.5s;
       align-items: flex-start;
     }
+    .body{
+      display: none;
+    }
   
     .card-hp:hover {
       height: 600px;
@@ -122,5 +125,6 @@
   .video-asus {
     text-align: center;
     margin-top: 60px;
+
   }
   

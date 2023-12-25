@@ -13,11 +13,11 @@ function ImageSlider ()  {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '0%', // Điều chỉnh giá trị padding ở giữa slide
+    centerPadding: '0%', 
     autoplay: true,
     autoplaySpeed: 3000,
-    prevArrow: <></>, // Sử dụng empty fragment để loại bỏ nút previous
-    nextArrow: <></>, // Sử dụng empty fragment để loại bỏ nút next
+    prevArrow: <></>, 
+    nextArrow: <></>, 
   };
 
   const image = [
