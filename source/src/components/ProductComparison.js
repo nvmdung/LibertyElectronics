@@ -38,37 +38,40 @@ const ProductComparison = ({ productDetail }) => {
               <h3>{selectedProduct.name}</h3>
               <p>Type: {selectedProduct.type}</p>
               <img src={`.${selectedProduct.image[0]}`} width="50%" alt={selectedProduct.name} />
-              <p>Price: ${selectedProduct.price}</p>        
+              <div>
+                        ${selectedProduct.discount ? 
+                            ((selectedProduct.price - (selectedProduct.price * (selectedProduct.discount / 100))).toFixed(2)) : (selectedProduct.price.toFixed(2))}
+                        </div>       
             </div>
                 <div>      
-                <div class="rowdetail">
-                  <div class="col-xs-4">Screensize:</div>
-                 <div class="col-xs-8">{selectedProduct.screensize}</div>
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">Screensize:</div>
+                 <div class="col-xs-8compare">{selectedProduct.screensize}</div>
                 </div>
-                <div class="rowdetail">
-                  <div class="col-xs-4">Weight:</div>
-                  <div class="col-xs-8">{selectedProduct.itemweight}</div>
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">Weight:</div>
+                  <div class="col-xs-8compare">{selectedProduct.itemweight}</div>
                 </div>
-                <div class="rowdetail">
-                  <div class="col-xs-4">CPU:</div>
-                  <div class="col-xs-8">{selectedProduct.cpuchip}</div>
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">CPU:</div>
+                  <div class="col-xs-8compare">{selectedProduct.cpuchip}</div>
                 </div>
-                <div class="rowdetail">
-                  <div class="col-xs-4">RAM:</div>
-                  <div class="col-xs-8">{selectedProduct.memorysize}
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">RAM:</div>
+                  <div class="col-xs-8compare">{selectedProduct.memorysize}
                   </div>
                 </div>
-                <div class="rowdetail">
-                  <div class="col-xs-4">Hard Disk:</div>
-                  <div class="col-xs-8">{selectedProduct.harddisksize}</div>
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">Hard Disk:</div>
+                  <div class="col-xs-8compare">{selectedProduct.harddisksize}</div>
                 </div>
-                <div class="rowdetail">
-                  <div class="col-xs-4">Battery:</div>
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">Battery:</div>
                   <div class="col-xs-8">{selectedProduct.pin}</div>
                 </div>
-                <div class="rowdetail">
-                  <div class="col-xs-4">Warranty:</div>
-                  <div class="col-xs-8">{selectedProduct.warranty}</div>
+                <div class="rowdetailcompare">
+                  <div class="col-xs-4compare">Warranty:</div>
+                  <div class="col-xs-8compare">{selectedProduct.warranty}</div>
                 </div>
               </div>
             </div>
@@ -82,36 +85,39 @@ const ProductComparison = ({ productDetail }) => {
                 <h3>{similarProducts[currentIndex].name}</h3>
                 <p>Type: {similarProducts[currentIndex].type}</p>
                 <img src={`.${similarProducts[currentIndex].image[0]}`} width="50%" alt={similarProducts[currentIndex].name} />
-                <p>Price: ${similarProducts[currentIndex].price}</p>            
+                <div>
+                        ${similarProducts[currentIndex].discount ? 
+                            ((similarProducts[currentIndex].price - (similarProducts[currentIndex].price * (similarProducts[currentIndex].discount / 100))).toFixed(2)) : (similarProducts[currentIndex].price.toFixed(2))}
+                        </div>          
                 <div>      
-            <div class="rowdetail">
-              <div class="col-xs-4">Screensize:</div>
-             <div class="col-xs-8">{similarProducts[currentIndex].screensize}</div>
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">Screensize:</div>
+             <div class="col-xs-8compare">{similarProducts[currentIndex].screensize}</div>
             </div>
-            <div class="rowdetail">
-              <div class="col-xs-4">Weight:</div>
-              <div class="col-xs-8">{similarProducts[currentIndex].itemweight}</div>
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">Weight:</div>
+              <div class="col-xs-8compare">{similarProducts[currentIndex].itemweight}</div>
             </div>
-            <div class="rowdetail">
-              <div class="col-xs-4">CPU:</div>
-              <div class="col-xs-8">{similarProducts[currentIndex].cpuchip}</div>
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">CPU:</div>
+              <div class="col-xs-8compare">{similarProducts[currentIndex].cpuchip}</div>
             </div>
-            <div class="rowdetail">
-              <div class="col-xs-4">RAM:</div>
-              <div class="col-xs-8">{similarProducts[currentIndex].memorysize}
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">RAM:</div>
+              <div class="col-xs-8compare">{similarProducts[currentIndex].memorysize}
               </div>
             </div>
-            <div class="rowdetail">
-              <div class="col-xs-4">Hard Disk:</div>
-              <div class="col-xs-8">{similarProducts[currentIndex].harddisksize}</div>
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">Hard Disk:</div>
+              <div class="col-xs-8compare">{similarProducts[currentIndex].harddisksize}</div>
             </div>
-            <div class="rowdetail">
-              <div class="col-xs-4">Battery:</div>
-              <div class="col-xs-8">{similarProducts[currentIndex].pin}</div>
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">Battery:</div>
+              <div class="col-xs-8compare">{similarProducts[currentIndex].pin}</div>
             </div>
-            <div class="rowdetail">
-              <div class="col-xs-4">Warranty:</div>
-              <div class="col-xs-8">{similarProducts[currentIndex].warranty}</div>
+            <div class="rowdetailcompare">
+              <div class="col-xs-4compare">Warranty:</div>
+              <div class="col-xs-8compare">{similarProducts[currentIndex].warranty}</div>
             </div>
           </div>
               </div>

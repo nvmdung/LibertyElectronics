@@ -35,3 +35,44 @@
     color: #007bff;
     font-weight: bold;
   }
+  .rowdetailcompare {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  
+  .col-xs-4compare {
+
+   border: 1px solid rgba(0, 0, 0, 0.295);
+   margin-left: 5%; 
+   margin-right: 5%;
+  }
+  
+  .col-xs-8compare {
+    padding-left: 5px;
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    margin-right: 5%;
+  }
+  @media (min-width: 768px) {
+    .col-xs-4compare{
+      text-align: left;
+    }
+  } 
+  @media (max-width: 768px) {
+
+  
+    .col-xs-4compare,
+    .col-xs-8compare {
+      font-size: 7px;
+      margin-left: 2%; 
+      margin-right: 2%; 
+      align-items: center;
+      text-align: center;
+    }
+    .navigation-buttons button{
+      width: 40px;
+      font-size: 5px;
+     
+    }
+  }
